@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_listview_item_gray"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_item_top"
+    android:paddingEnd="@dimen/padding_item"
+    android:paddingLeft="@dimen/padding_item"
+    android:paddingRight="@dimen/padding_item"
+    android:paddingStart="@dimen/padding_item"
+    android:paddingTop="@dimen/padding_item_top" >
+
+    <com.comeonbaby.android.app.view.customview.TextViewCustom
+        android:id="@+id/textDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textColor="@color/color_black" />
+
+    <com.comeonbaby.android.app.view.customview.TextViewCustom
+        android:id="@+id/textRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.8"
+        android:padding="5dp"
+        android:background="@drawable/bg_rating_report_bad"
+        android:textColor="@color/color_white" />
+
+    <com.comeonbaby.android.app.view.customview.TextViewCustom
+        android:id="@+id/textNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:layout_weight="1"
+        android:drawableEnd="@drawable/icon_arrow_right"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:padding="5dp"
+        android:textColor="@color/color_black" />
+
+</LinearLayout>

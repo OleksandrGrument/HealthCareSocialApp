@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="api_key_gcm">AIzaSyABPqO5_-fDh5N6DZunn8Grk0G4H_fXqXw</string>
+    <string name="kakao_app_key">72768002b965f1b621149c6656d3a90b</string>
+    <string name="facebook_app_id">1702383216739696</string>
+    <string name="string_press_back_again_to_exit">Press back again to exit app.</string>
+    <string name="app_name">Come On Baby</string>
+    <string name="regex_email">^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[a-zA-Z]{2,4}$</string>
+    <string name="string_cancel">Cancellation</string>
+    <string name="string_no_network_connectivity">Network connection unavailable</string>
+    <string name="string_network_not_connected_desc">A network connection is required to use this app. When the connection resumes, this message will disappear. </string>
+    <string name="notification_content">We miss you, please come back</string>
+
+    <string-array name="list_foods">
+        <item>Winnie Chui</item>
+        <item>Adjudication</item>
+        <item>Cabbage</item>
+        <item>Chinese cabbage</item>
+        <item>Borkley</item>
+        <item>burdock</item>
+        <item>Lotus root</item>
+        <item>stop</item>
+        <item>potato</item>
+        <item>Cobrabi</item>
+        <item>onion</item>
+        <item>Mugwort</item>
+        <item>Ground garlic</item>
+        <item>mushroom</item>
+        <item>chives</item>
+        <item>dandelion</item>
+        <item>Cold</item>
+        <item>Parsley</item>
+        <item>yam</item>
+        <item>Acorn</item>
+        <item>Mustard kimchi</item>
+        <item>Taran</item>
+        <item>flaxseed</item>
+        <item>Perilla</item>
+        <item>olive</item>
+        <item>beef</item>
+        <item>duck</item>
+        <item>chicken</item>
+        <item>salt</item>
+        <item>clam</item>
+        <item>oyster</item>
+        <item>mussel</item>
+        <item>to</item>
+        <item>shrimp</item>
+        <item>I am</item>
+        <item>Sea cucumber</item>
+        <item>Flounder</item>
+        <item>Sea bream</item>
+        <item>salmon</item>
+        <item>Libby</item>
+        <item>Libby</item>
+        <item>tuna</item>
+        <item>sardine</item>
+        <item>Kim</item>
+        <item>Seaweed</item>
+        <item>Blue</item>
+        <item>Top</item>
+        <item>squid</item>
+        <item>Haircut</item>
+        <item>eel</item>
+        <item>Mackerel</item>
+        <item>Samchi</item>
+        <item>Pacific saury</item>
+        <item>Dynamic</item>
+        <item>Daejeon</item>
+        <item>Anchovy</item>
+        <item>Juku</item>
+    </string-array>
+    <string-array name="list_city">
+        <item>Seoul</item>
+        <item>game</item>
+        <item>Incheon</item>
+        <item>Busan</item>
+        <item>Daejeon</item>
+        <item>Dae-gu</item>
+        <item>Chungcheongnam-do</item>
+        <item>Chung-cheong bukdo</item>
+        <item>Gangwon-do</item>
+        <item>Gyeongsangbuk-do</item>
+        <item>Gyeongsangnam-do</item>
+        <item>Jeollabuk do</item>
+        <item>Jeollanam-do</item>
+        <item>Jeju Island</item>
+        <item>Overseas</item>
+    </string-array>
+    <string-array name="list_state">
+        <item>Seoul</item>
+        <item>game</item>
+        <item>Incheon</item>
+        <item>Busan</item>
+        <item>Daejeon</item>
+        <item>Dae-gu</item>
+        <item>Chungcheongnam-do</item>
+        <item>Chung-cheong bukdo</item>
+        <item>Gangwon-do</item>
+        <item>Gyeongsangbuk-do</item>
+        <item>Gyeongsangnam-do</item>
+        <item>Jeollabuk do</item>
+        <item>Jeollanam-do</item>
+        <item>Jeju Island</item>
+        <item>Overseas</item>
+    </string-array>
+
+    <!-- General -->
+    <string name="string_ok"> OK </string>
+        
+    <string name="string_2_dot">: </string>
+        
+    <string name="string_on"> ON </string>
+        
+    <string name="string_off"> OFF </string>
+        
+    <string name="text_city"> city </string>
+        
+    <string name="text_state"> Status </string>
+        
+    <string name="string_error"> Notice </string>
+        
+    <string name="string_yes"> Example </string>
+        
+    <string name="string_no"> No </string>
+        
+    <string name="string_waiting"> Processing. Please wait a moment </string>
+
+    <!-- Login -->
+    <string name="text_welcome_1"> Korea Federation of Societies </string>
+        
+    <string name="text_welcome_2"> (sponsored) Ministry of Gender Equality </string>
+        
+    <string name="text_welcome_3"> so that anyone who wants to give birth </string>
+        
+    <string name="text_login_app"> Sign in with your app account </string>
+        <string name="text_login_facebook"> Log in to your facebook account </string>  
+     
+    <string name="text_login_kakaotalk"> Login to your cacao account </string>
+        
+    <string name="text_register"> Sign Up </string>
+        
+    <string name="title_username"> Enter email </string>
+        
+    <string name="title_password"> Enter password </string>
+        
+    <string name="title_forgot_password"> Forgot your password? </string>
+        
+    <string name="title_sign_in"> Login </string>
+        
+    <string name="string_login_email_incorrect"> Not a signed email </string>
+        
+    <string name="string_login_password_incorrect"> The password is incorrect. </string>
+        
+    <string name="string_login_kakaotalk_fail"> Sorry for the inconvenience. KakaoTalk login is currently working. Please use Facebook sign-up or general sign-up </string>
+
+    <!-- Forgot password -->
+    <string name="title_forgot_password_screen"> Find password </string>
+        
+    <string name="title_input_email_forgot_screen"> What if I do not have a password? </string>
+        
+    <string name="title_request_password_forgot_screen"> Receiving password email </string>
+        
+    <string name="string_success_forgot_password"> An email has been sent. Please check your Spam folder. </string>
+        
+    <string name="string_error_forgot_password"> No matching email address. Please check again. </string>
+
+    <!-- Create account -->
+    <string name="hint_email_address"> Enter email </string> 
+    <string name="hint_request_password"> Enter password </string>    
+    <string name="hint_confirm_password"> Verify Password </string>    
+    <string name="hint_nickname"> Enter nickname </string>    
+    <string name="note_request_password"> * 4 to 12 alphanumeric characters </string>    
+    <string name="note_nickname"> * Hangul, English, numbers between 2 and 10 characters </string>    
+    <string name="string_enter_your_email"> Please enter all items </string>    
+    <string name="string_invalid_email_address"> Not a valid email. Please try again. </string>    
+    <string name="string_enter_your_password"> Please enter all items </string>    
+    <string name="string_passwd_length_hint"> Not a valid password. Please try again. </string>    
+    <string name="string_enter_your_nickname"> Please enter all items </string>    
+    <string name="string_nickname_length_hint"> This is not a valid nickname. Please try again. </string>    
+    <string name="string_error_create_user"> Please try again. </string>
+
+    <!-- Term of Use -->
+    <string name="title_dieu_khoan"> Accept Terms </string>
+        
+    <string name="hint_dieu_khoan"> Terms of Service </string>
+        
+    <string name="text_dieu_khoan"> Content Identification> </string>
+        
+    <string name="hint_thuthap_thongtin"> Collection and use of personal information </string>
+        
+    <string name="text_thuthap_thongtin"> Content Identification> </string>
+        
+    <string name="checkbox_dieu_khoan"> I agree </string>
+        
+    <string name="checkbox_thuthap_thongtin"> I agree </string>
+        
+    <string name="button_accept_all"> Agree all </string>
+        
+    <string name="button_accept"> Accept </string>
+        
+    <string name="button_cancel"> Cancel </string>
+        
+    <string name="string_error_check_term_policy"> Please enter all items. </string>
+
+    <!-- Basic Question -->
+    <string name="text_title_basic_question">Basics questions</string>
+        
+    <string name="text_title_basic_question_finish"> Complete the baseline questions </string>
+        
+    <string name="text_can_multi_check"> (duplicate checkable) </string>
+        
+    <string name="text_female"> Female </string>
+        
+    <string name="text_male"> Male </string>
+        
+    <string name="text_title_question_1"> How many years have you not been able to be pregnant?</string>
+        
+    <string name="text_title_question_2"> Do you currently have children? </string>
+        
+    <string name="text_title_question_3"> What treatment did you undergo to try to become fertile </string>
+        
+    <string name="text_title_question_4"> What causes your infertility? </string>
+        
+    <string name="text_title_question_5"> What help do you need? Are you struggling with something? </string>
+        
+    <string name="text_title_question_6"> What are your plans for your family structure? </string>
+        
+    <string name="text_radio_question_1"> None </string>
+        
+    <string name="text_radio_question_2"> 1 to 2 years </string>
+        
+    <string name="text_radio_question_3"> 2 to 3 years </string>
+        
+    <string name="text_radio_question_4"> 3 to 5 years </string>
+        
+    <string name="text_radio_question_5"> 5+ years </string>
+        
+    <string name="text_radio_question_6"> None </string>
+        
+    <string name="text_radio_question_7"> 1 person </string>
+        
+    <string name="text_radio_question_8"> 2 people </string>
+        
+    <string name="text_radio_question_9"> 3 </string>
+        
+    <string name="text_radio_question_10"> 4 or more </string>
+        
+    <string name="text_radio_question_11"> Induce natural pregnancy  </string>
+        
+    <string name="text_radio_question_12"> Induction of ovulation </string>
+        
+    <string name="text_radio_question_13"> Artificial insemination </string>
+        
+    <string name="text_radio_question_14"> In Vitro Fertilization  </string>
+        
+    <string name="text_radio_question_15"> Operation </string>
+        
+    <string name="text_radio_question_16"> Endoscopy </string>
+        
+    <string name="text_radio_question_17"> Laparoscopic procedure </string>
+        
+    <string name="text_radio_question_18"> Endometrial stimulation </string>
+        
+    <string name="text_radio_question_19"> Inspection</string>
+        
+    <string name="text_radio_question_20"> More </string>
+        
+    <string name="text_radio_question_21"> Ovarian dysfunction </string>
+        
+    <string name="text_radio_question_22"> Uterine myoma </string>
+        
+    <string name="text_radio_question_23"> Adenomyosis </string>
+        
+    <string name="text_radio_question_24"> Hormone Factor </string>
+        
+    <string name="text_radio_question_25"> Habitual (mooring) abortion </string>
+        
+    <string name="text_radio_question_26"> Unknown cause </string>
+        
+    <string name="text_radio_question_27"> Polycystic ovary syndrome </string>
+        
+    <string name="text_radio_question_28"> Menstrual disorder </string>
+        
+    <string name="text_radio_question_29"> Endometriosis </string>
+        
+    <string name="text_radio_question_30"> Fallopian tube abnormality </string>
+        
+    <string name="text_radio_question_31"> Ovulation disorder </string>
+        
+    <string name="text_radio_question_32"> Pregnancy preparation </string>
+        
+    <string name="text_radio_question_33"> Blood circulation disorder </string>
+        
+    <string name="text_radio_question_34"> Other </string>
+        
+    <string name="text_radio_question_35"> Infertility (number of sperm counts, motility, shape deformity, etc.) </string>
+        
+    <string name="text_radio_question_36"> Hormone Factor </string>
+        
+    <string name="text_radio_question_37"> Amenorrhea (obstructive, non-obstructive) </string>
+        
+    <string name="text_radio_question_38"> Cerebral varices </string>
+        
+    <string name="text_radio_question_39"> Unknown cause </string>
+        
+    <string name="text_radio_question_40"> Other </string>
+        
+    <string name="text_radio_question_41"> Psychological (Discomfort, Anxiety, Depression, Mood Disorder) </string>
+        
+    <string name="text_radio_question_42"> Hospitals - Medical information </string>
+        
+    <string name="text_radio_question_43"> Relationship with family. Solutions(spouse, family, home) </string>
+        
+    <string name="text_radio_question_44"> Relationship with others. Solutions (religion, neighbor, friend, work colleague, colleagues, etc.) </string>
+        
+    <string name="text_radio_question_45"> Support system </string>
+        
+    <string name="text_radio_question_46"> Financial problem </string>
+        
+    <string name="text_radio_question_47"> Nutrition consultation (eating habit) </string>
+        
+    <string name="text_radio_question_48"> Other </string>
+        
+    <string name="text_radio_question_49"> Couple only </string>
+        
+    <string name="text_radio_question_50"> Adoption </string>
+        
+    <string name="text_radio_question_51"> Experience foster parent </string>
+        
+    <string name="text_radio_question_52"> Divorce </string>
+        
+    <string name="text_radio_question_53"> I never thought of it </string>
+        
+    <string name="text_radio_question_54"> Surrogate mother </string>
+        
+    <string name="text_radio_question_55"> Sperm donation </string>
+        
+    <string name="text_radio_question_56"> Egg donation </string>
+        
+    <string name="text_radio_question_57"> Other </string>
+        
+    <string name="text_unit_question"> times </string>
+        
+    <string name="text_next_step"> Next </string>
+        
+    <string name="text_finish_step"> Answer completed </string>
+        
+    <string name="button_finish_step"> Finish registration </string>
+        
+    <string name="string_error_check_basic_question_1"> Please enter everything </string>
+        
+    <string name="string_error_check_basic_question"> Please enter all items </string>
+
+    <!-- Profile Config -->
+    <string name="text_title_profile_config"> Privacy Settings </string>
+        
+    <string name="text_profile_config_gioitinh"> Gender </string>
+        
+    <string name="text_profile_config_namsinh"> Year of birth </string>
+        
+    <string name="text_profile_config_vung"> Residence </string>
+        
+    <string name="text_profile_config_diachi"> Address </string>
+        
+    <string name="text_profile_config_nguyetsan"> Menstrual cycle </string>
+        
+    <string name="text_profile_config_redday"> Average duration of menstruation </string>
+        
+    <string name="text_profile_config_ngaycuoi"> Last menstr. start date</string>
+        
+    <string name="text_profile_config_chieucao"> Height </string>
+        
+    <string name="text_profile_config_cannang"> Weight </string>
+        
+    <string name="text_profile_config_thamgia"> Subscription complete </string>
+        
+    <string name="text_profile_config_bmi"> Enter BMI </string>
+        
+    <string name="text_cm"> cm </string>
+        
+    <string name="text_kg"> Kg </string>
+        
+    <string name="text_day"> day </string>
+        
+    <string name="text_month"> month </string>
+        
+    <string name="text_year"> year </string>
+        
+    <string name="text_week"> week </string>
+        
+    <string name="text_x"> X </string>
+        
+    <string name="text_confirm"> OK </string>
+        
+    <string name="text_hint_diachi"> street address </string>
+        
+    <string name="string_error_input_infor_profile_config"> All entries are required to complete the subscription. </string>
+
+    <!-- Home -->
+    <string name="text_close_tool"> Getting Started </string>
+        
+    <string name="text_home"> Home </string>
+        
+    <string name="text_comeon"> Come On Guide </string>
+        
+    <string name="text_community"> Community </string>
+        
+    <string name="text_report"> Reports </string>
+        
+    <string name="text_setting"> Settings </string>
+
+    <!-- Calendar -->
+    <string name="monday"> MON </string>
+        
+    <string name="tuesday"> TUE </string>
+        
+    <string name="wednesday"> WED </string>
+        
+    <string name="thursday"> THU </string>
+        
+    <string name="friday"> FRI </string>
+        
+    <string name="saturday"> SAT </string>
+        
+    <string name="sunday"> SUN </string>
+        
+    <string name="text_edit"> History of child hope notes </string>
+        
+    <string name="text_kinhnguyet"> Menstrual period </string>
+        
+    <string name="text_thuthai"> Ovulation date </string>
+        
+    <string name="text_rungtrung"> Fertile </string>
+        
+    <string name="text_description"> Click on the date to record your hope notes </string>
+
+    <!-- List Note -->
+    <string name="text_title_list_note"> Child hope note </string>
+        
+    <string name="text_nhietke_modified"> Basic body temperature </string>
+        
+    <string name="text_monan"> Did not intake </string>
+        
+    <string name="text_monan_modified"> Recommended food </string>
+        
+    <string name="text_hat_modified"> Recommended nuts </string>
+        
+    <string name="text_tra_modified"> Recommended tea </string>
+        
+    <string name="text_vandong_modified"> Exercise </string>
+        
+    <string name="text_ngu_modified"> Wakeup </string>
+        
+    <string name="text_ngu1_modified"> Bedtime </string>
+        
+    <string name="text_uongnuoc_modified"> Water intake </string>
+        
+    <string name="text_tam_modified"> Sitz bath </string>
+        
+    <string name="text_vitamin_modified"> Vitamins </string>
+        
+    <string name="text_axicfolic_modified"> Folate </string>
+        
+    <string name="text_cafe_modified"> Coffee intake </string>
+        
+    <string name="text_ruou_modified"> Alcohol intake </string>
+        
+    <string name="text_thuocla_modified"> Smoking </string>
+    <string name="text_camxuc_modified"> Emotion status </string>
+        
+    <string name="text_thietlap_modified"> BMI </string>
+    <string name="text_unit_nhietke">%s  &#x2103;</string>
+    <string name="text_unit_uongnuoc">%s  liter</string>
+    <string name="text_unit_tam">%s  minute</string>
+    <string name="text_unit_cafe">%s  Less than a cup</string>
+    <string name="text_unit_ruou">%s  glass</string>
+    <string name="text_unit_thuocla">smoking</string>
+    <string name="text_unit_camxuc">usually</string>
+    <string name="text_unit_thietlap">%s  kidney</string>
+
+    <!-- Temperature -->
+    <string name="text_title_temperature"> Basic body temperature </string>
+    <string name="text_temperature_content"> Keep the basic body temperature at </string>
+    <string name="text_temperature_content1">36.5&#x2103;</string>
+    <string name="text_temperature_content2"> or more </string>
+    <string name="text_temperature_content3"> is recommended. </string>
+    <string name="text_temperature_content_1"> Continually inputing into the child hope note will help to improve the basic body temperature. </string>
+    <string name="text_temperature_content_2"> </string>
+    <string name="text_dot">.</string>
+    <string name="text_cerious">&#x2103;</string>
+    <string name="text_button_temperature"> Record </string>
+
+    <!-- Food -->
+    <string name="text_title_monan"> Recommended food </string>    
+    <string name="text_monan_content"> We recommend you </string>
+    <string name="text_monan_content1"> 1 day 1 food </string>   
+    <string name="text_monan_content2"> or more </string>    
+    <string name="text_monan_dung"> Intake </string>   
+    <string name="text_monan_no_dung"> Did not intake </string>   
+    <string name="text_monan_content3"> from recommended food list per day. </string>    
+    <string name="text_goiy_1"> Soybean oil </string>  
+    <string name="text_goiy_2"> Mandarin </string>    
+    <string name="text_goiy_3"> Quail </string>   
+    <string name="text_note_refresh"> Refresh food recomendations </string>   
+    <string name="text_khongthich"> no intake </string>   
+    <string name="text_button_monan"> Record </string>
+
+    <!-- Nuts -->
+    <string name="text_title_hat"> Recommended nuts </string>  
+    <string name="text_hat_content"> Recommended nuts </string>
+    <string name="text_hat_content1"> 1 day </string>    
+    <string name="text_hat_content2"> Abnormal intake </string>    
+    <string name="text_hat_content3"> Recommended </string>    
+    <string name="text_checkbox_hat_dung"> Intake </string>    
+    <string name="text_checkbox_hat_no_dung"> Did not intake </string>    
+    <string name="text_hat_goiy_1"> Walnut </string>    
+    <string name="text_hat_goiy_2"> Peanut </string>    
+    <string name="text_hat_goiy_3"> Almond </string>    
+    <string name="text_hat_goiy_4"> Pine nut </string>    
+    <string name="text_hat_soluong_1"> 3 </string>    
+    <string name="text_hat_soluong_2"> 10 </string>    
+    <string name="text_hat_soluong_3"> 7 </string>    
+    <string name="text_hat_soluong_4"> 10 </string>    
+    <string name="text_note_hat"> Recommended daily intake of nuts </string>    
+    <string name="text_button_hat"> Record </string>    
+    <string name="error_enter_hat"> Please enter your preferred nuts type </string>
+
+    <!-- Tea -->
+    <string name="text_title_tra"> Recommended tea </string>    
+    <string name="text_tra_content"> Suggested intake </string>    
+    <string name="text_tra_content1"> 1 glass per day </string>    
+    <string name="text_tra_content2"> or above </string>    
+    <string name="text_tra_content3"> Suggested intake </string>    
+    <string name="text_checkbox_tra_dung"> Intake </string>    
+    <string name="text_checkbox_tra_no_dung"> Did not intake </string>    
+    <string name="text_tra_goiy_1"> Jujube </string>    
+    <string name="text_tra_goiy_2"> Burdock tea </string>   
+    <string name="text_tra_goiy_3"> Ginger tea </string>  
+    <string name="text_tra_goiy_4"> Herbal tea </string>   
+    <string name="text_tra_goiy_5"> Mushroom tea </string>   
+    <string name="text_tra_goiy_6"> Golden tea </string>   
+    <string name="text_note_tra"> Recommended tea type </string>  
+    <string name="text_button_tra"> Record </string>
+    <string name="error_enter_tra"> Please fill in your recommended tea type </string>
+
+    <!-- Exercises -->
+    <string name="text_title_vandong"> Recommended physical activity </string>
+    <string name="text_vandong_content1"> 1 day of 1 exercise </string>    
+    <string name="text_vandong_content2"> steadily recommended exercise time </string>    
+    <string name="text_vandong_content3"> Practice is helpful. </string>    
+    <string name="text_checkbox_vandong_dung"> Practice </string>    
+    <string name="text_checkbox_vandong_no_dung"> Not practice </string>    
+    <string name="text_vandong_goiy_1"> Running / Walking </string>    
+    <string name="text_vandong_goiy_2"> Biking / Swimming </string>    
+    <string name="text_vandong_goiy_3"> Climb </string>    
+    <string name="text_vandong_goiy_4"> Yoga / Aerobics </string>    
+    <string name="text_note_vandong"> Recommended exercise type </string>    
+    <string name="text_button_vandong"> Record </string>    
+    <string name="error_enter_vandong"> Please enter your recommended exercise type. </string>
+
+    <!-- Vitamin -->
+    <string name="text_title_vitamin"> Vitamins </string>
+    <string name="text_vitamin_content"> Vitamin intake is recommended </string>    
+    <string name="text_checkbox_vitamin_dung"> Intake </string>   
+    <string name="text_checkbox_vitamin_no_dung"> Did not intake </string>   
+    <string name="text_button_vitamin"> Record </string>
+
+    <!-- Folic acid -->
+    <string name="text_title_axic"> Folic acid </string>  
+    <string name="text_axic_content"> Folic acid is recommended </string>    
+    <string name="text_checkbox_axic_dung"> Intake </string>    
+    <string name="text_checkbox_axic_no_dung"> Did not intake </string>    
+    <string name="text_button_axic"> Record </string>
+
+    <!-- Cafe -->
+    <string name="text_title_cafe"> Coffee </string>
+    <string name="text_cafe_content"> Coffee intake </string>    
+    <string name="text_cafe_content1"> less than one cup a day </string>    
+    <string name="text_cafe_content2"> is recommended </string>    
+    <string name="text_checkbox_cafe_dung"> Less than one </string>    
+    <string name="text_checkbox_cafe_no_dung"> More than two </string>    
+    <string name="text_button_cafe"> Record </string>
+
+    <!-- Smoking -->    
+    <string name="text_title_thuocla"> Smoking </string>    
+    <string name="text_thuocla_content"> For pregnancy </string>   
+    <string name="text_thuocla_content1"> do not smoke </string>    
+    <string name="text_thuocla_content2"> please </string>   
+    <string name="text_checkbox_thuocla_dung"> Smoking </string>    
+    <string name="text_checkbox_thuocla_no_dung"> No Smoking </string>    
+    <string name="text_button_thuocla"> Record </string>
+
+    <!-- Sleep -->
+    <string name="text_title_ngu"> Wakeup / Bedtime </string>
+    <string name="text_ngu_content"> Regularly </string>    
+    <string name="text_ngu_content1"> sleep before 12 PM </string>    
+    <string name="text_ngu_content2"> is recommended </string>    
+    <string name="text_ngu_content3"> 1 day </string>    
+    <string name="text_ngu_content4"> sleep time 8 hours </string>    
+    <string name="text_ngu_content5"> is recommended </string>    
+    <string name="text_ngu_label1"> Waking time </string>    
+    <string name="text_ngu_label2"> Bedtime </string>    
+    <string name="text_unit_hour"> hours </string>  
+    <string name="text_unit_minutes"> minutes </string>    
+    <string name="text_button_ngu"> Record </string>
+
+    <!-- Water -->
+    <string name="text_title_nuoc"> Water intake </string>    
+    <string name="text_nuoc_content"> Water intake </string>    
+    <string name="text_nuoc_content1"> 1.5l or more per day </string>   
+    <string name="text_nuoc_content2"> is recommended. </string>    
+    <string name="text_nuoc_content3"> Except for carbonated drinks and coffee </string>    
+    <string name="text_checkbox_nuoc1"> 0.5 liter </string>    
+    <string name="text_checkbox_nuoc2"> 1 liter </string>    
+    <string name="text_checkbox_nuoc3"> 1.5 liters </string>   
+    <string name="text_checkbox_nuoc4"> 2 liters or more </string>   
+    <string name="text_button_nuoc"> Record </string>
+
+    <!-- Heating -->
+    <string name="text_title_tam"> Steam heating / Sitz bath </string>
+    <string name="text_tam_content"> The left / right </string>    
+    <string name="text_tam_content1"> 30 to 40 minutes per day </string>   
+    <string name="text_tam_content2"> is recommended </string>    
+    <string name="text_checkbox_tam1"> 10 minutes </string>    
+    <string name="text_checkbox_tam2"> 20 minutes </string>    
+    <string name="text_checkbox_tam3"> 30 minutes </string>    
+    <string name="text_checkbox_tam4"> 40 minutes </string>    
+    <string name="text_button_tam"> Record </string>
+
+    <!-- Emotianal state -->
+    <string name="text_title_camxuc"> Emotion status </string>
+    <string name="text_camxuc_content"> How was your day feeling? </string>    
+    <string name="text_checkbox_camxuc1"> Very good </string>    
+    <string name="text_checkbox_camxuc2"> Good </string>    
+    <string name="text_checkbox_camxuc3"> Normal </string>    
+    <string name="text_checkbox_camxuc4"> Bad </string>    
+    <string name="text_checkbox_camxuc5"> Very bad </string>    
+    <string name="text_button_camxuc"> Record </string>
+
+    <!-- Ruou -->
+    <string name="text_title_ruou"> Alcohol intake </string>
+        
+    <string name="text_ruou_content"> Alcohol consumption </string>
+        
+    <string name="text_ruou_content1"> Less than one standard per day </string>
+        
+    <string name="text_ruou_content2"> is recommended </string>
+        
+    <string name="text_ruou_content3"> A standard of 14 grams of alcohol </string>
+        
+    <string name="text_ruou_tip1"> 0 cup </string>
+        
+    <string name="text_ruou_tip2"> One glass </string>
+        
+    <string name="text_ruou_tip3"> 2 glasses </string>
+        
+    <string name="text_ruou_tip4"> More than 3 </string>
+        
+    <string name="text_ruou_goiy1"> One glass of wine: 45ml </string>
+        
+    <string name="text_ruou_goiy2"> 2 glasses of shochu: 90ml </string>
+        
+    <string name="text_ruou_goiy3"> One bottle of beer: 360ml </string>
+        
+    <string name="text_ruou_goiy4"> One glass of wine: 150ml </string>
+        
+    <string name="text_ruou_goiy5"> 1 cup of makgeolli: 250ml </string>
+        
+    <string name="text_ruou_note"> Source: Korean Association of Family Medicine Alcohol Studies </string>
+        
+    <string name="text_button_ruou"> Record </string>
+
+    <!-- Come On -->
+    <string name="text_tab_comeon_recipe"> Recipe </string>
+    <string name="text_tab_comeon_guide"> Guide </string>
+
+    <!-- Community -->
+    <string name="text_tab_community_event"> Notice\n/Event </string>    
+    <string name="text_tab_community_mysuccess"> My\nstory </string>    
+    <string name="text_tab_community_myrecipe"> My\nrecipe </string>    
+    <string name="text_tab_community_husband"> Husband\nstory </string>
+    <string name="text_tab_community_qa">Q &amp; A</string>
+
+    <!-- Community Details -->
+    <string name="text_write"> Write </string>
+        
+    <string name="hint_write_comment"> Leave a comment </string>
+        
+    <string name="text_edit_my_success"> Modifying </string>
+        
+    <string name="text_delete_my_success"> Deleting </string>
+        
+    <string name="text_edit_title_my_success"> Modifying </string>
+        
+    <string name="text_done"> OK </string>
+        
+    <string name="text_like"> Recommendation %s </string>
+        
+    <string name="text_like_1"> Referrals: </string>
+
+    <!-- Community New -->
+    <string name="text_title_community_new"> Writing </string>
+        
+    <string name="hint_title_community_new"> Please enter a title </string>
+        
+    <string name="hint_content_community_new"> Please enter your content </string>
+        
+    <string name="text_from_camera"> Camera </string>
+        
+    <string name="text_from_album"> Album </string>
+        
+    <string name="error_enter_new_community"> Please enter your suggested exercise type </string>
+
+    <!-- Q&A -->
+    <string name="text_delete_qa"> Delete </string>
+        
+    <string name="text_title_qa_new"> Writing </string>
+        
+    <string name="text_answered"> Answer completed </string>
+        
+    <string name="text_not_answer"> Answers </string>
+
+    <!-- Report -->
+    <string name="text_report_month"> Monthly report </string>
+    <string name="text_report_week"> Weekly report </string>   
+    <string name="text_report_excellent"> Great job </string>    
+    <string name="text_report_good"> Well done </string>
+        
+    <string name="text_report_bad"> Do better </string>    
+    <string name="text_report_excellent1"> excellent </string>    
+    <string name="text_report_good1"> good </string>    
+    <string name="text_report_bad1"> bad </string>
+        
+    <string name="text_report_1"> Recommended food </string>    
+    <string name="text_report_2"> Nuts </string>    
+    <string name="text_report_3"> Tea </string>
+    <string name="text_report_4"> Exercises </string>    
+    <string name="text_report_5"> Midnight sleep </string>    
+    <string name="text_report_6"> Average sleep time </string>    
+    <string name="text_report_7"> Water intake </string>    
+    <string name="text_report_8"> Sitz bath </string>    
+    <string name="text_report_9"> Vitamins </string>    
+    <string name="text_report_10"> Folic acid </string>    
+    <string name="text_report_11"> Less than a cup of coffee </string>    
+    <string name="text_report_12"> Alcohol </string>    
+    <string name="text_report_13"> Non-smoking </string>    
+    <string name="text_report_14"> Emotion </string>
+    <!-- month -->
+    <string name="text_report_1_1"> Monthly %s intake </string>    
+    <string name="text_report_2_1">%s per month </string>    
+    <string name="text_report_3_1">%s per month </string>    
+    <string name="text_report_4_1">%s per month </string>    
+    <string name="text_report_5_1">%s per month </string>    
+    <string name="text_report_6_1" formatted="false"> Average month %s hours %s minutes </string>   
+    <string name="text_report_7_1">Average %s per month </string>    
+    <string name="text_report_8_1">%s per month </string>    
+    <string name="text_report_9_1">%s per month </string>    
+    <string name="text_report_10_1">%s monthly intake </string>    
+    <string name="text_report_11_1">%s per month </string>    
+    <string name="text_report_12_1" formatted="false"> Monthly %s drinking / average %s </string>    
+    <string name="text_report_13_1">%s per month </string>    
+    <string name="text_report_14_1" formatted="false" > Very good %s times, good %s times, \n usually %s times, bad %s times, very bad %s </string>
+    <!-- week -->
+    <string name="text_report_1_2"> ingestion %s </string>
+        
+    <string name="text_report_2_2"> Feeding %s times </string>
+        
+    <string name="text_report_3_2"> Feeding %s times </string>
+        
+    <string name="text_report_4_2"> weeks %s </string>
+        
+    <string name="text_report_5_2"> weeks %s </string>
+        
+    <string name="text_report_6_2" formatted="false"> Week %s hours %s minutes </string>
+        
+    <string name="text_report_7_2"> Weekly average %s liter </string>
+        
+    <string name="text_report_8_2"> weeks %s </string>
+        
+    <string name="text_report_9_2"> Feeding %s times </string>
+        
+    <string name="text_report_10_2"> Feeding %s times </string>
+        
+    <string name="text_report_11_2"> weeks %s </string>
+        
+    <string name="text_report_12_2" formatted="false"> Drinking %s of the week %s / average %s </string>
+        
+    <string name="text_report_13_2"> weeks %s </string>
+        
+    <string name="text_report_14_2" formatted="false"> Very good %s times, good %s times, \n usually %s times, bad %s times, very bad %s </string>
+        
+    <string name="text_note"> ※ Inquiries 1899-1806 </string>
+        
+    <string name="text_note_1"> Korea Federation of Subdivision Family Houses www.agaya.org </string>
+
+    <!-- Setting -->
+    <string name="text_setting_email"> email </string>
+        
+    <string name="text_setting_password"> Password </string>
+        
+    <string name="text_setting_gioitinh"> Gender </string>
+        
+    <string name="text_setting_nickname"> Nickname </string>
+        
+    <string name="text_setting_bmi"> BMI calculation </string>
+        
+    <string name="text_setting_push"> Push notification </string>
+        
+    <string name="text_setting_logout"> Logout </string>
+        
+    <string name="text_setting_delete_account"> Leave Member </string>
+        
+    <string name="error_message_for_service_unavailable"> Service connection is bad. \ N \ nPlease try again later. </string>
+        
+    <string name="string_enter_your_information_bmi"> Please enter all items </string>
+        
+    <string name="string_confirm_logout"> Are you sure you want to log out? </string>
+        
+    <string name="string_confirm_delete_account"> All your information will be deleted. \ NDo you really want to leave? </string>
+
+    <string name="title_new_version"> New Version </string>
+        
+    <string name="content_new_version"> New version exists. Please run after upgrade </string>
+</resources>
+
+

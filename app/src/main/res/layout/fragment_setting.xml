@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRootProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray" >
+
+    <include
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        style="@style/ScrollView"
+        android:id="@+id/scrollSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTitle"
+        android:background="@color/color_white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_body" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.CircularImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="@dimen/size_avatar_setting"
+                    android:layout_height="@dimen/size_avatar_setting"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_female_large" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_email"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                    android:id="@+id/textEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:gravity="end|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:textAlignment="viewEnd"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textEmailAddress"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@drawable/text_email_color_state" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_password"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                    android:id="@+id/editPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textPassword"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_nickname"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                    android:id="@+id/editNickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_gioitinh"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textGioitinh"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_profile_config_namsinh"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textNamSinh"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_profile_config_vung"
+                    android:textColor="@color/color_black" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="end|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_line_gray_not_padding_radius"
+                        android:gravity="start|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <com.comeonbaby.android.app.view.customview.ButtonCustom
+                            android:id="@+id/btnCity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false"
+                            android:hint="@string/text_city"
+                            android:maxHeight="40dp"
+                            android:paddingEnd="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingStart="10dp"
+                            android:maxLines="1"
+                            android:textColor="@color/color_black" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:clickable="false"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_dropdown" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--
+                <LinearLayout
+                    android:id="@+id/layoutState"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/border_line_gray_not_padding_radius"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.comeonbaby.android.app.view.customview.ButtonCustom
+                        android:id="@+id/btnState"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1.5"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="start|center_vertical"
+                        android:maxHeight="40dp"
+                        android:paddingEnd="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingStart="5dp"
+                        android:singleLine="true"
+                        android:hint="@string/text_state"
+                        android:textColor="@color/color_black" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:clickable="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_dropdown" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_profile_config_diachi"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                    android:id="@+id/editDiaChi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:imeOptions="actionDone|flagNoExtractUi"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:text="@string/text_profile_config_nguyetsan"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textChuKy"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:text="@string/text_profile_config_redday"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textRedday"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:text="7일"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:text="@string/text_profile_config_ngaycuoi"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textNgayCuoi"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_bmi"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textBMI"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:gravity="end|center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_push"
+                    android:textColor="@color/color_black" />
+
+                <ToggleButton
+                    android:id="@+id/togglePush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:checked="true"
+                    android:textOff="@string/string_off"
+                    android:textOn="@string/string_on" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_editext"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_logout"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_item" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_editext"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_arrow_right"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_right"
+                    android:gravity="start|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:minWidth="100dp"
+                    android:maxLines="1"
+                    android:text="@string/text_setting_delete_account"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <com.comeonbaby.android.app.view.customview.TextViewCustom
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rancua" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

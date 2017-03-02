@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRootQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1" >
+
+    <include
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_top_logo_1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:src="@drawable/bg_button_basic_finish" />
+
+    <com.comeonbaby.android.app.view.customview.ButtonCustom
+        android:id="@+id/btnButtonFinishStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_bottom_selection"
+        android:gravity="center"
+        android:maxHeight="@dimen/height_bottom_bar"
+        android:paddingRight="10dp"
+        android:text="@string/button_setup_privacy"
+        android:textColor="@color/color_white"
+        android:textStyle="normal" />
+
+</RelativeLayout>

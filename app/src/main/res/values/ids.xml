@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="image_prev_date" type="id"/>
+    <item name="image_next_date" type="id"/>
+    <item name="text_top_date" type="id"/>
+    <item name="image_prev_date_report" type="id"/>
+    <item name="image_next_date_report" type="id"/>
+    <item name="text_date_report" type="id"/>
+
+    <!--ExtendedCalendarView-->
+    <item name="image_prev_date_ecv" type="id"/>
+    <item name="image_next_date_ecv" type="id"/>
+    <item name="base_layout_ecv" type="id"/>
+    <item name="text_date_ecv" type="id"/>
+    <item name="label_layout_ecv" type="id"/>
+    <item name="calendar_ecv" type="id"/>
+
+
+</resources>

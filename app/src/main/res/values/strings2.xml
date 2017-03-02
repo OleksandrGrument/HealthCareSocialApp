@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="days_of_week">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+
+    <string name="button_setup_privacy"> Save and go to privacy settings </string>
+    <string name="basic_questions_error"> Something wrong. Please try againe </string>
+    <string name="save_day_note_btn_text"> Save hope note </string>
+    <string name="report_exelent"> EXELENT </string>
+    <string name="report_good"> GOOD </string>
+    <string name="report_bad"> BAD </string>
+    <string name="report_graph_title"> Basic body temperature graph </string>
+    <string name="report_labels_separator"> ● </string>
+
+
+    <string name="text_report_14_1_1" formatted="false" > Very good %s times, good %s times, \n usually %s times, bad %s times, very bad %s </string>
+    <string name="text_report_14_2_2" formatted="false"> Very good %s times, good %s times, \n usually %s times, bad %s times, very bad %s </string>
+    <string name="text_report_12_2_2" formatted="false"> Drinking %s times / average %s standard </string>
+    <string name="text_report_12_1_1" formatted="false"> Monthly %s drinking / average %s standard </string> 
+
+    <string name="title_register_user"> Register new user </string>
+    <string name="string_nickname_length"> Nickname length too small </string>
+    <string name="string_passwords_different"> Password fields do not match </string>
+
+    <string name="dialog_title_delete_community"> Delete community </string>
+    <string name="dialog_message_delete_community"> Are you realy want to delete community? </string>
+
+
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRootQADetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray" >
+
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_button_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_top_bar"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_left_1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.comeonbaby.android.app.view.customview.TextViewCustom
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:background="@color/color_transparent"
+                android:gravity="center"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnButtonDeleteQA"
+        android:layout_below="@+id/layoutTitle"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_body" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="@dimen/size_avatar"
+                    android:layout_height="@dimen/size_avatar"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/avatar_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="start"
+                    android:orientation="vertical" >
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:id="@+id/textUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_transparent"
+                        android:textColor="@color/color_black"
+                        android:textStyle="bold" />
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:id="@+id/textDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_transparent"
+                        android:textColor="@color/color_text_date" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_transparent"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:id="@+id/textUsernameAnswered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="@color/color_transparent"
+                        android:textColor="@color/color_black"
+                        android:textStyle="bold" />
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:id="@+id/textDateAnswered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/color_transparent"
+                        android:textColor="@color/color_black" />
+                </LinearLayout>
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/textAnswered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_transparent"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.comeonbaby.android.app.view.customview.ButtonCustom
+        android:id="@+id/btnButtonDeleteQA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_bottom_selection"
+        android:gravity="center"
+        android:maxHeight="@dimen/height_bottom_bar"
+        android:text="@string/text_delete_qa"
+        android:textColor="@color/color_white"
+        android:textStyle="normal" />
+
+</RelativeLayout>

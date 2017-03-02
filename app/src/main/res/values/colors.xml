@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_transparent">@android:color/transparent</color>
+    <color name="color_system_button">#f48221</color>
+    <color name="color_system_background">#d7dce7</color>
+    <color name="color_bg_header_event">#646464</color>
+    <color name="color_background_create">#e5e5e5</color>
+    <color name="color_gray">#ddd</color>
+    <color name="color_text_date">#918a8a</color>
+    <color name="color_delete">#aaaaaa</color>
+    <color name="color_dark_gray">#80dddddd</color>
+    <color name="color_background_gray">#efeff4</color>
+    <color name="color_top_bar">#fdb813</color>
+    <color name="color_bottom_bar">#f48221</color>
+    <color name="color_button_kakaotalk">#ffc501</color>
+    <color name="color_button_facebook">#4574de</color>
+    <color name="color_button_app">#29c8e6</color>
+    <color name="color_button_disable">#7bb4cf</color>
+    <color name="color_border_edittext">#c8c7cc</color>
+    <color name="color_blue">#007dba</color>
+    <color name="color_blue_grey">#5792af</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_red_button">#d11212</color>
+    <color name="color_brown">#554545</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_red_seekbar">#ee7779</color>
+    <color name="color_black">#FF000000</color>
+    <color name="color_background">#eeeeee</color>
+    <color name="color_tab_not_focus">#d9cfcf</color>
+    <color name="color_good">#ffcf5e</color>
+    <color name="color_bad">#ed8589</color>
+    <color name="color_excellent">#92a4c8</color>
+    <color name="color_photo_capture">#2a3436</color>
+    <color name="color_photo_gallery">#2c373d</color>
+
+    <color name="color_red_days_background">#FFFFCDD2</color>
+    <color name="color_fert_days_background">#FFB2EBF2</color>
+    <color name="color_ovulation_day_background">#FFFFE0B2</color>
+    <color name="color_current_day_front">#C8CFD8DC</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>

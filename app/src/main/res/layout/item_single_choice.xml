@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_item" >
+
+    <com.comeonbaby.android.app.view.customview.TextViewCustom
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:minWidth="100dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/color_black" />
+
+    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+        android:id="@+id/checkboxChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox_vuong_selector_on_off"
+        android:button="@null"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRootTerm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1" >
+
+    <include
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnButtonCancel"
+        android:layout_below="@+id/layoutTitle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.comeonbaby.android.app.view.customview.ButtonCustom
+                android:id="@+id/btnAcceptAll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_bottom_bar"
+                android:layout_margin="@dimen/margin_top_logo_1"
+                android:background="@drawable/bg_button_green_selection"
+                android:gravity="center"
+                android:maxHeight="@dimen/height_bottom_bar"
+                android:text="@string/button_accept_all"
+                android:textColor="@color/color_white"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="@string/hint_dieu_khoan"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/txtDieuKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/text_dieu_khoan"
+                    android:textColor="@color/color_gray" />
+            </LinearLayout>
+
+            <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                android:id="@+id/checkboxDieuKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector_on_off"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:text="@string/checkbox_dieu_khoan"
+                android:textColor="@color/color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_editext"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="@dimen/height_editext"
+                    android:singleLine="true"
+                    android:text="@string/hint_thuthap_thongtin"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/txtThuThapThongTin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/text_thuthap_thongtin"
+                    android:textColor="@color/color_gray" />
+            </LinearLayout>
+
+            <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                android:id="@+id/checkboxThongTin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector_on_off"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:text="@string/checkbox_dieu_khoan"
+                android:textColor="@color/color_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.comeonbaby.android.app.view.customview.ButtonCustom
+        android:id="@+id/btnButtonCancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_bar"
+        android:layout_above="@+id/btnButtonAccept"
+        android:background="@drawable/bg_button_bottom_while_selection"
+        android:gravity="center"
+        android:maxHeight="@dimen/height_bottom_bar"
+        android:text="@string/button_cancel"
+        android:textColor="@color/color_gray"
+        android:textStyle="normal" />
+
+    <com.comeonbaby.android.app.view.customview.ButtonCustom
+        android:id="@+id/btnButtonAccept"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_bottom_selection"
+        android:gravity="center"
+        android:maxHeight="@dimen/height_bottom_bar"
+        android:text="@string/button_accept"
+        android:textColor="@color/color_white"
+        android:textStyle="normal" />
+
+</RelativeLayout>

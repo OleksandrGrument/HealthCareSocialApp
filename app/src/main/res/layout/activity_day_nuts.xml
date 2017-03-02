@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRootHat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1" >
+
+    <include
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnButtonFinishHat"
+        android:layout_below="@+id/layoutTitle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_body" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_hat_content" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/text_hat_content1"
+                    android:textStyle="bold" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_hat_content2" />
+            </LinearLayout>
+
+            <com.comeonbaby.android.app.view.customview.TextViewCustom
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_hat_content3" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupNuts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/checboxDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableTop="@drawable/checkbox_hat_dung"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_checkbox_hat_dung" 
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/checboxNoDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:button="@null"
+                    android:drawableTop="@drawable/checkbox_hat_no_dung"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_checkbox_hat_no_dung" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_body"
+                    android:background="@color/color_gray"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/text_note_hat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/padding_monan_left"
+                    android:layout_marginLeft="@dimen/padding_monan_left"
+                    android:layout_marginRight="@dimen/padding_monan_left"
+                    android:layout_marginStart="@dimen/padding_monan_left"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_goiy_1"
+                        android:textColor="@color/color_black"
+                        android:id="@+id/txtNuts1" />
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_soluong_1"
+                        android:textColor="@color/color_black" />
+
+                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                        android:id="@+id/checkbox_Hat_Goiy_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_vuong_selector_on_off"
+                        android:drawableStart="@drawable/checkbox_vuong_selector_on_off" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/padding_monan_left"
+                    android:layout_marginLeft="@dimen/padding_monan_left"
+                    android:layout_marginRight="@dimen/padding_monan_left"
+                    android:layout_marginStart="@dimen/padding_monan_left"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_goiy_2"
+                        android:textColor="@color/color_black"
+                        android:id="@+id/txtNuts2" />
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_soluong_2"
+                        android:textColor="@color/color_black" />
+
+                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                        android:id="@+id/checkbox_Hat_Goiy_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_vuong_selector_on_off"
+                        android:drawableStart="@drawable/checkbox_vuong_selector_on_off" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/padding_monan_left"
+                    android:layout_marginLeft="@dimen/padding_monan_left"
+                    android:layout_marginRight="@dimen/padding_monan_left"
+                    android:layout_marginStart="@dimen/padding_monan_left"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_goiy_3"
+                        android:textColor="@color/color_black"
+                        android:id="@+id/txtNuts3" />
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_soluong_3"
+                        android:textColor="@color/color_black" />
+
+                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                        android:id="@+id/checkbox_Hat_Goiy_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_vuong_selector_on_off"
+                        android:drawableStart="@drawable/checkbox_vuong_selector_on_off" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/padding_monan_top"
+                    android:layout_marginEnd="@dimen/padding_monan_left"
+                    android:layout_marginLeft="@dimen/padding_monan_left"
+                    android:layout_marginRight="@dimen/padding_monan_left"
+                    android:layout_marginStart="@dimen/padding_monan_left"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_goiy_4"
+                        android:textColor="@color/color_black"
+                        android:id="@+id/txtNuts4" />
+
+                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="@string/text_hat_soluong_4"
+                        android:textColor="@color/color_black" />
+
+                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                        android:id="@+id/checkbox_Hat_Goiy_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_vuong_selector_on_off"
+                        android:drawableStart="@drawable/checkbox_vuong_selector_on_off" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.comeonbaby.android.app.view.customview.ButtonCustom
+        android:id="@+id/btnButtonFinishHat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_bottom_selection"
+        android:gravity="center"
+        android:maxHeight="@dimen/height_bottom_bar"
+        android:text="@string/text_button_hat"
+        android:textColor="@color/color_white"
+        android:textStyle="normal" />
+
+</RelativeLayout>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRootQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1" >
+
+    <include
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnButtonNextStep"
+        android:layout_below="@+id/layoutTitle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_top_logo_1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@drawable/bg_button_basic2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingStart="5dp" >
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:id="@+id/txtTitle4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/text_title_question_4"
+                    android:textColor="@color/color_black" />
+
+                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_editext"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center_vertical"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="@string/text_can_multi_check"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                android:id="@+id/checkboxFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_icon_female_small"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/checkbox_icon_female_small"
+                android:gravity="start|center_vertical"
+                android:padding="10dp"
+                android:paddingLeft="32dp"
+                android:paddingStart="32dp"
+                android:singleLine="true"
+                android:text="@string/text_female"
+                android:textColor="@color/color_black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="3" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad21"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_21" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad22"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_22" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad23"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_23" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="3" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad24"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_24" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad25"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_25" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad26"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_26" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="3" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad27"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_27" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad28"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_28" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad29"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_29" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="3" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad30"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_30" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad31"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_31" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad32"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_32" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="3" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad33"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_33" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical" >
+
+                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                        android:id="@+id/rad34"
+                        style="@style/RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector_on_off"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp"
+                        android:text="@string/text_radio_question_34" />
+
+                    <com.comeonbaby.android.app.view.customview.EditTextCustom
+                        android:id="@+id/editAnswer34"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/color_white"
+                        android:imeOptions="actionDone|flagNoExtractUi"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                android:id="@+id/checkboxMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_icon_male_small"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/checkbox_icon_male_small"
+                android:gravity="start|center_vertical"
+                android:padding="10dp"
+                android:paddingLeft="32dp"
+                android:paddingStart="32dp"
+                android:singleLine="true"
+                android:text="@string/text_male"
+                android:textColor="@color/color_black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="1" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad35"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_35" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="2" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad36"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_36" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad37"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_37" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:weightSum="2" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad38"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_38" />
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad39"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_39" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    android:id="@+id/rad40"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_selector_on_off"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/text_radio_question_40" />
+
+                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                    android:id="@+id/editAnswer40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_white"
+                    android:imeOptions="actionDone|flagNoExtractUi"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_line" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.comeonbaby.android.app.view.customview.ButtonCustom
+        android:id="@+id/btnButtonNextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button_bottom_selection"
+        android:drawableEnd="@drawable/bg_step_2"
+        android:drawableRight="@drawable/bg_step_2"
+        android:gravity="center"
+        android:maxHeight="@dimen/height_bottom_bar"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/text_next_step"
+        android:textColor="@color/color_white"
+        android:textStyle="normal" />
+
+</RelativeLayout>
