@@ -25,8 +25,6 @@ public class Constants {
     public static final int MSG_UPLOAD_BASIC_QUESTION_FAIL = 666;
     public static final int MSG_UPLOAD_BASIC_QUESTION_SUCCESS = 111;
 
-
-
     public static final String SAVE_NOTE_OPERATION = "savenote";
     public static final String GET_NOTES_OPERATION = "getnotes";
     public static final String GET_GUIDE_OPERATION = "getguide";
