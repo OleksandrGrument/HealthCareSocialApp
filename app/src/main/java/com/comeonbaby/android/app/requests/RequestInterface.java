@@ -41,6 +41,9 @@ public interface RequestInterface {
     Call<NewResponse> updateProfileOperation(@Body NewRequest request);
 
     @POST("users")
+    Call<NewResponse> uploadBasicQuestion(@Body NewRequest request);
+
+    @POST("users")
     Call<NewResponse> saveNoteOperation(@Body NewRequest request);
 
     @POST("users")

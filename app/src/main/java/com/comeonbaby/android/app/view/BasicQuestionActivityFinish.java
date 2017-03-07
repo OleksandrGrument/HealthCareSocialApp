@@ -6,6 +6,7 @@ package com.comeonbaby.android.app.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.widget.ImageView;
 
 import com.comeonbaby.android.R;
 import com.comeonbaby.android.app.common.DialogUtilities;
+import com.comeonbaby.android.app.db.dto.UserDTO;
+import com.comeonbaby.android.app.requests.commands.Commands;
 import com.comeonbaby.android.app.utils.AppSession;
 import com.comeonbaby.android.app.utils.PrefsHelper;
 import com.comeonbaby.android.app.view.customview.ButtonCustom;
@@ -25,11 +28,15 @@ import org.json.JSONObject;
 public class BasicQuestionActivityFinish extends BaseActivity implements OnClickListener {
     boolean backBtnEnabled; //uses to prevent back button use when saving progress started
     JSONObject jsonObject;  //final json
+    UserDTO userDTO;
+    Handler handler;
 
     @Override
     protected void onCreateContent(Bundle savedInstanceState) {
         setContentView(R.layout.activity_basic_question_finish);
         initObjectUI();
+        userDTO = AppSession.getSession().getSystemUser();
+
         backBtnEnabled = true;
         setupHideKeyboard(findViewById(R.id.layoutRootQuestion));
     }
@@ -91,9 +98,13 @@ public class BasicQuestionActivityFinish extends BaseActivity implements OnClick
     private boolean pushQuestionsDataToServer() {
         PrefsHelper.getPrefsHelper().savePref(PrefsHelper.PREF_BASIC_QUESTIONS_COMPLETED, new Boolean(true));
 
-        //Отправка на сервер
         AppSession.getSession().getSystemUser().getProfileDTO().setIs_finish_question(true);
         Log.d("!!!Answers", jsonObject.toString());
+
+        //Отправка на сервер //TODO Отправка на сервер BQ;
+
+            Commands.uploadBasicQuestion(userDTO, jsonObject);
+
         return true;
     }
 

@@ -1,11 +1,14 @@
 package com.comeonbaby.android.app.requests.commands;
 
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.design.widget.Snackbar;
 import android.util.Log;
+import android.view.View;
 
 import com.comeonbaby.android.app.db.dto.CommentDTO;
 import com.comeonbaby.android.app.db.dto.CommunityDTO;
@@ -202,6 +205,20 @@ public class Commands {
         executeRequest(handler, response, SUBTAG, Constants.UPDATE_PROFILE_OPERATION, Constants.MSG_UPDATE_PROFILE_SUCCESS, Constants.MSG_UPDATE_PROFILE_FAIL);
     }
 
+    //Upload Basic Question
+    public static void uploadBasicQuestion(final UserDTO user, final JSONObject jsBasicQuestion) {
+
+        final String SUBTAG = TAG + "uploadBasicQuestion()";
+
+        final NewRequest request = new NewRequest();
+        request.setOperation(Constants.UPLOAD_BASIC_QUESTION);
+        request.setUser(user.toJSON().toString());
+        request.setData(jsBasicQuestion.toString());
+
+        Call<NewResponse> response = requestInterface.uploadBasicQuestion(request);
+        executeRequest(response, SUBTAG, Constants.UPLOAD_BASIC_QUESTION, Constants.MSG_UPDATE_PROFILE_SUCCESS, Constants.MSG_UPDATE_PROFILE_FAIL);
+    }
+
     //Save note
     public static void saveNoteOperation(final Handler handler, final UserDTO user, final NoteDTO note) {
         final String SUBTAG = TAG + "saveNote()";
@@ -369,6 +386,7 @@ public class Commands {
                 request.setContent(dto.getContent());
                 request.setOperation(Constants.SAVE_COMUNITY_RECORD_OPERATION);
                 request.setType(dto.getContent_type());
+
                 Call<NewResponse> response = requestInterface.saveComunityOperation(request);
                 executeRequest(handler, response, SUBTAG, Constants.SAVE_COMUNITY_RECORD_OPERATION, Constants.MSG_SAVE_COMUNITY_SUCCESS, Constants.MSG_SAVE_COMUNITY_FAIL);
             }
@@ -501,15 +519,19 @@ public class Commands {
                 Bundle bundle = new Bundle();
                 Message msg = new Message();
                 NewResponse resp = response.body(); // Создание объекта респонс и заполнение объекта из ретрофита
+
                 if (resp == null) {
                     handler.sendEmptyMessage(Constants.MSG_ERROR);
                     Log.d(SUBTAG, "Retrofit error. Response NULL!");
                     return;
                 }
+
                 Log.d(SUBTAG, "Response: operation - " + resp.getOperation() + ", result - " + resp.getResult() + ", message - " + resp.getMessage());
+
                 bundle.putString(ExtraConstants.RESULT, resp.getResult());
                 bundle.putString(ExtraConstants.MESSAGE, resp.getMessage());
                 bundle.putString(ExtraConstants.OPERATION, resp.getOperation());
+
                 if (resp.getResult() != null && resp.getResult().equals(Constants.SUCCESS)) {
                     if(resp.getUser() != null) bundle.putString(ExtraConstants.USER, resp.getUser());
                     if(resp.getData() != null) bundle.putString(ExtraConstants.DATA, resp.getData());
@@ -520,6 +542,7 @@ public class Commands {
                     msg.what = failMsg;
                     msg.setData(bundle);
                 }
+
                 if(handler != null) handler.sendMessage(msg);
             }
 
@@ -537,4 +560,25 @@ public class Commands {
             }
         });
     }
+
+    private static void executeRequest(Call<NewResponse> response, final String SUBTAG, final String operation, final int successMsg, final int failMsg){
+
+        response.enqueue(new Callback<NewResponse>() { // Асинхронный запрос (Отправка без получения ответа в виде информации)
+            @Override
+            public void onResponse(Call<NewResponse> call, Response<NewResponse> response) {
+                Log.d(Constants.TAG, SUBTAG + "!!!!!!!!!!!!!!!!!ПЕРЕДАЛО!!!!!!!!!!!");
+                NewResponse resp = response.body(); // Создание объекта респонс и заполнение объекта из ретрофита
+                if(resp.getResult().equals(Constants.SUCCESS)){
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<NewResponse> call, Throwable t) { // Если ошибка
+                Log.d(Constants.TAG,"!!!!!!!!!!!!!!!!!!!!!!!!!!!!"); // Ошибка в логи
+            }
+        });
+
+    }
+
 }

@@ -455,12 +455,13 @@
         android:id="@+id/btnButtonFinish"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"
-        android:layout_alignParentBottom="true"
         android:background="@drawable/bg_button_bottom_selection"
         android:gravity="center"
         android:maxHeight="@dimen/height_bottom_bar"
         android:text="@string/button_finish_step"
         android:textColor="@color/color_white"
-        android:textStyle="normal" />
+        android:textStyle="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
