@@ -21,6 +21,7 @@ public class Constants {
     public static final String GET_PROFILE_OPERATION = "getprofile";
     public static final String UPDATE_PROFILE_OPERATION = "updateprofile";
 
+
     public static final String UPLOAD_BASIC_QUESTION = "uploadbasicquestion";
     public static final int MSG_UPLOAD_BASIC_QUESTION_FAIL = 666;
     public static final int MSG_UPLOAD_BASIC_QUESTION_SUCCESS = 111;
