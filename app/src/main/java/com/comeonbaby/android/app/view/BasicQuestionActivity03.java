@@ -105,23 +105,32 @@ public class BasicQuestionActivity03 extends BaseActivity implements OnClickList
 
     private void saveQuestionsData() {
         stateAllButtons(false);
-        JSONObject jsonObject = new JSONObject();
+
+        PrefsHelper prefsHelper = PrefsHelper.getPrefsHelper();
+        String str = ((String) prefsHelper.getPref(PrefsHelper.PREF_BASIC_ANSWERS_2));
+        JSONObject jsonObject = null;
+        try {
+            jsonObject = new JSONObject(str);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        Log.e("!!!!!!!!!!B_Q_3:JSON", jsonObject.toString());
         try {
             //First part
-            if (checkbox41.isChecked()) jsonObject.put("3-41", "true");
-            if (checkbox42.isChecked()) jsonObject.put("3-42", "true");
-            if (checkbox43.isChecked()) jsonObject.put("3-43", "true");
-            if (checkbox44.isChecked()) jsonObject.put("3-44", "true");
-            if (checkbox45.isChecked()) jsonObject.put("3-45", "true");
-            if (checkbox46.isChecked()) jsonObject.put("3-46", "true");
-            if (checkbox47.isChecked()) jsonObject.put("3-47", "true");
+            if (checkbox41.isChecked()) jsonObject.put("question_3_41", "true");
+            if (checkbox42.isChecked()) jsonObject.put("question_3_42", "true");
+            if (checkbox43.isChecked()) jsonObject.put("question_3_43", "true");
+            if (checkbox44.isChecked()) jsonObject.put("question_3_44", "true");
+            if (checkbox45.isChecked()) jsonObject.put("question_3_45", "true");
+            if (checkbox46.isChecked()) jsonObject.put("question_3_46", "true");
+            if (checkbox47.isChecked()) jsonObject.put("question_3_47", "true");
             if (checkbox48.isChecked()) {
                 if (TextUtils.isEmpty(editAnswer48.getText().toString().trim())) {
                     DialogUtilities.showAlertDialog(baseActivity, R.layout.dialog_error_warning, R.string.string_error, R.string.string_error_check_basic_question, null);
                     stateAllButtons(true);
                     return;
                 }
-                else  jsonObject.put("3-48", editAnswer48.getText().toString().trim());
+                else  jsonObject.put("question_3_48", editAnswer48.getText().toString().trim());
             }
             //Check if one or more items checked in first part
             if (jsonObject.length() < 1) {
@@ -133,35 +142,35 @@ public class BasicQuestionActivity03 extends BaseActivity implements OnClickList
             //Second part
             int counter = 0;    //counter to check number of selected items
             if (checkbox49.isChecked()) {
-                jsonObject.put("3-49", "true");
+                jsonObject.put("question_3_49", "true");
                 counter++;
             }
             if (checkbox50.isChecked()) {
-                jsonObject.put("3-50", "true");
+                jsonObject.put("question_3_50", "true");
                 counter++;
             }
             if (checkbox51.isChecked()) {
-                jsonObject.put("3-51", "true");
+                jsonObject.put("question_3_51", "true");
                 counter++;
             }
             if (checkbox52.isChecked()) {
-                jsonObject.put("3-52", "true");
+                jsonObject.put("question_3_52", "true");
                 counter++;
             }
             if (checkbox53.isChecked()) {
-                jsonObject.put("3-53", "true");
+                jsonObject.put("question_3_53", "true");
                 counter++;
             }
             if (checkbox54.isChecked()) {
-                jsonObject.put("3-54", "true");
+                jsonObject.put("question_3_54", "true");
                 counter++;
             }
             if (checkbox55.isChecked()) {
-                jsonObject.put("3-55", "true");
+                jsonObject.put("question_3_55", "true");
                 counter++;
             }
             if (checkbox56.isChecked()) {
-                jsonObject.put("3-56", "true");
+                jsonObject.put("question_3_56", "true");
                 counter++;
             }
             if (checkbox57.isChecked()) {
@@ -170,7 +179,7 @@ public class BasicQuestionActivity03 extends BaseActivity implements OnClickList
                     stateAllButtons(true);
                     return;
                 } else {
-                    jsonObject.put("3-57", editAnswer57.getText().toString().trim());
+                    jsonObject.put("question_3_57", editAnswer57.getText().toString().trim());
                     counter++;
                 }
             }

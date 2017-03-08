@@ -21,7 +21,6 @@ public class Constants {
     public static final String GET_PROFILE_OPERATION = "getprofile";
     public static final String UPDATE_PROFILE_OPERATION = "updateprofile";
 
-
     public static final String UPLOAD_BASIC_QUESTION = "uploadbasicquestion";
     public static final int MSG_UPLOAD_BASIC_QUESTION_FAIL = 666;
     public static final int MSG_UPLOAD_BASIC_QUESTION_SUCCESS = 111;
@@ -41,10 +40,8 @@ public class Constants {
     public static final String GET_NOTICES_OPERATION = "getnotices";
     public static final String DELETE_COMUNITY_RECORD_OPERATION = "deleterecord";
 
-
     //Broadcasts
     public static final String GET_NOTES_SUCCESS_ACTION = "getnotessuccess";
-
 
     public static final String SUCCESS = "success"; // ответ ПОДТВЕРЖДЕНО
     public static final String FAILURE = "failure"; // ответ ОШИБКА
@@ -115,5 +112,4 @@ public class Constants {
     public static final int MSG_GET_Q_A_FAIL = 40;
     public static final int MSG_SAVE_QA_SUCCESS = 41;
     public static final int MSG_SAVE_QA_FAIL = 42;
-
 }

@@ -116,7 +116,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
             else if (checked == R.id.rad3) answer = "2-3";
             else if (checked == R.id.rad4) answer = "3-5";
             else if (checked == R.id.rad5) answer = "5+";
-            jsonObject.put("1-1", answer);
+            jsonObject.put("question_1_1", answer);
 
             //Проверка заполнения второй группы RadioButton, вывод AlertDialog если не заполнено; запись в JSON
             if (radGroup2.getCheckedRadioButtonId() <= 0) {
@@ -131,7 +131,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
             else if (checked == R.id.rad8) answer = "2";
             else if (checked == R.id.rad9) answer = "3";
             else if (checked == R.id.rad10) answer = "4+";
-            jsonObject.put("1-2", answer);
+            jsonObject.put("question_1_2", answer);
 
             //Проверяем чекбоксы у третьей группы и заполнение соответствующих полей, записываем JSON
             if (((CheckBoxCustom) findViewById(R.id.rad11)).isChecked()) {
@@ -140,7 +140,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-11", ((EditTextCustom) findViewById(R.id.editAnswer11)).getText().toString());
+                else jsonObject.put("question_1_3_11", ((EditTextCustom) findViewById(R.id.editAnswer11)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad12)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer12)).getText().toString())) {
@@ -148,7 +148,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-12", ((EditTextCustom) findViewById(R.id.editAnswer12)).getText().toString());
+                else jsonObject.put("question_1_3_12", ((EditTextCustom) findViewById(R.id.editAnswer12)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad13)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer13)).getText().toString())) {
@@ -156,7 +156,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-13", ((EditTextCustom) findViewById(R.id.editAnswer13)).getText().toString());
+                else jsonObject.put("question_1_3_13", ((EditTextCustom) findViewById(R.id.editAnswer13)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad14)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer14)).getText().toString())) {
@@ -164,7 +164,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-14", ((EditTextCustom) findViewById(R.id.editAnswer14)).getText().toString());
+                else jsonObject.put("question_1_3_14", ((EditTextCustom) findViewById(R.id.editAnswer14)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad15)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer15)).getText().toString())) {
@@ -172,7 +172,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-15", ((EditTextCustom) findViewById(R.id.editAnswer15)).getText().toString());
+                else jsonObject.put("question_1_3_15", ((EditTextCustom) findViewById(R.id.editAnswer15)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad16)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer16)).getText().toString())) {
@@ -180,7 +180,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-16", ((EditTextCustom) findViewById(R.id.editAnswer16)).getText().toString());
+                else jsonObject.put("question_1_3_16", ((EditTextCustom) findViewById(R.id.editAnswer16)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad17)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer17)).getText().toString())) {
@@ -188,7 +188,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-17", ((EditTextCustom) findViewById(R.id.editAnswer17)).getText().toString());
+                else jsonObject.put("question_1_3_17", ((EditTextCustom) findViewById(R.id.editAnswer17)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad18)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer18)).getText().toString())) {
@@ -196,7 +196,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-18", ((EditTextCustom) findViewById(R.id.editAnswer18)).getText().toString());
+                else jsonObject.put("question_1_3_18", ((EditTextCustom) findViewById(R.id.editAnswer18)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad19)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer19)).getText().toString())) {
@@ -204,7 +204,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-19", ((EditTextCustom) findViewById(R.id.editAnswer19)).getText().toString());
+                else jsonObject.put("question_1_3_19", ((EditTextCustom) findViewById(R.id.editAnswer19)).getText().toString());
             }
             if (((CheckBoxCustom) findViewById(R.id.rad20)).isChecked()) {
                 if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.editAnswer20)).getText().toString())) {
@@ -212,7 +212,7 @@ public class BasicQuestionActivity01 extends BaseActivity implements View.OnClic
                     stateAllButtons(true);
                     return;
                 }
-                else jsonObject.put("1-3-20", ((EditTextCustom) findViewById(R.id.editAnswer20)).getText().toString());
+                else jsonObject.put("question_1_3_20", ((EditTextCustom) findViewById(R.id.editAnswer20)).getText().toString());
             }
         } catch (JSONException e) {
             e.printStackTrace();

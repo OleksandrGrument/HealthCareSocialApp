@@ -23,6 +23,7 @@ import com.comeonbaby.android.app.view.customview.ButtonCustom;
 import com.comeonbaby.android.app.view.customview.TextViewCustom;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class BasicQuestionActivityFinish extends BaseActivity implements OnClickListener {
@@ -72,16 +73,15 @@ public class BasicQuestionActivityFinish extends BaseActivity implements OnClick
         showProgress();
 
         PrefsHelper prefsHelper = PrefsHelper.getPrefsHelper();
-        jsonObject = new JSONObject();
+        String str = ((String) prefsHelper.getPref(PrefsHelper.PREF_BASIC_ANSWERS_3));
+        Log.e("!!!!!!!!B_Q_FINISH:STR:", str);
+
+        jsonObject = null;
+
         try {
-            JSONArray jsonArray = new JSONArray();
-            JSONObject basic01 = new JSONObject((String) prefsHelper.getPref(PrefsHelper.PREF_BASIC_ANSWERS_1));
-            JSONObject basic02 = new JSONObject((String) prefsHelper.getPref(PrefsHelper.PREF_BASIC_ANSWERS_2));
-            JSONObject basic03 = new JSONObject((String) prefsHelper.getPref(PrefsHelper.PREF_BASIC_ANSWERS_3));
-            jsonArray.put(0, basic01);
-            jsonArray.put(1, basic02);
-            jsonArray.put(2, basic03);
-            jsonObject.put("answers", jsonArray);
+            jsonObject = new JSONObject(str);
+            jsonObject.put("user_id", userDTO.getSystemID().toString());
+            Log.e("!!!!!!!!B_Q_FINISH:JSON", jsonObject.toString());
         } catch (Exception e) {
             e.printStackTrace();
             moveToBasic01AfterError();
@@ -102,8 +102,7 @@ public class BasicQuestionActivityFinish extends BaseActivity implements OnClick
         Log.d("!!!Answers", jsonObject.toString());
 
         //Отправка на сервер //TODO Отправка на сервер BQ;
-
-            Commands.uploadBasicQuestion(userDTO, jsonObject);
+        Commands.uploadBasicQuestion(userDTO, jsonObject);
 
         return true;
     }

@@ -169,46 +169,57 @@ public class BasicQuestionActivity02 extends BaseActivity implements OnClickList
     //Save json data to prefences
     private void saveQuestionsData() {
         stateAllButtons(false);
-        JSONObject jsonObject = new JSONObject();
+
+        PrefsHelper prefsHelper = PrefsHelper.getPrefsHelper();
+        String str = ((String) prefsHelper.getPref(PrefsHelper.PREF_BASIC_ANSWERS_1));
+
+        JSONObject jsonObject = null;
+        try {
+            jsonObject = new JSONObject(str);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        Log.e("!!!!!!!!!!B_Q_2:JSON", jsonObject.toString());
+
         try {
             //Save answers for female part checked
             if (checkboxFemale.isChecked()) {
-                if (checkbox21.isChecked()) jsonObject.put("2-21", "true");
-                if (checkbox22.isChecked()) jsonObject.put("2-22", "true");
-                if (checkbox23.isChecked()) jsonObject.put("2-23", "true");
-                if (checkbox24.isChecked()) jsonObject.put("2-24", "true");
-                if (checkbox25.isChecked()) jsonObject.put("2-25", "true");
-                if (checkbox26.isChecked()) jsonObject.put("2-26", "true");
-                if (checkbox27.isChecked()) jsonObject.put("2-27", "true");
-                if (checkbox28.isChecked()) jsonObject.put("2-28", "true");
-                if (checkbox29.isChecked()) jsonObject.put("2-29", "true");
-                if (checkbox30.isChecked()) jsonObject.put("2-30", "true");
-                if (checkbox31.isChecked()) jsonObject.put("2-31", "true");
-                if (checkbox32.isChecked()) jsonObject.put("2-32", "true");
-                if (checkbox33.isChecked()) jsonObject.put("2-33", "true");
+                if (checkbox21.isChecked()) jsonObject.put("question_2_21", "true");
+                if (checkbox22.isChecked()) jsonObject.put("question_2_22", "true");
+                if (checkbox23.isChecked()) jsonObject.put("question_2_23", "true");
+                if (checkbox24.isChecked()) jsonObject.put("question_2_24", "true");
+                if (checkbox25.isChecked()) jsonObject.put("question_2_25", "true");
+                if (checkbox26.isChecked()) jsonObject.put("question_2_26", "true");
+                if (checkbox27.isChecked()) jsonObject.put("question_2_27", "true");
+                if (checkbox28.isChecked()) jsonObject.put("question_2_28", "true");
+                if (checkbox29.isChecked()) jsonObject.put("question_2_29", "true");
+                if (checkbox30.isChecked()) jsonObject.put("question_2_30", "true");
+                if (checkbox31.isChecked()) jsonObject.put("question_2_31", "true");
+                if (checkbox32.isChecked()) jsonObject.put("question_2_32", "true");
+                if (checkbox33.isChecked()) jsonObject.put("question_2_33", "true");
                 if (checkbox34.isChecked()) {
                     if (TextUtils.isEmpty(editAnswer34.getText().toString().trim())) {
                         DialogUtilities.showAlertDialog(baseActivity, R.layout.dialog_error_warning, R.string.string_error, R.string.string_error_check_basic_question, null);
                         stateAllButtons(true);
                         return;
                     }
-                    else jsonObject.put("2-34", editAnswer34.getText().toString().trim());
+                    else jsonObject.put("question_2_34", editAnswer34.getText().toString().trim());
                 }
             }
             //Save answers for male part checked
             else {
-                if (checkbox35.isChecked()) jsonObject.put("2-35", "true");
-                if (checkbox36.isChecked()) jsonObject.put("2-36", "true");
-                if (checkbox37.isChecked()) jsonObject.put("2-37", "true");
-                if (checkbox38.isChecked()) jsonObject.put("2-38", "true");
-                if (checkbox39.isChecked()) jsonObject.put("2-39", "true");
+                if (checkbox35.isChecked()) jsonObject.put("question_2_35", "true");
+                if (checkbox36.isChecked()) jsonObject.put("question_2_36", "true");
+                if (checkbox37.isChecked()) jsonObject.put("question_2_37", "true");
+                if (checkbox38.isChecked()) jsonObject.put("question_2_38", "true");
+                if (checkbox39.isChecked()) jsonObject.put("question_2_39", "true");
                 if (checkbox40.isChecked()) {
                     if (TextUtils.isEmpty(editAnswer40.getText().toString().trim())) {
                         DialogUtilities.showAlertDialog(baseActivity, R.layout.dialog_error_warning, R.string.string_error, R.string.string_error_check_basic_question, null);
                         stateAllButtons(true);
                         return;
                     }
-                    else  jsonObject.put("2-40", editAnswer40.getText().toString().trim());
+                    else  jsonObject.put("question_2_40", editAnswer40.getText().toString().trim());
                 }
             }
         }

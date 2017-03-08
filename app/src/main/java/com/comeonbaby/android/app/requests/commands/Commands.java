@@ -216,7 +216,7 @@ public class Commands {
         request.setData(jsBasicQuestion.toString());
 
         Call<NewResponse> response = requestInterface.uploadBasicQuestion(request);
-        executeRequest(response, SUBTAG, Constants.UPLOAD_BASIC_QUESTION, Constants.MSG_UPDATE_PROFILE_SUCCESS, Constants.MSG_UPDATE_PROFILE_FAIL);
+        executeRequest(response, SUBTAG, Constants.UPLOAD_BASIC_QUESTION);
     }
 
     //Save note
@@ -561,7 +561,7 @@ public class Commands {
         });
     }
 
-    private static void executeRequest(Call<NewResponse> response, final String SUBTAG, final String operation, final int successMsg, final int failMsg){
+    private static void executeRequest(Call<NewResponse> response, final String SUBTAG, final String operation){
 
         response.enqueue(new Callback<NewResponse>() { // Асинхронный запрос (Отправка без получения ответа в виде информации)
             @Override
@@ -569,7 +569,7 @@ public class Commands {
                 Log.d(Constants.TAG, SUBTAG + "!!!!!!!!!!!!!!!!!ПЕРЕДАЛО!!!!!!!!!!!");
                 NewResponse resp = response.body(); // Создание объекта респонс и заполнение объекта из ретрофита
                 if(resp.getResult().equals(Constants.SUCCESS)){
-
+                    Log.d("UPLOAD SUCCESS!!!!!!!!!","!!!!!!!! " + operation + " SUCCESS");
                 }
             }
 
