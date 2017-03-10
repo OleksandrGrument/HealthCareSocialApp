@@ -24,7 +24,7 @@ public class CommunityDTO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 2529449337056238119L;
-	private long id;									//id на сервере
+	private long id;								//id на сервере
 	private String content;							//Пользовательский текст
 	private int content_type;  						//тип: ConstsCore.SUCCESS_TYPE, ConstsCore.RECIPE_TYPE, ConstsCore.HUSBAND_TYPE
 	private String title;							//Пользовательский заголовок

@@ -204,6 +204,7 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
                                 Long socialID = object.getLong("id");
                                 if(socialID != null) {
                                     userDTO.setSocialID(socialID);
+                                    user.getProfileDTO().setNickname(socialID+"");
                                 }
 
 //                            //Get name from facebook
@@ -345,6 +346,8 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
                             if (name != null && !name.equals("")) {
                                 Log.d("Nickname", name);
                                 user.getProfileDTO().setNickname(name);
+                            } else {
+                                user.getProfileDTO().setNickname(userProfile.getId()+"");
                             }
                         }
                         Commands.startLoginSocial(handler, Constants.LOGIN_KAKAO, user.getEmail(), user.getSocialID());

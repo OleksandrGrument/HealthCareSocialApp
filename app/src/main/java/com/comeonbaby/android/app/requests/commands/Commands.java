@@ -300,6 +300,7 @@ public class Commands {
         final NewRequest request = new NewRequest();
         request.setOperation(Constants.GET_RECIPE_OPERATION);
         request.setUser(user.toJSON().toString());
+        Log.e("!!!!!!!!!request",request.toString());
 
         Call<NewResponse> response = requestInterface.getRecipeOperation(request);
         executeRequest(handler, response, SUBTAG, Constants.GET_RECIPE_OPERATION, Constants.MSG_GET_RECIPE_SUCCESS, Constants.MSG_GET_RECIPE_FAIL);
@@ -439,6 +440,7 @@ public class Commands {
         final CommunityRequest request = new CommunityRequest();
         request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
         request.setOperation(Constants.GET_NOTICES_OPERATION);
+
         Call<NewResponse> response = requestInterface.getNoticesOperation(request);
         executeRequest(handler, response, SUBTAG, Constants.GET_NOTICES_OPERATION, Constants.MSG_GET_NOTICES_SUCCESS, Constants.MSG_GET_NOTICES_FAIL);
     }
@@ -525,7 +527,6 @@ public class Commands {
                     Log.d(SUBTAG, "Retrofit error. Response NULL!");
                     return;
                 }
-
                 Log.d(SUBTAG, "Response: operation - " + resp.getOperation() + ", result - " + resp.getResult() + ", message - " + resp.getMessage());
 
                 bundle.putString(ExtraConstants.RESULT, resp.getResult());

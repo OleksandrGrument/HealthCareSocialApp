@@ -103,7 +103,7 @@ public class ImageCommunityDTO implements Serializable {
 	public List<ImageCommunityDTO> parseListImags(String data) {
 		try {
 			List<ImageCommunityDTO> list = new ArrayList<ImageCommunityDTO>();
-			String[] images = data.split(",");
+			String[] images = data.split("<>");
 			for (String img : images) {
 				ImageCommunityDTO imgComm = new ImageCommunityDTO();
 				//imgComm.setId(1);
