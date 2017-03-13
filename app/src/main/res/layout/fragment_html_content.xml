@@ -48,30 +48,31 @@
             android:visibility="invisible" />
     </LinearLayout>
 
-    <WebView
-        android:id="@+id/webviewCustom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layoutTitle"
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/transparent"
-        android:padding="@dimen/padding_body"
-        android:scrollbars="vertical" />
+
 
     <ScrollView
         android:id="@+id/scrollViewHtml"
         style="@style/ScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/webviewCustom"
+        android:layout_below="@+id/layoutTitle"
         android:padding="@dimen/padding_body" >
 
         <LinearLayout
             android:id="@+id/layoutImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/webviewCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/padding_body"
+                android:scrollbars="vertical" />
         </LinearLayout>
     </ScrollView>
 
