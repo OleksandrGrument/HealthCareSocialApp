@@ -1,12 +1,15 @@
 package com.comeonbaby.android.app.common;
 
+import com.comeonbaby.android.app.requests.Constants;
+
+
 public class ServerPath {
 	// Amazon
 //	public static String SERVER = "http://54.92.0.11/api/v1";
 //	public static String SERVER_MEDIA = "http://54.92.0.11";
 //	public static String SERVER_RECIPE = "http://54.92.0.11";
 	public static String SERVER = "http://10.0.2.2";
-	public static String SERVER_MEDIA = "file://";
+	public static String SERVER_MEDIA = /*Constants.BASE_URL + */ "http://192.168.0.32:8080/show-image/";
 	public static String SERVER_RECIPE = "http://10.0.2.2";
 
 

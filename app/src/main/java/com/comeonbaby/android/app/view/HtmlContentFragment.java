@@ -90,8 +90,10 @@ public class HtmlContentFragment extends BaseContainerFragment implements OnClic
 					imageView.setScaleType(ScaleType.FIT_CENTER);
 					ImageLoader.getInstance().displayImage(ServerPath.SERVER_MEDIA + communityDto.getListImage().get(i).getImage(), imageView, Constants.GROUP_AVATAR_DISPLAY_OPTIONS);
 					layoutImage.addView(imageView);
+					Log.d("HtmlContentFragment!!!!",ServerPath.SERVER_MEDIA + communityDto.getListImage().get(i).getImage());
 				}
 			}
+
 		} else if (comeOnDto != null) {
 			edtTitle.setText(comeOnDto.getTitle());
 			scrollViewHtml.setVisibility(View.GONE);

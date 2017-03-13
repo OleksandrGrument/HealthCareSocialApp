@@ -185,6 +185,7 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 						if (data.containsKey(ExtraConstants.DATA)) {
 							try {
 								JSONArray jsarr = new JSONArray(data.getString(ExtraConstants.DATA));
+								Log.v("CommunityFragment!!: ",jsarr.toString());
 								commList = CommunityDTO.parseListCommunity(jsarr);
                                 final ListEventAdapter adapter = new ListEventAdapter(commList, getActivity());
                                 listCommunity.setAdapter(adapter);
