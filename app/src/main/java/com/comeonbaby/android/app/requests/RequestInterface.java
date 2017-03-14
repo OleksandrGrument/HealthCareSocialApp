@@ -19,40 +19,40 @@ public interface RequestInterface {
     // Call<(Дженерик или свой тип который принимает ответ)> СВОЁ_НАЗВАНИЕ_МЕТОДА (@АНОТАЦИЯ ТИП_ОТПРАВЛЯЕМОГО_ОБЪЕКТА поле)
     // Как работать с ретрофитом 2.0 ---- http://java-help.ru/retrofit-2-review/
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> updateEmailOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> updatePasswordOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> registerUserOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> loginEmailOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> loginSocialOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> getProfileOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> updateProfileOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> uploadBasicQuestion(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> saveNoteOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> getNoresOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> getGuideOperation(@Body NewRequest request);
 
-    @POST("users")
+    @POST("users-app")
     Call<NewResponse> getRecipeOperation(@Body NewRequest request);
 
     @POST("cities")
