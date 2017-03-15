@@ -85,5 +85,8 @@ public interface RequestInterface {
     @POST("community")
     Call<NewResponse> saveQAOperation (@Body QARequest request);
 
+    @POST("google-cloud-id")
+    Call<NewResponse> sendToServerGCM (@Body NewRequest request);
+
 }
 
