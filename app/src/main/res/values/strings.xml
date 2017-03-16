@@ -2,827 +2,606 @@
 <resources>
 
     <string name="api_key_gcm">AIzaSyABPqO5_-fDh5N6DZunn8Grk0G4H_fXqXw</string>
-    <string name="kakao_app_key">72768002b965f1b621149c6656d3a90b</string>
-    <string name="facebook_app_id">1702383216739696</string>
+    <string name="kakao_app_key">a835853b7ed9cdc6d523eaf6380a7d58</string>
+    <string name="facebook_app_id">332264086946009</string>
     <string name="string_press_back_again_to_exit">Press back again to exit app.</string>
-    <string name="app_name">Come On Baby</string>
+    <string name="app_name">컴온베이비</string>
     <string name="regex_email">^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[a-zA-Z]{2,4}$</string>
-    <string name="string_cancel">Cancellation</string>
+    <string name="string_cancel">취소</string>
     <string name="string_no_network_connectivity">Network connection unavailable</string>
     <string name="string_network_not_connected_desc">A network connection is required to use this app. When the connection resumes, this message will disappear. </string>
-    <string name="notification_content">We miss you, please come back</string>
-
+	<string name="notification_content">We miss you, please come back</string>
+    
     <string-array name="list_foods">
-        <item>Winnie Chui</item>
-        <item>Adjudication</item>
-        <item>Cabbage</item>
-        <item>Chinese cabbage</item>
-        <item>Borkley</item>
-        <item>burdock</item>
-        <item>Lotus root</item>
-        <item>stop</item>
-        <item>potato</item>
-        <item>Cobrabi</item>
-        <item>onion</item>
-        <item>Mugwort</item>
-        <item>Ground garlic</item>
-        <item>mushroom</item>
-        <item>chives</item>
-        <item>dandelion</item>
-        <item>Cold</item>
-        <item>Parsley</item>
-        <item>yam</item>
-        <item>Acorn</item>
-        <item>Mustard kimchi</item>
-        <item>Taran</item>
-        <item>flaxseed</item>
-        <item>Perilla</item>
-        <item>olive</item>
-        <item>beef</item>
-        <item>duck</item>
-        <item>chicken</item>
-        <item>salt</item>
-        <item>clam</item>
-        <item>oyster</item>
-        <item>mussel</item>
-        <item>to</item>
-        <item>shrimp</item>
-        <item>I am</item>
-        <item>Sea cucumber</item>
-        <item>Flounder</item>
-        <item>Sea bream</item>
-        <item>salmon</item>
-        <item>Libby</item>
-        <item>Libby</item>
-        <item>tuna</item>
-        <item>sardine</item>
-        <item>Kim</item>
-        <item>Seaweed</item>
-        <item>Blue</item>
-        <item>Top</item>
-        <item>squid</item>
-        <item>Haircut</item>
-        <item>eel</item>
-        <item>Mackerel</item>
-        <item>Samchi</item>
-        <item>Pacific saury</item>
-        <item>Dynamic</item>
-        <item>Daejeon</item>
-        <item>Anchovy</item>
-        <item>Juku</item>
+        <item>곰취</item>
+        <item>금치</item>
+        <item>양배추</item>
+        <item>배추</item>
+        <item>브 콜리</item>
+        <item>우엉</item>
+        <item>연근</item>
+        <item>고 마</item>
+        <item>감자</item>
+        <item>콜라비</item>
+        <item>양파</item>
+        <item>쑥</item>
+        <item>흙마늘</item>
+        <item>버섯</item>
+        <item>부추</item>
+        <item>민들레</item>
+        <item>냉이</item>
+        <item>미나리</item>
+        <item>참마</item>
+        <item>도토리</item>
+        <item>갓김치</item>
+        <item>토란</item>
+        <item>아마씨</item>
+        <item>들기름</item>
+        <item>올리브</item>
+        <item>쇠고기</item>
+        <item>오리</item>
+        <item>닭</item>
+        <item>염</item>
+        <item>조개</item>
+        <item>굴</item>
+        <item>홍합</item>
+        <item>게</item>
+        <item>새우</item>
+        <item>전</item>
+        <item>해삼</item>
+        <item>넙치(광어)</item>
+        <item>도미</item>
+        <item>연어</item>
+        <item>리비</item>
+        <item>대</item>
+        <item>참치</item>
+        <item>정어리</item>
+        <item>김</item>
+        <item>미역</item>
+        <item>파래</item>
+        <item>톳</item>
+        <item>오징어</item>
+        <item>갈치</item>
+        <item>장어</item>
+        <item>고등어</item>
+        <item>삼치</item>
+        <item>꽁치</item>
+        <item>동태</item>
+        <item>황태</item>
+        <item>멸치</item>
+        <item>주꾸미</item>
     </string-array>
     <string-array name="list_city">
-        <item>Seoul</item>
-        <item>game</item>
-        <item>Incheon</item>
-        <item>Busan</item>
-        <item>Daejeon</item>
-        <item>Dae-gu</item>
-        <item>Chungcheongnam-do</item>
-        <item>Chung-cheong bukdo</item>
-        <item>Gangwon-do</item>
-        <item>Gyeongsangbuk-do</item>
-        <item>Gyeongsangnam-do</item>
-        <item>Jeollabuk do</item>
-        <item>Jeollanam-do</item>
-        <item>Jeju Island</item>
-        <item>Overseas</item>
+        <item>서울</item>
+        <item>경기</item>
+        <item>인천</item>
+        <item>부산</item>
+        <item>대전</item>
+        <item>대구</item>
+        <item>충청남도</item>
+        <item>충청북도</item>
+        <item>강원도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>제주도</item>
+        <item>해외</item>
     </string-array>
     <string-array name="list_state">
-        <item>Seoul</item>
-        <item>game</item>
-        <item>Incheon</item>
-        <item>Busan</item>
-        <item>Daejeon</item>
-        <item>Dae-gu</item>
-        <item>Chungcheongnam-do</item>
-        <item>Chung-cheong bukdo</item>
-        <item>Gangwon-do</item>
-        <item>Gyeongsangbuk-do</item>
-        <item>Gyeongsangnam-do</item>
-        <item>Jeollabuk do</item>
-        <item>Jeollanam-do</item>
-        <item>Jeju Island</item>
-        <item>Overseas</item>
+        <item>서울</item>
+        <item>경기</item>
+        <item>인천</item>
+        <item>부산</item>
+        <item>대전</item>
+        <item>대구</item>
+        <item>충청남도</item>
+        <item>충청북도</item>
+        <item>강원도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>제주도</item>
+        <item>해외</item>
     </string-array>
 
     <!-- General -->
-    <string name="string_ok"> OK </string>
-        
-    <string name="string_2_dot">: </string>
-        
-    <string name="string_on"> ON </string>
-        
-    <string name="string_off"> OFF </string>
-        
-    <string name="text_city"> city </string>
-        
-    <string name="text_state"> Status </string>
-        
-    <string name="string_error"> Notice </string>
-        
-    <string name="string_yes"> Example </string>
-        
-    <string name="string_no"> No </string>
-        
-    <string name="string_waiting"> Processing. Please wait a moment </string>
+    <string name="string_ok">확인</string>
+    <string name="string_2_dot">:</string>
+    <string name="string_on">ON</string>
+    <string name="string_off">OFF</string>
+    <string name="text_city">도시</string>
+    <string name="text_state">상태</string>
+    <string name="string_error">알림</string>
+    <string name="string_yes">예</string>
+    <string name="string_no">아니오</string>
+    <string name="string_waiting">처리중 입니다. 잠시만 기다려 주세요</string>
 
     <!-- Login -->
-    <string name="text_welcome_1"> Korea Federation of Societies </string>
-        
-    <string name="text_welcome_2"> (sponsored) Ministry of Gender Equality </string>
-        
-    <string name="text_welcome_3"> so that anyone who wants to give birth </string>
-        
-    <string name="text_login_app"> Sign in with your app account </string>
-        <string name="text_login_facebook"> Log in to your facebook account </string>  
-     
-    <string name="text_login_kakaotalk"> Login to your cacao account </string>
-        
-    <string name="text_register"> Sign Up </string>
-        
-    <string name="title_username"> Enter email </string>
-        
-    <string name="title_password"> Enter password </string>
-        
-    <string name="title_forgot_password"> Forgot your password? </string>
-        
-    <string name="title_sign_in"> Login </string>
-        
-    <string name="string_login_email_incorrect"> Not a signed email </string>
-        
-    <string name="string_login_password_incorrect"> The password is incorrect. </string>
-        
-    <string name="string_login_kakaotalk_fail"> Sorry for the inconvenience. KakaoTalk login is currently working. Please use Facebook sign-up or general sign-up </string>
+    <string name="text_welcome_1">(사)한국난임가족연합회</string>
+    <string name="text_welcome_2">(후원)여성가족부</string>
+    <string name="text_welcome_3">낳고 싶은 사람 누구나 낳을 수 있도록</string>
+    <string name="text_login_app">앱 계정으로 로그인</string>
+    <string name="text_login_facebook">facebook 계정으로 로그인</string>
+    <string name="text_login_kakaotalk">카카오 계정으로 로그인</string>
+    <string name="text_register">회원 가입</string>
+    <string name="title_username">이메일 입력</string>
+    <string name="title_password">비밀번호 입력</string>
+    <string name="title_forgot_password">비밀번호를 잊으셨나요?</string>
+    <string name="title_sign_in">로그인</string>
+    <string name="string_login_email_incorrect">가입된 이메일이 아닙니다</string>
+    <string name="string_login_password_incorrect">패스워드가 맞지 않습니다.</string>
+    <string name="string_login_kakaotalk_fail">불편을 드려 죄송합니다. 카카오톡 로그인은 현재 작업중입니다.  페이스북로그인 또는 일반 가입을 이용해 주세요</string>
 
     <!-- Forgot password -->
-    <string name="title_forgot_password_screen"> Find password </string>
-        
-    <string name="title_input_email_forgot_screen"> What if I do not have a password? </string>
-        
-    <string name="title_request_password_forgot_screen"> Receiving password email </string>
-        
-    <string name="string_success_forgot_password"> An email has been sent. Please check your Spam folder. </string>
-        
-    <string name="string_error_forgot_password"> No matching email address. Please check again. </string>
+    <string name="title_forgot_password_screen">비밀번호 찾기</string>
+    <string name="title_input_email_forgot_screen">비밀번호 가 생 가각 나지 않는다면?</string>
+    <string name="title_request_password_forgot_screen">비밀번호 이메일 받기</string>
+    <string name="string_success_forgot_password">이메일을 보냈습니다. 스팸함까지 확인해 주세요.</string>
+    <string name="string_error_forgot_password">일치하는 이메일 주소가 없습니다. 다시 확인해 주세요.</string>
 
     <!-- Create account -->
-    <string name="hint_email_address"> Enter email </string> 
-    <string name="hint_request_password"> Enter password </string>    
-    <string name="hint_confirm_password"> Verify Password </string>    
-    <string name="hint_nickname"> Enter nickname </string>    
-    <string name="note_request_password"> * 4 to 12 alphanumeric characters </string>    
-    <string name="note_nickname"> * Hangul, English, numbers between 2 and 10 characters </string>    
-    <string name="string_enter_your_email"> Please enter all items </string>    
-    <string name="string_invalid_email_address"> Not a valid email. Please try again. </string>    
-    <string name="string_enter_your_password"> Please enter all items </string>    
-    <string name="string_passwd_length_hint"> Not a valid password. Please try again. </string>    
-    <string name="string_enter_your_nickname"> Please enter all items </string>    
-    <string name="string_nickname_length_hint"> This is not a valid nickname. Please try again. </string>    
-    <string name="string_error_create_user"> Please try again. </string>
+    <string name="hint_email_address">이메일 입력</string>
+    <string name="hint_request_password">비밀번호 입력</string>
+    <string name="hint_confirm_password">비밀번호 확인 </string>
+    <string name="hint_nickname">닉네임 입력</string>
+    <string name="note_request_password">* 4~12 자 사이의 영문 혹은 숫자</string>
+    <string name="note_nickname">* 2~10 자 사이의 한글 , 영문 , 숫자</string>
+    <string name="string_enter_your_email">모든 항목을 입력해 주세요.</string>
+    <string name="string_invalid_email_address">올바른 이메일이 아닙니다. 다시 입력해 주세요.</string>
+    <string name="string_enter_your_password">모든 항목을 입력해 주세요.</string>
+    <string name="string_passwd_length_hint">올바른 비밀번호가 아닙니다. 다시 입력해 주세요.</string>
+    <string name="string_enter_your_nickname">모든 항목을 입력해 주세요.</string>
+    <string name="string_nickname_length_hint">올바른 비밀번호가 아닙니다. 다시 입력해 주세요.</string>
+    <string name="string_error_create_user">다시 시도하십시오.</string>
 
     <!-- Term of Use -->
-    <string name="title_dieu_khoan"> Accept Terms </string>
-        
-    <string name="hint_dieu_khoan"> Terms of Service </string>
-        
-    <string name="text_dieu_khoan"> Content Identification> </string>
-        
-    <string name="hint_thuthap_thongtin"> Collection and use of personal information </string>
-        
-    <string name="text_thuthap_thongtin"> Content Identification> </string>
-        
-    <string name="checkbox_dieu_khoan"> I agree </string>
-        
-    <string name="checkbox_thuthap_thongtin"> I agree </string>
-        
-    <string name="button_accept_all"> Agree all </string>
-        
-    <string name="button_accept"> Accept </string>
-        
-    <string name="button_cancel"> Cancel </string>
-        
-    <string name="string_error_check_term_policy"> Please enter all items. </string>
+    <string name="title_dieu_khoan">이용약관 동의</string>
+    <string name="hint_dieu_khoan">서비스 이용약관</string>
+    <string name="text_dieu_khoan">내용확인 ></string>
+    <string name="hint_thuthap_thongtin">개인정보 수집 및 이용안내</string>
+    <string name="text_thuthap_thongtin">내용확인 ></string>
+    <string name="checkbox_dieu_khoan">동의합니다</string>
+    <string name="checkbox_thuthap_thongtin">동의합니다</string>
+    <string name="button_accept_all">모두 동의하기</string>
+    <string name="button_accept">동의</string>
+    <string name="button_cancel">취소</string>
+    <string name="string_error_check_term_policy">모든 항목을 입력해 주세요..</string>
 
     <!-- Basic Question -->
-    <string name="text_title_basic_question">Basics questions</string>
-        
-    <string name="text_title_basic_question_finish"> Complete the baseline questions </string>
-        
-    <string name="text_can_multi_check"> (duplicate checkable) </string>
-        
-    <string name="text_female"> Female </string>
-        
-    <string name="text_male"> Male </string>
-        
-    <string name="text_title_question_1"> How many years have you not been able to be pregnant?</string>
-        
-    <string name="text_title_question_2"> Do you currently have children? </string>
-        
-    <string name="text_title_question_3"> What treatment did you undergo to try to become fertile </string>
-        
-    <string name="text_title_question_4"> What causes your infertility? </string>
-        
-    <string name="text_title_question_5"> What help do you need? Are you struggling with something? </string>
-        
-    <string name="text_title_question_6"> What are your plans for your family structure? </string>
-        
-    <string name="text_radio_question_1"> None </string>
-        
-    <string name="text_radio_question_2"> 1 to 2 years </string>
-        
-    <string name="text_radio_question_3"> 2 to 3 years </string>
-        
-    <string name="text_radio_question_4"> 3 to 5 years </string>
-        
-    <string name="text_radio_question_5"> 5+ years </string>
-        
-    <string name="text_radio_question_6"> None </string>
-        
-    <string name="text_radio_question_7"> 1 person </string>
-        
-    <string name="text_radio_question_8"> 2 people </string>
-        
-    <string name="text_radio_question_9"> 3 </string>
-        
-    <string name="text_radio_question_10"> 4 or more </string>
-        
-    <string name="text_radio_question_11"> Induce natural pregnancy  </string>
-        
-    <string name="text_radio_question_12"> Induction of ovulation </string>
-        
-    <string name="text_radio_question_13"> Artificial insemination </string>
-        
-    <string name="text_radio_question_14"> In Vitro Fertilization  </string>
-        
-    <string name="text_radio_question_15"> Operation </string>
-        
-    <string name="text_radio_question_16"> Endoscopy </string>
-        
-    <string name="text_radio_question_17"> Laparoscopic procedure </string>
-        
-    <string name="text_radio_question_18"> Endometrial stimulation </string>
-        
-    <string name="text_radio_question_19"> Inspection</string>
-        
-    <string name="text_radio_question_20"> More </string>
-        
-    <string name="text_radio_question_21"> Ovarian dysfunction </string>
-        
-    <string name="text_radio_question_22"> Uterine myoma </string>
-        
-    <string name="text_radio_question_23"> Adenomyosis </string>
-        
-    <string name="text_radio_question_24"> Hormone Factor </string>
-        
-    <string name="text_radio_question_25"> Habitual (mooring) abortion </string>
-        
-    <string name="text_radio_question_26"> Unknown cause </string>
-        
-    <string name="text_radio_question_27"> Polycystic ovary syndrome </string>
-        
-    <string name="text_radio_question_28"> Menstrual disorder </string>
-        
-    <string name="text_radio_question_29"> Endometriosis </string>
-        
-    <string name="text_radio_question_30"> Fallopian tube abnormality </string>
-        
-    <string name="text_radio_question_31"> Ovulation disorder </string>
-        
-    <string name="text_radio_question_32"> Pregnancy preparation </string>
-        
-    <string name="text_radio_question_33"> Blood circulation disorder </string>
-        
-    <string name="text_radio_question_34"> Other </string>
-        
-    <string name="text_radio_question_35"> Infertility (number of sperm counts, motility, shape deformity, etc.) </string>
-        
-    <string name="text_radio_question_36"> Hormone Factor </string>
-        
-    <string name="text_radio_question_37"> Amenorrhea (obstructive, non-obstructive) </string>
-        
-    <string name="text_radio_question_38"> Cerebral varices </string>
-        
-    <string name="text_radio_question_39"> Unknown cause </string>
-        
-    <string name="text_radio_question_40"> Other </string>
-        
-    <string name="text_radio_question_41"> Psychological (Discomfort, Anxiety, Depression, Mood Disorder) </string>
-        
-    <string name="text_radio_question_42"> Hospitals - Medical information </string>
-        
-    <string name="text_radio_question_43"> Relationship with family. Solutions(spouse, family, home) </string>
-        
-    <string name="text_radio_question_44"> Relationship with others. Solutions (religion, neighbor, friend, work colleague, colleagues, etc.) </string>
-        
-    <string name="text_radio_question_45"> Support system </string>
-        
-    <string name="text_radio_question_46"> Financial problem </string>
-        
-    <string name="text_radio_question_47"> Nutrition consultation (eating habit) </string>
-        
-    <string name="text_radio_question_48"> Other </string>
-        
-    <string name="text_radio_question_49"> Couple only </string>
-        
-    <string name="text_radio_question_50"> Adoption </string>
-        
-    <string name="text_radio_question_51"> Experience foster parent </string>
-        
-    <string name="text_radio_question_52"> Divorce </string>
-        
-    <string name="text_radio_question_53"> I never thought of it </string>
-        
-    <string name="text_radio_question_54"> Surrogate mother </string>
-        
-    <string name="text_radio_question_55"> Sperm donation </string>
-        
-    <string name="text_radio_question_56"> Egg donation </string>
-        
-    <string name="text_radio_question_57"> Other </string>
-        
-    <string name="text_unit_question"> times </string>
-        
-    <string name="text_next_step"> Next </string>
-        
-    <string name="text_finish_step"> Answer completed </string>
-        
-    <string name="button_finish_step"> Finish registration </string>
-        
-    <string name="string_error_check_basic_question_1"> Please enter everything </string>
-        
-    <string name="string_error_check_basic_question"> Please enter all items </string>
+    <string name="text_title_basic_question">기초질문사항</string>
+    <string name="text_title_basic_question_finish">기초질문사항 완료</string>
+    <string name="text_can_multi_check">(중복체크 가 능)</string>
+    <string name="text_female">여성</string>
+    <string name="text_male">남성</string>
+    <string name="text_title_question_1">난임 기간은 몇 년 되셨습니까?</string>
+    <string name="text_title_question_2">귀하는 현재 자녀 가 있습니까?</string>
+    <string name="text_title_question_3">귀하 가 경험한 난임 치료는?</string>
+    <string name="text_title_question_4">귀하의 난임 원인은?</string>
+    <string name="text_title_question_5">지금 가장 필요한 도움이나 힘든 부분이 무엇입니까?</string>
+    <string name="text_title_question_6">향후 가족 계획에 대한 생각은 무엇입니까?</string>
+    <string name="text_radio_question_1">없음</string>
+    <string name="text_radio_question_2">1년이상∼ 2년이하</string>
+    <string name="text_radio_question_3">2년이상 ∼ 3년이하</string>
+    <string name="text_radio_question_4">3년이상 ∼ 5년이하</string>
+    <string name="text_radio_question_5">5년 이상</string>
+    <string name="text_radio_question_6">없음</string>
+    <string name="text_radio_question_7">1명</string>
+    <string name="text_radio_question_8">2명</string>
+    <string name="text_radio_question_9">3명</string>
+    <string name="text_radio_question_10">4명 이상</string>
+    <string name="text_radio_question_11">자연임신유도</string>
+    <string name="text_radio_question_12">배란유도</string>
+    <string name="text_radio_question_13">인공수정</string>
+    <string name="text_radio_question_14">체외수정시술</string>
+    <string name="text_radio_question_15">수술</string>
+    <string name="text_radio_question_16">자궁내시경</string>
+    <string name="text_radio_question_17">복 가강 경시술</string>
+    <string name="text_radio_question_18">자궁내막자극술</string>
+    <string name="text_radio_question_19">검사</string>
+    <string name="text_radio_question_20">기 타</string>
+    <string name="text_radio_question_21">난소기능저하</string>
+    <string name="text_radio_question_22">자궁근종</string>
+    <string name="text_radio_question_23">자궁선근증</string>
+    <string name="text_radio_question_24">호르몬요인</string>
+    <string name="text_radio_question_25">습관성(계류)유산</string>
+    <string name="text_radio_question_26">원인불명</string>
+    <string name="text_radio_question_27">다낭성난소증후군</string>
+    <string name="text_radio_question_28">월경이상</string>
+    <string name="text_radio_question_29">자궁내막증</string>
+    <string name="text_radio_question_30">나팔관이상․폐쇄</string>
+    <string name="text_radio_question_31">배란장애</string>
+    <string name="text_radio_question_32">임신준비</string>
+    <string name="text_radio_question_33">수족냉증․혈액순환장애</string>
+    <string name="text_radio_question_34">기 타</string>
+    <string name="text_radio_question_35">소약정자증(정액검사상 정자의수, 운동성, 모양기형 등)</string>
+    <string name="text_radio_question_36">호르몬요인</string>
+    <string name="text_radio_question_37">무정자증(폐쇄성․비폐쇄성)</string>
+    <string name="text_radio_question_38">정계정맥류</string>
+    <string name="text_radio_question_39">원인불명</string>
+    <string name="text_radio_question_40">기 타</string>
+    <string name="text_radio_question_41">심리적(난임, 불안, 우울, 기분장애)</string>
+    <string name="text_radio_question_42">병원-의학정보</string>
+    <string name="text_radio_question_43">가족시선의 대응 대처방법(배우자, 시댁, 친정)</string>
+    <string name="text_radio_question_44">주변시선의 대응 대처방법 (종교, 이웃, 친구, 직장동료, 난임동료, 기타 등)</string>
+    <string name="text_radio_question_45">지원제도</string>
+    <string name="text_radio_question_46">경제적인 문제</string>
+    <string name="text_radio_question_47">영양상담(식습관)</string>
+    <string name="text_radio_question_48">기 타</string>
+    <string name="text_radio_question_49">부부만</string>
+    <string name="text_radio_question_50">입양</string>
+    <string name="text_radio_question_51">위탁모 체험</string>
+    <string name="text_radio_question_52">이혼</string>
+    <string name="text_radio_question_53">생 가각 해본적 없다</string>
+    <string name="text_radio_question_54">대리모</string>
+    <string name="text_radio_question_55">정자공여</string>
+    <string name="text_radio_question_56">난자공여</string>
+    <string name="text_radio_question_57">기 타</string>
+    <string name="text_unit_question">회</string>
+    <string name="text_next_step">다음으로</string>
+    <string name="text_finish_step">답변 완료</string>
+    <string name="button_finish_step">개인정보 설정하기</string>
+    <string name="string_error_check_basic_question_1">모든 내용을 입력해 주세요</string>
+    <string name="string_error_check_basic_question">모든 항목을 입력해 주세요.</string>
 
     <!-- Profile Config -->
-    <string name="text_title_profile_config"> Privacy Settings </string>
-        
-    <string name="text_profile_config_gioitinh"> Gender </string>
-        
-    <string name="text_profile_config_namsinh"> Year of birth </string>
-        
-    <string name="text_profile_config_vung"> Residence </string>
-        
-    <string name="text_profile_config_diachi"> Address </string>
-        
-    <string name="text_profile_config_nguyetsan"> Menstrual cycle </string>
-        
-    <string name="text_profile_config_redday"> Average duration of menstruation </string>
-        
-    <string name="text_profile_config_ngaycuoi"> Last menstr. start date</string>
-        
-    <string name="text_profile_config_chieucao"> Height </string>
-        
-    <string name="text_profile_config_cannang"> Weight </string>
-        
-    <string name="text_profile_config_thamgia"> Subscription complete </string>
-        
-    <string name="text_profile_config_bmi"> Enter BMI </string>
-        
-    <string name="text_cm"> cm </string>
-        
-    <string name="text_kg"> Kg </string>
-        
-    <string name="text_day"> day </string>
-        
-    <string name="text_month"> month </string>
-        
-    <string name="text_year"> year </string>
-        
-    <string name="text_week"> week </string>
-        
-    <string name="text_x"> X </string>
-        
-    <string name="text_confirm"> OK </string>
-        
-    <string name="text_hint_diachi"> street address </string>
-        
-    <string name="string_error_input_infor_profile_config"> All entries are required to complete the subscription. </string>
+    <string name="text_title_profile_config">개인정보 설정</string>
+    <string name="text_profile_config_gioitinh">성별</string>
+    <string name="text_profile_config_namsinh">출생연도</string>
+    <string name="text_profile_config_vung">거주지역</string>
+    <string name="text_profile_config_diachi">주소</string>
+    <string name="text_profile_config_nguyetsan">생리주기</string>
+    <string name="text_profile_config_redday">평균 생리기간</string>
+    <string name="text_profile_config_ngaycuoi">마지막 생리시작일</string>
+    <string name="text_profile_config_chieucao">키</string>
+    <string name="text_profile_config_cannang">몸무게</string>
+    <string name="text_profile_config_thamgia">가입 완료</string>
+    <string name="text_profile_config_bmi">BMI 입력</string>
+    <string name="text_cm">cm</string>
+    <string name="text_kg">Kg</string>
+    <string name="text_day">일</string>
+    <string name="text_month">월</string>
+    <string name="text_year">년</string>
+    <string name="text_week">주</string>
+    <string name="text_x">X</string>
+    <string name="text_confirm">확인</string>
+    <string name="text_hint_diachi">상세주소</string>
+    <string name="string_error_input_infor_profile_config">모든 항목을 입력해야 가입이 완료됩니다.</string>
 
     <!-- Home -->
-    <string name="text_close_tool"> Getting Started </string>
-        
-    <string name="text_home"> Home </string>
-        
-    <string name="text_comeon"> Guide </string>
-        
-    <string name="text_community"> Community </string>
-        
-    <string name="text_report"> Reports </string>
-        
-    <string name="text_setting"> Settings </string>
+    <string name="text_close_tool">시작하기</string>
+    <string name="text_home">홈</string>
+    <string name="text_comeon">컴온가이드</string>
+    <string name="text_community">커뮤니티</string>
+    <string name="text_report">리포트</string>
+    <string name="text_setting">설정</string>
 
     <!-- Calendar -->
-    <string name="monday"> MON </string>
-        
-    <string name="tuesday"> TUE </string>
-        
-    <string name="wednesday"> WED </string>
-        
-    <string name="thursday"> THU </string>
-        
-    <string name="friday"> FRI </string>
-        
-    <string name="saturday"> SAT </string>
-        
-    <string name="sunday"> SUN </string>
-        
-    <string name="text_edit"> Notes of the day</string>
-        
-    <string name="text_kinhnguyet"> Menstrual period </string>
-        
-    <string name="text_thuthai"> Ovulation date </string>
-        
-    <string name="text_rungtrung"> Fertile </string>
-        
-    <string name="text_description"> Click on the date to record your hope notes </string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    <string name="text_edit">아이소망노트기록</string>
+    <string name="text_kinhnguyet">생리기간</string>
+    <string name="text_thuthai">배란예정일</string>
+    <string name="text_rungtrung">가임기</string>
+    <string name="text_description">아이소망노트기록은 날짜를 클릭</string>
 
     <!-- List Note -->
-    <string name="text_title_list_note"> Child hope note </string>
-        
-    <string name="text_nhietke_modified"> Basic body temperature </string>
-        
-    <string name="text_monan"> Did not intake </string>
-        
-    <string name="text_monan_modified"> Recommended food </string>
-        
-    <string name="text_hat_modified"> Recommended nuts </string>
-        
-    <string name="text_tra_modified"> Recommended tea </string>
-        
-    <string name="text_vandong_modified"> Exercise </string>
-        
-    <string name="text_ngu_modified"> Wakeup </string>
-        
-    <string name="text_ngu1_modified"> Bedtime </string>
-        
-    <string name="text_uongnuoc_modified"> Water intake </string>
-        
-    <string name="text_tam_modified"> Sitz bath </string>
-        
-    <string name="text_vitamin_modified"> Vitamins </string>
-        
-    <string name="text_axicfolic_modified"> Folate </string>
-        
-    <string name="text_cafe_modified"> Coffee intake </string>
-        
-    <string name="text_ruou_modified"> Alcohol intake </string>
-        
-    <string name="text_thuocla_modified"> Smoking </string>
-    <string name="text_camxuc_modified"> Emotion status </string>
-        
-    <string name="text_thietlap_modified"> BMI </string>
+    <string name="text_title_list_note">아이소망 노트</string>
+    <string name="text_nhietke_modified">기초체온</string>
+    <string name="text_monan">비섭취</string>
+    <string name="text_monan_modified">추천 음식</string>
+    <string name="text_hat_modified">추천 견과류</string>
+    <string name="text_tra_modified">추천 차</string>
+    <string name="text_vandong_modified">추천 운동</string>
+    <string name="text_ngu_modified">기상</string>
+    <string name="text_ngu1_modified">취침</string>
+    <string name="text_uongnuoc_modified">물 섭취</string>
+    <string name="text_tam_modified">좌훈/좌욕</string>
+    <string name="text_vitamin_modified">비타민</string>
+    <string name="text_axicfolic_modified">엽산</string>
+    <string name="text_cafe_modified">커피 섭취</string>
+    <string name="text_ruou_modified">알코올 섭취</string>
+    <string name="text_thuocla_modified">흡연 여부</string>
+    <string name="text_camxuc_modified">감정 상태</string>
+    <string name="text_thietlap_modified">BMI</string>
     <string name="text_unit_nhietke">%s  &#x2103;</string>
-    <string name="text_unit_uongnuoc">%s  liter</string>
-    <string name="text_unit_tam">%s  minute</string>
-    <string name="text_unit_cafe">%s  Less than a cup</string>
-    <string name="text_unit_ruou">%s  glass</string>
-    <string name="text_unit_thuocla">smoking</string>
-    <string name="text_unit_camxuc">usually</string>
-    <string name="text_unit_thietlap">%s  kidney</string>
+    <string name="text_unit_uongnuoc">%s  리터</string>
+    <string name="text_unit_tam">%s  분</string>
+    <string name="text_unit_cafe">%s  잔 이하</string>
+    <string name="text_unit_ruou">%s  잔</string>
+    <string name="text_unit_thuocla">흡연</string>
+    <string name="text_unit_camxuc">보통</string>
+    <string name="text_unit_thietlap">%s  신장</string>
 
     <!-- Temperature -->
-    <string name="text_title_temperature"> Basic body temperature </string>
-    <string name="text_temperature_content"> Keep the basic body temperature at </string>
+    <string name="text_title_temperature">기 초 체 온</string>
+    <string name="text_temperature_content">기초체온은</string>
     <string name="text_temperature_content1">36.5&#x2103;</string>
-    <string name="text_temperature_content2"> or more </string>
-    <string name="text_temperature_content3"> is recommended. </string>
-    <string name="text_temperature_content_1"> Continually inputing into the child hope note will help to improve the basic body temperature. </string>
-    <string name="text_temperature_content_2"> </string>
+    <string name="text_temperature_content2">이상을</string>
+    <string name="text_temperature_content3">유지하는것을 권장합니다</string>
+    <string name="text_temperature_content_1">기초체온 향상을 위해 아이소망노트를</string>
+    <string name="text_temperature_content_2">꾸준히 실천해 주시면 도움이 됩니다.</string>
     <string name="text_dot">.</string>
     <string name="text_cerious">&#x2103;</string>
-    <string name="text_button_temperature"> Record </string>
+    <string name="text_button_temperature">기록하기</string>
 
-    <!-- Food -->
-    <string name="text_title_monan"> Recommended food </string>    
-    <string name="text_monan_content"> We recommend you </string>
-    <string name="text_monan_content1"> 1 day 1 food </string>   
-    <string name="text_monan_content2"> or more </string>    
-    <string name="text_monan_dung"> Intake </string>   
-    <string name="text_monan_no_dung"> Did not intake </string>   
-    <string name="text_monan_content3"> from recommended food list per day. </string>    
-    <string name="text_goiy_1"> Soybean oil </string>  
-    <string name="text_goiy_2"> Mandarin </string>    
-    <string name="text_goiy_3"> Quail </string>   
-    <string name="text_note_refresh"> Refresh food recomendations </string>   
-    <string name="text_khongthich"> no intake </string>   
-    <string name="text_button_monan"> Record </string>
+    <!-- Mon an -->
+    <string name="text_title_monan">추 천 음 식</string>
+    <string name="text_monan_content">추천 음식은</string>
+    <string name="text_monan_content1">1일 1음식</string>
+    <string name="text_monan_content2">이상</string>
+    <string name="text_monan_dung">섭취</string>
+    <string name="text_monan_no_dung">비섭취</string>
+    <string name="text_monan_content3">섭취를 권장합니다.</string>
+    <string name="text_goiy_1">콩기름</string>
+    <string name="text_goiy_2">귤</string>
+    <string name="text_goiy_3">메추리알</string>
+    <string name="text_note_refresh">추천음식 새로고침</string>
+    <string name="text_khongthich">섭취 안함</string>
+    <string name="text_button_monan">기록하기</string>
 
-    <!-- Nuts -->
-    <string name="text_title_hat"> Recommended nuts </string>  
-    <string name="text_hat_content"> Recommended nuts </string>
-    <string name="text_hat_content1"> 1 day </string>    
-    <string name="text_hat_content2"> Abnormal intake </string>    
-    <string name="text_hat_content3"> Recommended </string>    
-    <string name="text_checkbox_hat_dung"> Intake </string>    
-    <string name="text_checkbox_hat_no_dung"> Did not intake </string>    
-    <string name="text_hat_goiy_1"> Walnut </string>    
-    <string name="text_hat_goiy_2"> Peanut </string>    
-    <string name="text_hat_goiy_3"> Almond </string>    
-    <string name="text_hat_goiy_4"> Pine nut </string>    
-    <string name="text_hat_soluong_1"> 3 </string>    
-    <string name="text_hat_soluong_2"> 10 </string>    
-    <string name="text_hat_soluong_3"> 7 </string>    
-    <string name="text_hat_soluong_4"> 10 </string>    
-    <string name="text_note_hat"> Recommended daily intake of nuts </string>    
-    <string name="text_button_hat"> Record </string>    
-    <string name="error_enter_hat"> Please enter your preferred nuts type </string>
+    <!-- Hat -->
+    <string name="text_title_hat">추 천 견 과 류</string>
+    <string name="text_hat_content">추천 견과류는</string>
+    <string name="text_hat_content1">1일 1종류</string>
+    <string name="text_hat_content2">이상 섭취를</string>
+    <string name="text_hat_content3">권장합니다​</string>
+    <string name="text_checkbox_hat_dung">섭취</string>
+    <string name="text_checkbox_hat_no_dung">비섭취</string>
+    <string name="text_hat_goiy_1">호두</string>
+    <string name="text_hat_goiy_2">땅콩</string>
+    <string name="text_hat_goiy_3">아몬드</string>
+    <string name="text_hat_goiy_4">잣</string>
+    <string name="text_hat_soluong_1">3알</string>
+    <string name="text_hat_soluong_2">10알</string>
+    <string name="text_hat_soluong_3">7알</string>
+    <string name="text_hat_soluong_4">10알</string>
+    <string name="text_note_hat">견과류 1일 섭취 권장량</string>
+    <string name="text_button_hat">기록하기</string>
+    <string name="error_enter_hat">추천 차 종류까지 입력해 주세요.</string>
 
-    <!-- Tea -->
-    <string name="text_title_tra"> Recommended tea </string>    
-    <string name="text_tra_content"> Suggested intake </string>    
-    <string name="text_tra_content1"> 1 glass per day </string>    
-    <string name="text_tra_content2"> or above </string>    
-    <string name="text_tra_content3"> Suggested intake </string>    
-    <string name="text_checkbox_tra_dung"> Intake </string>    
-    <string name="text_checkbox_tra_no_dung"> Did not intake </string>    
-    <string name="text_tra_goiy_1"> Jujube </string>    
-    <string name="text_tra_goiy_2"> Burdock tea </string>   
-    <string name="text_tra_goiy_3"> Ginger tea </string>  
-    <string name="text_tra_goiy_4"> Herbal tea </string>   
-    <string name="text_tra_goiy_5"> Mushroom tea </string>   
-    <string name="text_tra_goiy_6"> Golden tea </string>   
-    <string name="text_note_tra"> Recommended tea type </string>  
-    <string name="text_button_tra"> Record </string>
-    <string name="error_enter_tra"> Please fill in your recommended tea type </string>
+    <!-- Tra -->
+    <string name="text_title_tra">추 천 차</string>
+    <string name="text_tra_content">추천 차는</string>
+    <string name="text_tra_content1">1일 1잔</string>
+    <string name="text_tra_content2">이상</string>
+    <string name="text_tra_content3">섭취를 권장합니다.</string>
+    <string name="text_checkbox_tra_dung">섭취</string>
+    <string name="text_checkbox_tra_no_dung">비섭취</string>
+    <string name="text_tra_goiy_1">대추차</string>
+    <string name="text_tra_goiy_2">우엉차</string>
+    <string name="text_tra_goiy_3">생강차</string>
+    <string name="text_tra_goiy_4">허브차</string>
+    <string name="text_tra_goiy_5">두충차</string>
+    <string name="text_tra_goiy_6">당귀차</string>
+    <string name="text_note_tra">추천 차 종류</string>
+    <string name="text_button_tra">기록하기</string>
+    <string name="error_enter_tra">추천 차 종류까지 입력해 주세요.</string>
 
-    <!-- Exercises -->
-    <string name="text_title_vandong"> Recommended physical activity </string>
-    <string name="text_vandong_content1"> 1 day of 1 exercise </string>    
-    <string name="text_vandong_content2"> steadily recommended exercise time </string>    
-    <string name="text_vandong_content3"> Practice is helpful. </string>    
-    <string name="text_checkbox_vandong_dung"> Practice </string>    
-    <string name="text_checkbox_vandong_no_dung"> Not practice </string>    
-    <string name="text_vandong_goiy_1"> Running / Walking </string>    
-    <string name="text_vandong_goiy_2"> Biking / Swimming </string>    
-    <string name="text_vandong_goiy_3"> Climb </string>    
-    <string name="text_vandong_goiy_4"> Yoga / Aerobics </string>    
-    <string name="text_note_vandong"> Recommended exercise type </string>    
-    <string name="text_button_vandong"> Record </string>    
-    <string name="error_enter_vandong"> Please enter your recommended exercise type. </string>
+    <!-- Van dong -->
+    <string name="text_title_vandong">추 천 운 동</string>
+    <string name="text_vandong_content1">1일 1운동의</string>
+    <string name="text_vandong_content2">권장운동시간을 꾸준히</string>
+    <string name="text_vandong_content3">실천해 주시면 도움이 됩니다.</string>
+    <string name="text_checkbox_vandong_dung">실천</string>
+    <string name="text_checkbox_vandong_no_dung">비실천</string>
+    <string name="text_vandong_goiy_1">달리기/걷기</string>
+    <string name="text_vandong_goiy_2">자전거/수영</string>
+    <string name="text_vandong_goiy_3">등산</string>
+    <string name="text_vandong_goiy_4">요가/에어로빅</string>
+    <string name="text_note_vandong">추천 운동 종류</string>
+    <string name="text_button_vandong">기록하기</string>
+    <string name="error_enter_vandong">추천 운동 종류까지 입력해 주세요.</string>
 
     <!-- Vitamin -->
-    <string name="text_title_vitamin"> Vitamins </string>
-    <string name="text_vitamin_content"> Vitamin intake is recommended </string>    
-    <string name="text_checkbox_vitamin_dung"> Intake </string>   
-    <string name="text_checkbox_vitamin_no_dung"> Did not intake </string>   
-    <string name="text_button_vitamin"> Record </string>
+    <string name="text_title_vitamin">비타민</string>
+    <string name="text_vitamin_content">비타민 섭취를 권장합니다</string>
+    <string name="text_checkbox_vitamin_dung">섭취</string>
+    <string name="text_checkbox_vitamin_no_dung">비섭취</string>
+    <string name="text_button_vitamin">기록하기</string>
 
-    <!-- Folic acid -->
-    <string name="text_title_axic"> Folic acid </string>  
-    <string name="text_axic_content"> Folic acid is recommended </string>    
-    <string name="text_checkbox_axic_dung"> Intake </string>    
-    <string name="text_checkbox_axic_no_dung"> Did not intake </string>    
-    <string name="text_button_axic"> Record </string>
+    <!-- Axic folic -->
+    <string name="text_title_axic">엽산</string>
+    <string name="text_axic_content">엽산 섭취를 권장합니다.</string>
+    <string name="text_checkbox_axic_dung">섭취</string>
+    <string name="text_checkbox_axic_no_dung">비섭취</string>
+    <string name="text_button_axic">기록하기</string>
 
     <!-- Cafe -->
-    <string name="text_title_cafe"> Coffee </string>
-    <string name="text_cafe_content"> Coffee intake </string>    
-    <string name="text_cafe_content1"> less than one cup a day </string>    
-    <string name="text_cafe_content2"> is recommended </string>    
-    <string name="text_checkbox_cafe_dung"> Less than one </string>    
-    <string name="text_checkbox_cafe_no_dung"> More than two </string>    
-    <string name="text_button_cafe"> Record </string>
+    <string name="text_title_cafe">커피 섭취</string>
+    <string name="text_cafe_content">커피 섭취는</string>
+    <string name="text_cafe_content1">1일 1잔 이하를</string>
+    <string name="text_cafe_content2">권장합니다.</string>
+    <string name="text_checkbox_cafe_dung">1잔 이하</string>
+    <string name="text_checkbox_cafe_no_dung">2잔 이상</string>
+    <string name="text_button_cafe">기록하기</string>
 
-    <!-- Smoking -->    
-    <string name="text_title_thuocla"> Smoking </string>    
-    <string name="text_thuocla_content"> For pregnancy </string>   
-    <string name="text_thuocla_content1"> do not smoke </string>    
-    <string name="text_thuocla_content2"> please </string>   
-    <string name="text_checkbox_thuocla_dung"> Smoking </string>    
-    <string name="text_checkbox_thuocla_no_dung"> No Smoking </string>    
-    <string name="text_button_thuocla"> Record </string>
+    <!-- Thuoc la -->
+    <string name="text_title_thuocla">흡연 여부</string>
+    <string name="text_thuocla_content">임신을 위해</string>
+    <string name="text_thuocla_content1">금연</string>
+    <string name="text_thuocla_content2">을 꼭 해주세요</string>
+    <string name="text_checkbox_thuocla_dung">흡연</string>
+    <string name="text_checkbox_thuocla_no_dung">금연</string>
+    <string name="text_button_thuocla">기록하기</string>
 
-    <!-- Sleep -->
-    <string name="text_title_ngu"> Wakeup / Bedtime </string>
-    <string name="text_ngu_content"> Regularly </string>    
-    <string name="text_ngu_content1"> sleep before 12 PM </string>    
-    <string name="text_ngu_content2"> is recommended </string>    
-    <string name="text_ngu_content3"> 1 day </string>    
-    <string name="text_ngu_content4"> sleep time 8 hours </string>    
-    <string name="text_ngu_content5"> is recommended </string>    
-    <string name="text_ngu_label1"> Waking time </string>    
-    <string name="text_ngu_label2"> Bedtime </string>    
-    <string name="text_unit_hour"> hours </string>  
-    <string name="text_unit_minutes"> minutes </string>    
-    <string name="text_button_ngu"> Record </string>
+    <!-- Ngu -->
+    <string name="text_title_ngu">기상/취침시간</string>
+    <string name="text_ngu_content">매일 규칙적으로</string>
+    <string name="text_ngu_content1">12시 이전 취침</string>
+    <string name="text_ngu_content2">을 권장합니다</string>
+    <string name="text_ngu_content3">1일</string>
+    <string name="text_ngu_content4">수면시간은 8시간</string>
+    <string name="text_ngu_content5">을 권장합니다.</string>
+    <string name="text_ngu_label1">기상 시간</string>
+    <string name="text_ngu_label2">취침 시간</string>
+    <string name="text_unit_hour">시</string>
+    <string name="text_unit_minutes">분</string>
+    <string name="text_button_ngu">기록하기</string>
 
-    <!-- Water -->
-    <string name="text_title_nuoc"> Water intake </string>    
-    <string name="text_nuoc_content"> Water intake </string>    
-    <string name="text_nuoc_content1"> 1.5l or more per day </string>   
-    <string name="text_nuoc_content2"> is recommended. </string>    
-    <string name="text_nuoc_content3"> Except for carbonated drinks and coffee </string>    
-    <string name="text_checkbox_nuoc1"> 0.5 liter </string>    
-    <string name="text_checkbox_nuoc2"> 1 liter </string>    
-    <string name="text_checkbox_nuoc3"> 1.5 liters </string>   
-    <string name="text_checkbox_nuoc4"> 2 liters or more </string>   
-    <string name="text_button_nuoc"> Record </string>
+    <!-- Uong nuoc -->
+    <string name="text_title_nuoc">물 섭취</string>
+    <string name="text_nuoc_content">물 섭취는</string>
+    <string name="text_nuoc_content1">1일 1.5l 이상</string>
+    <string name="text_nuoc_content2">을 권장합니다.</string>
+    <string name="text_nuoc_content3">단, 탄산음료와 커피는 제외입니다.</string>
+    <string name="text_checkbox_nuoc1">0.5리터</string>
+    <string name="text_checkbox_nuoc2">1리터</string>
+    <string name="text_checkbox_nuoc3">1.5리터</string>
+    <string name="text_checkbox_nuoc4">2리터 이상</string>
+    <string name="text_button_nuoc">기록하기</string>
 
-    <!-- Heating -->
-    <string name="text_title_tam"> Steam heating / Sitz bath </string>
-    <string name="text_tam_content"> The left / right </string>    
-    <string name="text_tam_content1"> 30 to 40 minutes per day </string>   
-    <string name="text_tam_content2"> is recommended </string>    
-    <string name="text_checkbox_tam1"> 10 minutes </string>    
-    <string name="text_checkbox_tam2"> 20 minutes </string>    
-    <string name="text_checkbox_tam3"> 30 minutes </string>    
-    <string name="text_checkbox_tam4"> 40 minutes </string>    
-    <string name="text_button_tam"> Record </string>
+    <!-- Tam -->
+    <string name="text_title_tam">좌훈/좌욕</string>
+    <string name="text_tam_content">좌훈/좌욕은</string>
+    <string name="text_tam_content1">1일 30분-40분</string>
+    <string name="text_tam_content2">을 권장합니</string>
+    <string name="text_checkbox_tam1">10분</string>
+    <string name="text_checkbox_tam2">20분</string>
+    <string name="text_checkbox_tam3">30분</string>
+    <string name="text_checkbox_tam4">40분 이상</string>
+    <string name="text_button_tam">기록하기</string>
 
-    <!-- Emotianal state -->
-    <string name="text_title_camxuc"> Emotion status </string>
-    <string name="text_camxuc_content"> How was your day feeling? </string>    
-    <string name="text_checkbox_camxuc1"> Very good </string>    
-    <string name="text_checkbox_camxuc2"> Good </string>    
-    <string name="text_checkbox_camxuc3"> Normal </string>    
-    <string name="text_checkbox_camxuc4"> Bad </string>    
-    <string name="text_checkbox_camxuc5"> Very bad </string>    
-    <string name="text_button_camxuc"> Record </string>
+    <!-- Cam xuc -->
+    <string name="text_title_camxuc">감정 상태</string>
+    <string name="text_camxuc_content">오늘 하루 기분은 어떠셨나요?</string>
+    <string name="text_checkbox_camxuc1">매우 좋음</string>
+    <string name="text_checkbox_camxuc2">좋음</string>
+    <string name="text_checkbox_camxuc3">보통</string>
+    <string name="text_checkbox_camxuc4">나쁨</string>
+    <string name="text_checkbox_camxuc5">매우 나쁨</string>
+    <string name="text_button_camxuc">기록하기</string>
 
     <!-- Ruou -->
-    <string name="text_title_ruou"> Alcohol intake </string>
-        
-    <string name="text_ruou_content"> Alcohol consumption </string>
-        
-    <string name="text_ruou_content1"> Less than one standard per day </string>
-        
-    <string name="text_ruou_content2"> is recommended </string>
-        
-    <string name="text_ruou_content3"> A standard of 14 grams of alcohol </string>
-        
-    <string name="text_ruou_tip1"> 0 cup </string>
-        
-    <string name="text_ruou_tip2"> One glass </string>
-        
-    <string name="text_ruou_tip3"> 2 glasses </string>
-        
-    <string name="text_ruou_tip4"> More than 3 </string>
-        
-    <string name="text_ruou_goiy1"> One glass of wine: 45ml </string>
-        
-    <string name="text_ruou_goiy2"> 2 glasses of shochu: 90ml </string>
-        
-    <string name="text_ruou_goiy3"> One bottle of beer: 360ml </string>
-        
-    <string name="text_ruou_goiy4"> One glass of wine: 150ml </string>
-        
-    <string name="text_ruou_goiy5"> 1 cup of makgeolli: 250ml </string>
-        
-    <string name="text_ruou_note"> Source: Korean Association of Family Medicine Alcohol Studies </string>
-        
-    <string name="text_button_ruou"> Record </string>
+    <string name="text_title_ruou">알코올 섭취</string>
+    <string name="text_ruou_content">알코올 섭취는</string>
+    <string name="text_ruou_content1">1일 표준 1잔 이하를</string>
+    <string name="text_ruou_content2">권장합니다.</string>
+    <string name="text_ruou_content3">알코올 14g의 표준 1잔 기준</string>
+    <string name="text_ruou_tip1">0잔</string>
+    <string name="text_ruou_tip2">1잔</string>
+    <string name="text_ruou_tip3">2잔</string>
+    <string name="text_ruou_tip4">3잔 이상</string>
+    <string name="text_ruou_goiy1">양주 1잔 : 45ml</string>
+    <string name="text_ruou_goiy2">소주 2잔 : 90ml</string>
+    <string name="text_ruou_goiy3">맥주 1병 : 360ml</string>
+    <string name="text_ruou_goiy4">와인1잔 : 150ml</string>
+    <string name="text_ruou_goiy5">막걸리 1잔 : 250ml</string>
+    <string name="text_ruou_note">출처 : 대한가정의학회 알코올연구회</string>
+    <string name="text_button_ruou">기록하기</string>
 
     <!-- Come On -->
-    <string name="text_tab_comeon_recipe"> Recipe </string>
-    <string name="text_tab_comeon_guide"> Guide </string>
+    <string name="text_tab_comeon_recipe">추 천  레 시 피</string>
+    <string name="text_tab_comeon_guide">난 임  가 이 드</string>
 
     <!-- Community -->
-    <string name="text_tab_community_event"> Notice\n/Event </string>    
-    <string name="text_tab_community_mysuccess"> My\nstory </string>    
-    <string name="text_tab_community_myrecipe"> My\nrecipe </string>    
-    <string name="text_tab_community_husband"> Husband\nstory </string>
+    <string name="text_tab_community_event">공지\n/이벤트</string>
+    <string name="text_tab_community_mysuccess">자유\n게시판</string>
+    <string name="text_tab_community_myrecipe">나의\n레시피</string>
+    <string name="text_tab_community_husband">남편\n이야기</string>
     <string name="text_tab_community_qa">Q &amp; A</string>
 
     <!-- Community Details -->
-    <string name="text_write"> Write </string>
-        
-    <string name="hint_write_comment"> Leave a comment </string>
-        
-    <string name="text_edit_my_success"> Modifying </string>
-        
-    <string name="text_delete_my_success"> Deleting </string>
-        
-    <string name="text_edit_title_my_success"> Modifying </string>
-        
-    <string name="text_done"> OK </string>
-        
-    <string name="text_like"> Recommendation %s </string>
-        
-    <string name="text_like_1"> Referrals: </string>
+    <string name="text_write">쓰기</string>
+    <string name="hint_write_comment">댓글을 남겨주세요</string>
+    <string name="text_edit_my_success">수정하기</string>
+    <string name="text_delete_my_success">삭제하기</string>
+    <string name="text_edit_title_my_success">수정하기</string>
+    <string name="text_done">확인</string>
+    <string name="text_like">추천 %s</string>
+    <string name="text_like_1">추천수:</string>
 
     <!-- Community New -->
-    <string name="text_title_community_new"> Writing </string>
-        
-    <string name="hint_title_community_new"> Please enter a title </string>
-        
-    <string name="hint_content_community_new"> Please enter your content </string>
-        
-    <string name="text_from_camera"> Camera </string>
-        
-    <string name="text_from_album"> Album </string>
-        
-    <string name="error_enter_new_community"> Please enter your suggested exercise type </string>
+    <string name="text_title_community_new">글쓰기</string>
+    <string name="hint_title_community_new">제목을 입력해 주세요.</string>
+    <string name="hint_content_community_new">내용을 입력해 주세요</string>
+    <string name="text_from_camera">카메라</string>
+    <string name="text_from_album">앨범</string>
+    <string name="error_enter_new_community">추천 운동 종류까지 입력해 주세요.</string>
 
     <!-- Q&A -->
-    <string name="text_delete_qa"> Delete </string>
-        
-    <string name="text_title_qa_new"> Writing </string>
-        
-    <string name="text_answered"> Answer completed </string>
-        
-    <string name="text_not_answer"> Answers </string>
+    <string name="text_delete_qa">삭제</string>
+    <string name="text_title_qa_new">글쓰기</string>
+    <string name="text_answered">답변완료</string>
+    <string name="text_not_answer">미답변</string>
 
     <!-- Report -->
-    <string name="text_report_month"> Monthly report </string>
-    <string name="text_report_week"> Weekly report </string>   
-    <string name="text_report_excellent"> Great job </string>    
-    <string name="text_report_good"> Well done </string>
-        
-    <string name="text_report_bad"> Do better </string>    
-    <string name="text_report_excellent1"> excellent </string>    
-    <string name="text_report_good1"> good </string>    
-    <string name="text_report_bad1"> bad </string>
-        
-    <string name="text_report_1"> Recommended food </string>    
-    <string name="text_report_2"> Nuts </string>    
-    <string name="text_report_3"> Tea </string>
-    <string name="text_report_4"> Exercises </string>    
-    <string name="text_report_5"> Midnight sleep </string>    
-    <string name="text_report_6"> Average sleep time </string>    
-    <string name="text_report_7"> Water intake </string>    
-    <string name="text_report_8"> Sitz bath </string>    
-    <string name="text_report_9"> Vitamins </string>    
-    <string name="text_report_10"> Folic acid </string>    
-    <string name="text_report_11"> Less than a cup of coffee </string>    
-    <string name="text_report_12"> Alcohol </string>    
-    <string name="text_report_13"> Non-smoking </string>    
-    <string name="text_report_14"> Emotion </string>
+    <string name="text_report_month">월 간  리 포 트</string>
+    <string name="text_report_week">주 간  리 포 트</string>
+    <string name="text_report_excellent">참 잘했어요</string>
+    <string name="text_report_good">잘했어요</string>
+    <string name="text_report_bad">분발하세요</string>
+    <string name="text_report_excellent1">excellent</string>
+    <string name="text_report_good1">good</string>
+    <string name="text_report_bad1">bad</string>
+    <string name="text_report_1">추천음식</string>
+    <string name="text_report_2">견과류</string>
+    <string name="text_report_3">차</string>
+    <string name="text_report_4">운동</string>
+    <string name="text_report_5">자정 전 취침</string>
+    <string name="text_report_6">평균 수면시간</string>
+    <string name="text_report_7">물 섭취</string>
+    <string name="text_report_8">좌훈/좌욕</string>
+    <string name="text_report_9">비타민</string>
+    <string name="text_report_10">엽산</string>
+    <string name="text_report_11">커피 1잔 이하</string>
+    <string name="text_report_12">알코올</string>
+    <string name="text_report_13">금연</string>
+    <string name="text_report_14">감정</string>
     <!-- month -->
-    <string name="text_report_1_1"> Monthly %s intake </string>    
-    <string name="text_report_2_1">%s per month </string>    
-    <string name="text_report_3_1">%s per month </string>    
-    <string name="text_report_4_1">%s per month </string>    
-    <string name="text_report_5_1">%s per month </string>    
-    <string name="text_report_6_1" formatted="false"> Average month %s hours %s minutes </string>   
-    <string name="text_report_7_1">Average %s per month </string>    
-    <string name="text_report_8_1">%s per month </string>    
-    <string name="text_report_9_1">%s per month </string>    
-    <string name="text_report_10_1">%s monthly intake </string>    
-    <string name="text_report_11_1">%s per month </string>    
-    <string name="text_report_12_1" formatted="false"> Monthly %s drinking / average %s </string>    
-    <string name="text_report_13_1">%s per month </string>    
-    <string name="text_report_14_1" formatted="false" > Very good %s times, good %s times, \n usually %s times, bad %s times, very bad %s </string>
+    <string name="text_report_1_1">월 %s회 섭취</string>
+    <string name="text_report_2_1">월 %s회 섭취</string>
+    <string name="text_report_3_1">월 %s회 섭취</string>
+    <string name="text_report_4_1">월 %s회</string>
+    <string name="text_report_5_1">월 %s회</string>
+    <string name="text_report_6_1" formatted="false">월 평균 %s시간 %s분</string>
+    <string name="text_report_7_1">월 평균 %s 리터</string>
+    <string name="text_report_8_1">월 %s회</string>
+    <string name="text_report_9_1">월 %s회 섭취</string>
+    <string name="text_report_10_1">월 %s회 섭취</string>
+    <string name="text_report_11_1">월 %s회</string>
+    <string name="text_report_12_1" formatted="false">월 %s회 음주 / 평균 %s잔</string>
+    <string name="text_report_13_1">월 %s회</string>
+    <string name="text_report_14_1">매우 좋음 %s회, 좋음 3회,\n보통 9회, 나쁨 7회, 매우 나쁨</string>
     <!-- week -->
-    <string name="text_report_1_2"> ingestion %s </string>
-        
-    <string name="text_report_2_2"> Feeding %s times </string>
-        
-    <string name="text_report_3_2"> Feeding %s times </string>
-        
-    <string name="text_report_4_2"> weeks %s </string>
-        
-    <string name="text_report_5_2"> weeks %s </string>
-        
-    <string name="text_report_6_2" formatted="false"> Week %s hours %s minutes </string>
-        
-    <string name="text_report_7_2"> Weekly average %s liter </string>
-        
-    <string name="text_report_8_2"> weeks %s </string>
-        
-    <string name="text_report_9_2"> Feeding %s times </string>
-        
-    <string name="text_report_10_2"> Feeding %s times </string>
-        
-    <string name="text_report_11_2"> weeks %s </string>
-        
-    <string name="text_report_12_2" formatted="false"> Drinking %s of the week %s / average %s </string>
-        
-    <string name="text_report_13_2"> weeks %s </string>
-        
-    <string name="text_report_14_2" formatted="false"> Very good %s times, good %s times, \n usually %s times, bad %s times, very bad %s </string>
-        
-    <string name="text_note"> ※ Inquiries 1899-1806 </string>
-        
-    <string name="text_note_1"> Korea Federation of Subdivision Family Houses www.agaya.org </string>
+    <string name="text_report_1_2">주 %s회 섭취</string>
+    <string name="text_report_2_2">주 %s회 섭취</string>
+    <string name="text_report_3_2">주 %s회 섭취</string>
+    <string name="text_report_4_2">주 %s회</string>
+    <string name="text_report_5_2">주 %s회</string>
+    <string name="text_report_6_2" formatted="false">주 평균 %s시간 %s분</string>
+    <string name="text_report_7_2">주 평균 %s 리터</string>
+    <string name="text_report_8_2">주 %s회</string>
+    <string name="text_report_9_2">주 %s회 섭취</string>
+    <string name="text_report_10_2">주 %s회 섭취</string>
+    <string name="text_report_11_2">주 %s회</string>
+    <string name="text_report_12_2" formatted="false">주 %s회 음주 / 평균 %s잔</string>
+    <string name="text_report_13_2">주 %s회</string>
+    <string name="text_report_14_2">매우 좋음 %s회, 좋음 3회,\n보통 9회, 나쁨 7회, 매우 나쁨</string>
+    <string name="text_note">※ 난임상담전화 1899-1806</string>
+    <string name="text_note_1">한국난임가족연합회 www.agaya.org</string>
 
     <!-- Setting -->
-    <string name="text_setting_email"> email </string>
-        
-    <string name="text_setting_password"> Password </string>
-        
-    <string name="text_setting_gioitinh"> Gender </string>
-        
-    <string name="text_setting_nickname"> Nickname </string>
-        
-    <string name="text_setting_bmi"> BMI calculation </string>
-        
-    <string name="text_setting_push"> Push notification </string>
-        
-    <string name="text_setting_logout"> Logout </string>
-        
-    <string name="text_setting_delete_account"> Leave Member </string>
-        
-    <string name="error_message_for_service_unavailable"> Service connection is bad. \ N \ nPlease try again later. </string>
-        
-    <string name="string_enter_your_information_bmi"> Please enter all items </string>
-        
-    <string name="string_confirm_logout"> Are you sure you want to log out? </string>
-        
-    <string name="string_confirm_delete_account"> All your information will be deleted. \ NDo you really want to leave? </string>
+    <string name="text_setting_email">이메일</string>
+    <string name="text_setting_password">비밀번호</string>
+    <string name="text_setting_gioitinh">성별</string>
+    <string name="text_setting_nickname">닉네임</string>
+    <string name="text_setting_bmi">BMI 계산</string>
+    <string name="text_setting_push">푸쉬 알림</string>
+    <string name="text_setting_logout">로그아웃</string>
+    <string name="text_setting_delete_account">회원탈퇴</string>
+    <string name="error_message_for_service_unavailable">서비스 연결상태가 좋지 않습니다.\n\n잠시 후 다시 시도해 주세요.</string>
+    <string name="string_enter_your_information_bmi">모든 항목을 입력해 주세요.</string>
+    <string name="string_confirm_logout">로그아웃 하시겠습니까?</string>
+    <string name="string_confirm_delete_account">회원님의 모든 정보가 삭제 됩니다.\n정말로 탈퇴 하시겠습니까?</string>
 
-    <string name="title_new_version"> New Version </string>
-        
-    <string name="content_new_version"> New version exists. Please run after upgrade </string>
+    <string name="title_new_version">New Version</string>
+    <string name="content_new_version">새 버젼이 존재합니다. 업그레이드 이후에 실행해 주세요</string>
 </resources>
-
 
