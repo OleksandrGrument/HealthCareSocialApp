@@ -82,8 +82,11 @@ public interface RequestInterface {
     @POST("community")
     Call<NewResponse> deleteCommunityOperation (@Body CommunityRequest request);
 
-    @POST("community")
+    @POST("community-qa")
     Call<NewResponse> saveQAOperation (@Body QARequest request);
+
+    @POST("community-qa")
+    Call<NewResponse> deleteQARecord (@Body QARequest request);
 
     @POST("google-cloud-id")
     Call<NewResponse> sendToServerGCM (@Body NewRequest request);

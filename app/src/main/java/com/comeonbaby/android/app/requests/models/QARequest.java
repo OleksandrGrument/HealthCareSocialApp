@@ -5,11 +5,20 @@ package com.comeonbaby.android.app.requests.models;
  */
 
 public class QARequest {
+    private Long id;
     private String operation;
     private String user;
     private String title;
     private String text;
     private Boolean is_access;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getOperation() {
         return operation;
@@ -49,5 +58,17 @@ public class QARequest {
 
     public void setUser(String user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "QARequest{" +
+                "id=" + id +
+                ", operation='" + operation + '\'' +
+                ", user='" + user + '\'' +
+                ", title='" + title + '\'' +
+                ", text='" + text + '\'' +
+                ", is_access=" + is_access +
+                '}';
     }
 }

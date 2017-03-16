@@ -500,7 +500,7 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 		if (buttonEvent.isSelected() || buttonMySuccess.isSelected() || buttonMyRecipe.isSelected() || buttonHusband.isSelected())
 			loadListCommunity();
 		else if (buttonQA.isSelected())
-			loadListQA();
+			loadListCommunity();
 	}
 
 	@Override

@@ -1,7 +1,10 @@
 package com.comeonbaby.android.app.view;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,20 +17,38 @@ import com.comeonbaby.android.app.common.Globals;
 import com.comeonbaby.android.app.common.ServerPath;
 import com.comeonbaby.android.app.common.ServiceConsts;
 import com.comeonbaby.android.app.db.dto.CommunityQADTO;
+import com.comeonbaby.android.app.requests.ExtraConstants;
+import com.comeonbaby.android.app.requests.commands.Commands;
 import com.comeonbaby.android.app.server.ServerEmulator;
+import com.comeonbaby.android.app.utils.AppSession;
 import com.comeonbaby.android.app.view.customview.ButtonCustom;
 import com.comeonbaby.android.app.view.customview.TextViewCustom;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import static com.comeonbaby.android.R.id.btnButtonDeleteQA;
+import static com.comeonbaby.android.app.view.CommunityDetailsActivity.activity;
 
 public class QADetailsActivity extends BaseActivity implements OnClickListener {
 
 	CommunityQADTO item;
+	Handler handler;
 
 
 	protected void onCreateContent(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_qa_details);
 		initObjectUI();
 		setupHideKeyboard(findViewById(R.id.layoutRootQADetails));
+		initHandler();
+		ButtonCustom btnDelete = (ButtonCustom) findViewById(btnButtonDeleteQA);
+
+		btnDelete.setEnabled(false);
+		btnDelete.setVisibility(View.INVISIBLE);
+		if(item != null && item.getUser() != null && item.getUser().getSystemID() != null &&
+				item.getUser().getSystemID().equals(AppSession.getSession().getSystemUser().getSystemID())) {
+			Log.d("SET ENABLED!!!!!!!", "SET ENABLED!!!!!!!");
+			btnDelete.setEnabled(true);
+			btnDelete.setVisibility(View.VISIBLE);
+			btnDelete.setOnClickListener(this);
+		}
 	}
 
 	private void initObjectUI() {
@@ -38,7 +59,7 @@ public class QADetailsActivity extends BaseActivity implements OnClickListener {
 		((TextViewCustom) findViewById(R.id.textContent)).setTextSize(TypedValue.COMPLEX_UNIT_SP, Globals.size);
 
 		((ImageView) findViewById(R.id.imgBack)).setOnClickListener(this);
-		((ButtonCustom) findViewById(R.id.btnButtonDeleteQA)).setOnClickListener(this);
+		((ButtonCustom) findViewById(btnButtonDeleteQA)).setOnClickListener(this);
 
 		if (item != null) {
 			((TextViewCustom) findViewById(R.id.txtTitle)).setText(item.getTitle());
@@ -83,16 +104,39 @@ public class QADetailsActivity extends BaseActivity implements OnClickListener {
 		case R.id.imgBack:
 			finish();
 			break;
-		case R.id.btnButtonDeleteQA:
+		case btnButtonDeleteQA:
 			showProgress();
-			ServerEmulator.removeQuestionRecord(item.getId());
-			hideProgress();
+			Commands.deleteQARecord(handler, item);
+			//ServerEmulator.removeQuestionRecord(item.getId());
 			finish();
 //			DeleteCommunityQACommand.start(baseActivity, item);
 			break;
 		default:
 			break;
 		}
+	}
+
+
+
+	private void initHandler() {
+		handler = new Handler() {
+			@Override
+			public void handleMessage(android.os.Message msg) {
+				switch (msg.what) {
+					case com.comeonbaby.android.app.requests.Constants.MSG_DELETE_COMMUNITY_SUCCESS: {
+						finish();
+						break;
+					}
+					case com.comeonbaby.android.app.requests.Constants.MSG_DELETE_COMMUNITY_FAIL: {
+						hideProgress();
+						break;
+					}
+					default: {
+						break;
+					}
+				}
+			}
+		};
 	}
 
 	/*

@@ -179,6 +179,7 @@ public class CommunityQADTO implements Serializable {
 				pf.setNickname(jsonObject.getString(USER_NICKNAME));
 				pf.setAvatar(jsonObject.getString(USER_AVATAR));
 				user.setProfileDTO(pf);
+				user.setSystemID(jsonObject.getLong(USERID));
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -201,5 +202,22 @@ public class CommunityQADTO implements Serializable {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	@Override
+	public String toString() {
+		return "CommunityQADTO{" +
+				"user=" + user +
+				", userAnswer=" + userAnswer +
+				", answer_date='" + answer_date + '\'' +
+				", question_date='" + question_date + '\'' +
+				", description='" + description + '\'' +
+				", is_answered=" + is_answered +
+				", is_private=" + is_private +
+				", title='" + title + '\'' +
+				", question_text='" + question_text + '\'' +
+				", answer_text='" + answer_text + '\'' +
+				", id=" + id +
+				'}';
 	}
 }

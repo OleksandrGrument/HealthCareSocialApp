@@ -472,6 +472,22 @@ public class Commands {
         executeRequest(handler, response, SUBTAG, Constants.DELETE_COMUNITY_RECORD_OPERATION, Constants.MSG_DELETE_COMMUNITY_SUCCESS, Constants.MSG_DELETE_COMMUNITY_FAIL);
     }
 
+    public static void deleteQARecord(final Handler handler, CommunityQADTO dto) {
+        final String SUBTAG = TAG + "deleteQARecord()";
+        if(dto == null || dto.getId() == 0) {
+            Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
+            return;
+        }
+        final QARequest request = new QARequest();
+        request.setOperation(Constants.DELETE_Q_A_RECORD_OPERATION);
+        request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
+        request.setId(dto.getId());
+        Log.e("!!!!!!!!!!!!!!!!",request.toString());
+        Call<NewResponse> response = requestInterface.deleteQARecord(request);
+        executeRequest(handler, response, SUBTAG, Constants.DELETE_Q_A_RECORD_OPERATION, Constants.MSG_GET_COMUNITY_SUCCESS, Constants.MSG_GET_COMUNITY_FAIL);
+    }
+
+
     public static void getComunityQA(final Handler handler, int type) {
         final String SUBTAG = TAG + "getComunityQA()";
         final CommunityRequest request = new CommunityRequest();
@@ -483,41 +499,26 @@ public class Commands {
     }
 
 
-//    public static void saveQARecord(final Handler handler, final CommunityQADTO dto) {
-//        Log.d(TAG, "Start save QA record");
-//        final String SUBTAG = TAG + "saveComunity()";
-//        if(dto == null || dto.getUser() == null || dto.getUser().getSystemID() == null || dto.getTitle() == null || dto.getQuestion_text() == null ) {
-//            handler.sendEmptyMessage(Constants.MSG_ERROR);
-//            Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
-//            return;
-//        }
-//        Thread thr = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-////                ByteArrayOutputStream stream;
-////                int numOfImages = bitmaps != null ? bitmaps.size() : 0;
-////                byte[][] bytes = new byte[numOfImages][];
-////                for(int i = 0; i < numOfImages; i++) {
-////                    stream = new ByteArrayOutputStream();
-////                    bitmaps.get(i).compress(Bitmap.CompressFormat.JPEG, 90, stream);
-////                    bytes[i] = stream.toByteArray();
-////                    Log.d(SUBTAG, "image " +bitmaps.get(i).getWidth() + "x" + bitmaps.get(i).getWidth() + " added");
-////                }
-//                final QARequest request = new QARequest();
-////                request.setBitmaps(bytes);
-//
-//                request.setTitle(dto.getTitle());
-//                request.setUser(dto.getUser().toJSON().toString());
-//                request.setText(dto.getQuestion_text());
-//                request.setIs_access(dto.isIs_private());
-//                request.setOperation(Constants.SAVE_QA_OPERATION);
-//                Call<NewResponse> response = requestInterface.saveQAOperation(request);
-//                executeRequest(handler, response, SUBTAG, Constants.SAVE_QA_OPERATION, Constants.MSG_SAVE_QA_SUCCESS, Constants.MSG_SAVE_QA_FAIL);
-//            }
-//        });
-//        thr.setDaemon(true);
-//        thr.start();
-//    }
+    public static void saveQARecord(final Handler handler, final CommunityQADTO dto) {
+        Log.d(TAG, "Start save QA record" + dto.toString());
+        final String SUBTAG = TAG + "saveComunity()";
+        if(dto == null || dto.getTitle() == null || dto.getQuestion_text() == null ) {
+            handler.sendEmptyMessage(Constants.MSG_ERROR);
+            Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
+            return;
+        }
+        final QARequest request = new QARequest();
+
+        request.setTitle(dto.getTitle());
+        request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
+        request.setText(dto.getQuestion_text());
+        request.setIs_access(dto.isIs_private());
+        request.setOperation(Constants.SAVE_QA_OPERATION);
+
+        Log.d(TAG, "!!! request" + request.toString());
+        Call<NewResponse> response = requestInterface.saveQAOperation(request);
+        executeRequest(handler, response, SUBTAG, Constants.SAVE_QA_OPERATION, Constants.MSG_SAVE_QA_SUCCESS, Constants.MSG_SAVE_QA_FAIL);
+    }
 
     public static void modifyComunityRecord(final Handler handler, CommunityDTO dto) {
 

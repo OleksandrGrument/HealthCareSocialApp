@@ -91,18 +91,18 @@ public class QADetailsNewActivity extends BaseActivity implements OnClickListene
 	}
 
 	private void requestToServer() {
-//		showProgress();
-//		CommunityQADTO dto = new CommunityQADTO();
-//		dto.setTitle(((EditTextCustom) findViewById(R.id.textTitle)).getText().toString());
-//		dto.setQuestion_text(((EditTextCustom) findViewById(R.id.textContent)).getText().toString());
-//		dto.setIs_private(((CheckBoxCustom) findViewById(R.id.checkboxLockUnlock)).isChecked());
-//
-//		showProgress();
-//
-////        ServerEmulator.addNewQuestionRecord(dto);
-//		Commands.saveQARecord(handler, dto);
-//
-//        finish();
+		showProgress();
+		CommunityQADTO dto = new CommunityQADTO();
+		dto.setTitle(((EditTextCustom) findViewById(R.id.textTitle)).getText().toString());
+		dto.setQuestion_text(((EditTextCustom) findViewById(R.id.textContent)).getText().toString());
+		dto.setIs_private(((CheckBoxCustom) findViewById(R.id.checkboxLockUnlock)).isChecked());
+
+		showProgress();
+
+//        ServerEmulator.addNewQuestionRecord(dto);
+		Commands.saveQARecord(handler, dto);
+        Log.e("QADetailsNewActivity:", "Метод: requestToServer()");
+		//finish();
 //		PostCommunityQACommand.start(baseActivity, dto);
 	}
 

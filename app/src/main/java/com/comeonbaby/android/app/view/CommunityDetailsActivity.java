@@ -69,6 +69,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 						break;
 					}
 					case com.comeonbaby.android.app.requests.Constants.MSG_DELETE_COMMUNITY_FAIL: {
+						activity.hideProgress();
 						break;
 					}
                     default: {
@@ -124,10 +125,6 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 				@Override
 				public void onClick(View v) {
 					activity.showProgress();
-
-
-
-
 					Commands.deleteCommunityRecord(handler, communityDto);
 				}
 			};
