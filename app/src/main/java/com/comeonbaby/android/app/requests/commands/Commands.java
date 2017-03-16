@@ -219,6 +219,18 @@ public class Commands {
         executeRequest(response, SUBTAG, Constants.UPLOAD_BASIC_QUESTION);
     }
 
+    // Send to server id key, that server can send to app notification
+    public static void sendToServerGCMInformation(final String GoogleCloudMessageId){
+
+        final NewRequest request = new NewRequest();
+        request.setOperation("");
+        request.setData(GoogleCloudMessageId);
+        request.setUser("");
+
+        Call<NewResponse> response = requestInterface.sendToServerGCM(request);
+        executeRequest(response , "sendToServerGCMInformation" , "sendToServerGCMInformation");
+    }
+
     //Save note
     public static void saveNoteOperation(final Handler handler, final UserDTO user, final NoteDTO note) {
         final String SUBTAG = TAG + "saveNote()";
