@@ -23,10 +23,9 @@
         android:id="@+id/btnButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxHeight="50dp"
         android:layout_gravity="center"
         android:background="@drawable/bg_button_bottom_selection"
-        android:textColor="@color/color_white"
-        />
+        android:maxHeight="50dp"
+        android:textColor="@color/color_white" />
 
 </FrameLayout>
