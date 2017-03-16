@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "348018610363",
+    "firebase_url": "https://comeonbaby-1a654.firebaseio.com",
+    "project_id": "comeonbaby-1a654",
+    "storage_bucket": "comeonbaby-1a654.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348018610363:android:53adf19d5375744d",
+        "android_client_info": {
+          "package_name": "com.comeonbaby.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348018610363-3tmkoci9gim9461g77akogoim57hnoaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.comeonbaby.android",
+            "certificate_hash": "610b97303e7612b0792f05cde3e50a5fa137d38b"
+          }
+        },
+        {
+          "client_id": "348018610363-v2lqeq2eecbvj21gre7k856pda5o443k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-jEaNCckNhfX90My_UDApbZWTkPtDpj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348018610363-v2lqeq2eecbvj21gre7k856pda5o443k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
