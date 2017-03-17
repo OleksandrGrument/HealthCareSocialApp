@@ -39,6 +39,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CommunityFragment extends BaseContainerFragment implements OnItemClickListener, OnClickListener {
@@ -148,6 +149,15 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
                                 e.printStackTrace();
                             }
                         }
+                        if(commList==null) {
+							try {
+								throw new Exception("!!!");
+							} catch (Exception e) {
+								e.printStackTrace();
+							}
+						} else{
+							Collections.reverse(commList);
+						}
                         final ListCommunityAdapter adapter = new ListCommunityAdapter(commList, getActivity());
                         listCommunity.setAdapter(adapter);
                         break;
@@ -166,6 +176,15 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 							} catch (JSONException e) {
 								e.printStackTrace();
 							}
+						}
+						if(comListQA==null) {
+							try {
+								throw new Exception("!!!");
+							} catch (Exception e) {
+								e.printStackTrace();
+							}
+						} else{
+							Collections.reverse(comListQA);
 						}
 						final ListQAAdapter adapter = new ListQAAdapter(comListQA, getActivity());
 						listCommunity.setAdapter(adapter);
