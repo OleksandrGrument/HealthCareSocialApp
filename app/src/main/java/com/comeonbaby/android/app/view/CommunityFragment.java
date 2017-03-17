@@ -135,7 +135,7 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
                 Bundle data = msg.getData();
                 String message = "";
                 if (data.containsKey(ExtraConstants.MESSAGE)) message = data.getString(ExtraConstants.MESSAGE);
-                if (msg.what != Constants.MSG_ERROR) showSnackMessage(message);
+                //if (msg.what != Constants.MSG_ERROR) showSnackMessage(message);
                 ((MainActivity) getActivity()).hideProgress();
                 switch (msg.what) {
                     case Constants.MSG_GET_COMUNITY_SUCCESS: {
@@ -151,7 +151,7 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
                         }
                         if(commList==null) {
 							try {
-								throw new Exception("!!!");
+								throw new Exception("!!! commList = null CommunityFragment initHandler() ");
 							} catch (Exception e) {
 								e.printStackTrace();
 							}
@@ -179,7 +179,7 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 						}
 						if(comListQA==null) {
 							try {
-								throw new Exception("!!!");
+								throw new Exception("!!! comListQA = null CommunityFragment initHandler() ");
 							} catch (Exception e) {
 								e.printStackTrace();
 							}
@@ -206,6 +206,17 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 								JSONArray jsarr = new JSONArray(data.getString(ExtraConstants.DATA));
 								Log.v("CommunityFragment!!: ",jsarr.toString());
 								commList = CommunityDTO.parseListCommunity(jsarr);
+
+								if(commList==null) {
+									try {
+										throw new Exception("!!! commList = null CommunityFragment initHandler() ");
+									} catch (Exception e) {
+										e.printStackTrace();
+									}
+								} else{
+									Collections.reverse(commList);
+								}
+
                                 final ListEventAdapter adapter = new ListEventAdapter(commList, getActivity());
                                 listCommunity.setAdapter(adapter);
 							} catch (Exception e) {

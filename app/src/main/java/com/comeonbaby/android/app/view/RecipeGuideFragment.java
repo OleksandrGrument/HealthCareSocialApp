@@ -67,7 +67,7 @@ public class RecipeGuideFragment extends BaseContainerFragment implements Adapte
                 JSONArray guides = null;
                 if (data.containsKey(ExtraConstants.MESSAGE))
                     message = data.getString(ExtraConstants.MESSAGE);
-                if (msg.what != Constants.MSG_ERROR) showSnackMessage(message);
+                //if (msg.what != Constants.MSG_ERROR) showSnackMessage(message);
                 ((MainActivity) getActivity()).hideProgress();
                 switch (msg.what) {
                     case Constants.MSG_GET_GUIDE_SUCCESS: {
