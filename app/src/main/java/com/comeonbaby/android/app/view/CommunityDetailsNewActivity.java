@@ -162,34 +162,34 @@ public class CommunityDetailsNewActivity extends BaseActivity implements OnClick
 		case R.id.imgAddPhoto:
 		case R.id.imageAdd:
             //Добавление картинки с камеры
-			OnClickListener yesButtonListener = new OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					// use standard intent to capture an image
-					Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    Uri newImageUri = createNewImageUri("jpg");
-					captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, newImageUri);
-					// we will handle the returned data in onActivityResult
-					startActivityForResult(captureIntent, REQUEST_CAMERA);
-				}
-			};
-            //Добавление картинки с галереи
-			OnClickListener noButtonListener = new OnClickListener() {
-				@Override
-				public void onClick(View v) {
+//			OnClickListener yesButtonListener = new OnClickListener() {
+//				@Override
+//				public void onClick(View v) {
+//					// use standard intent to capture an image
+//					Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                    Uri newImageUri = createNewImageUri("jpg");
+//					captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, newImageUri);
+//					// we will handle the returned data in onActivityResult
+//					startActivityForResult(captureIntent, REQUEST_CAMERA);
+//				}
+//			};
+//            //Добавление картинки с галереи
+//			OnClickListener noButtonListener = new OnClickListener() {
+//				@Override
+//				public void onClick(View v) {
 					Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 					intent.setType("image/*");
 					startActivityForResult(Intent.createChooser(intent, "Select File"), SELECT_FILE);
-				}
-			};
-            //Запрос разрешений
-            if(!PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_CAMERA) || !PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_STORAGE)) {
-                PermHelper.verifyCameraPermissions(this);
-                PermHelper.verifyStoragePermissions(this);
-                break;
-            }
-            //Создание диалога выбора способа получения картинки
-            DialogUtilities.showAddPhotoDialog(CommunityDetailsNewActivity.this, yesButtonListener, noButtonListener);
+//				}
+//			};
+//            //Запрос разрешений
+//            if(!PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_CAMERA) || !PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_STORAGE)) {
+//                PermHelper.verifyCameraPermissions(this);
+//                PermHelper.verifyStoragePermissions(this);
+//                break;
+//            }
+//            //Создание диалога выбора способа получения картинки
+//            DialogUtilities.showAddPhotoDialog(CommunityDetailsNewActivity.this, yesButtonListener, noButtonListener);
             break;
 		default:
 			break;

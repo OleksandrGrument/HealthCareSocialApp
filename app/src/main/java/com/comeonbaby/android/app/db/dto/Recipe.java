@@ -38,4 +38,15 @@ public class Recipe {
     public String getDate() {
         return date;
     }
+
+
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "name='" + name + '\'' +
+                ", url_icon='" + url_icon + '\'' +
+                ", content='" + content + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }

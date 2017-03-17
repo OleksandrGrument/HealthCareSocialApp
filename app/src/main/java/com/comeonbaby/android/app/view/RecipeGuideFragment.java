@@ -1,9 +1,11 @@
 package com.comeonbaby.android.app.view;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -165,15 +167,18 @@ public class RecipeGuideFragment extends BaseContainerFragment implements Adapte
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 if (buttonRecipe.isSelected()) {
-                    CustomListAdapter adapter = (CustomListAdapter) parent.getAdapter();
-                    ComeOnGuideDTO item = new ComeOnGuideDTO();
-                    item.setTitle(recipes.get(position).getName());
-                    item.setContent(recipes.get(position).getContent());
-                    HtmlContentFragment fragment = new HtmlContentFragment();
-                    Bundle bundle = new Bundle();
-                    bundle.putSerializable(ServiceConsts.EXTRA_LIST_NANIN, item);
-                    fragment.setArguments(bundle);
-                    ((BaseContainerFragment) getParentFragment()).replaceFragment(fragment, true);
+//                    CustomListAdapter adapter = (CustomListAdapter) parent.getAdapter();
+//                    ComeOnGuideDTO item = new ComeOnGuideDTO();
+//                    item.setTitle(recipes.get(position).getName());
+//                    item.setContent(recipes.get(position).getContent());
+//                    HtmlContentFragment fragment = new HtmlContentFragment();
+//                    Bundle bundle = new Bundle();
+//                    bundle.putSerializable(ServiceConsts.EXTRA_LIST_NANIN, item);
+//                    fragment.setArguments(bundle);
+//                    ((BaseContainerFragment) getParentFragment()).replaceFragment(fragment, true);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(recipes.get(position).getContent()));
+                    startActivityForResult(intent, 1);
+
                 } else if (buttonGuide.isSelected()) {
                     Intent intent = new Intent(view.getContext(), ImageGuideActivity.class);
                     intent.putExtra(ImageGuideActivity.EXTRA_GUIDE_NUM, (int) id);
