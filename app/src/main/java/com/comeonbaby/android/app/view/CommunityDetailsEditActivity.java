@@ -2,6 +2,7 @@ package com.comeonbaby.android.app.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.TypedValue;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.comeonbaby.android.R;
 import com.comeonbaby.android.app.common.Constants;
@@ -19,6 +21,7 @@ import com.comeonbaby.android.app.common.ServiceConsts;
 import com.comeonbaby.android.app.db.dto.CommunityDTO;
 import com.comeonbaby.android.app.db.dto.ImageCommunityDTO;
 import com.comeonbaby.android.app.model.Comment;
+import com.comeonbaby.android.app.requests.commands.Commands;
 import com.comeonbaby.android.app.view.customview.ButtonCustom;
 import com.comeonbaby.android.app.view.customview.EditTextCustom;
 import com.comeonbaby.android.app.view.customview.ImageViewMySuccess;
@@ -177,6 +180,33 @@ public class CommunityDetailsEditActivity extends BaseActivity implements OnClic
 		((ButtonCustom) findViewById(R.id.buttonDone)).setEnabled(value);
 	}
 
+	Handler handler;
+
+	private void initHandler() {
+		handler = new Handler() {
+			@Override
+			public void handleMessage(android.os.Message msg) {
+				hideProgress();
+				switch (msg.what) {
+					case Constants.MSG_EDIT_COMMUNITY_SUCCESS: {
+						Log.d("SAVE COMMUNITY SUCCESS", "SAVE COMMUNITY SUCCESS!!!!");
+						hideProgress();
+						finish();
+						break;
+					}
+					case Constants.MSG_EDIT_COMMUNITY_FAIL: {
+						Log.d("SAVE COMMUNITY FAIL!!!!", "SAVE COMMUNITY FAIL!!!!");
+						hideProgress();
+						Toast.makeText(CommunityDetailsEditActivity.this, "SAVE COMMUNITY FAIL!!", Toast.LENGTH_SHORT).show();
+						finish();
+						break;
+					}
+				}
+			}
+		};
+	}
+
+
 	private void requestToServer() {
 		if (TextUtils.isEmpty(((EditTextCustom) findViewById(R.id.textTitle)).getText().toString())) {
 			String err_msg = getString(R.string.error_enter_new_community);
@@ -189,9 +219,14 @@ public class CommunityDetailsEditActivity extends BaseActivity implements OnClic
 			DialogUtilities.showAlertDialog(CommunityDetailsEditActivity.this, R.layout.dialog_error_warning, getString(R.string.string_error), err_msg, null);
 			return;
 		}
+
+		Log.e("!!!!!!!EDIT_BUTTON_DONE","!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		communityDto.setTitle(((EditTextCustom) findViewById(R.id.textTitle)).getText().toString());
 		communityDto.setContent(((EditTextCustom) findViewById(R.id.textContent)).getText().toString());
-//		showProgress();
+		showProgress();
+		Commands.sendEditComunityItem(handler, communityDto);
+		hideProgress();
+		finish();
 //		PutCommunityCommand.start(baseActivity, communityDto);
 	}
 

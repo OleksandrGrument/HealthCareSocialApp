@@ -408,6 +408,28 @@ public class Commands {
         thr.start();
     }
 
+    public static void sendEditComunityItem(final Handler handler, final CommunityDTO dto) {
+        Log.d(TAG, "Start send edit community item");
+        final String SUBTAG = TAG + "editComunity()";
+        if(dto == null || dto.getUser() == null || dto.getUser().getSystemID() == null || dto.getTitle() == null || dto.getContent() == null || dto.getContent_type() == 0) {
+            handler.sendEmptyMessage(Constants.MSG_ERROR);
+            Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
+            return;
+        }
+        final CommunityRequest request = new CommunityRequest();
+        request.setTitle(dto.getTitle());
+        request.setUser(dto.getUser().toJSON().toString());
+        request.setContent(dto.getContent());
+        request.setOperation(Constants.EDIT_COMUNITY_RECORD_OPERATION);
+        request.setType(dto.getContent_type());
+        request.setCommunityID(dto.getId());
+
+        Log.e("sendEditCommunityJSON",request.toString());
+
+        Call<NewResponse> response = requestInterface.editCommunityOperation(request);
+        executeRequest(handler, response, SUBTAG, Constants.EDIT_COMUNITY_RECORD_OPERATION, Constants.MSG_EDIT_COMMUNITY_SUCCESS, Constants.MSG_EDIT_COMMUNITY_FAIL);
+    }
+
     public static void getComunityRecords(final Handler handler, int type) {
         final String SUBTAG = TAG + "getComunity()";
         final CommunityRequest request = new CommunityRequest();

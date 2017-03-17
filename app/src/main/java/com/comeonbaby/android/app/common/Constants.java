@@ -24,7 +24,8 @@ public class Constants {
 	public static final String INTENT_ITEM_REPORT = "item_report";
 	public static final String EX_URL_FROM_FILE = "url_from_file";
 	public static final String EX_IS_MONTH = "is_month";
-
+	public static final int MSG_EDIT_COMMUNITY_SUCCESS = 43;
+	public static final int MSG_EDIT_COMMUNITY_FAIL = 44;
 
 
 

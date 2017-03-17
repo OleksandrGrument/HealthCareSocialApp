@@ -82,6 +82,9 @@ public interface RequestInterface {
     @POST("community")
     Call<NewResponse> deleteCommunityOperation (@Body CommunityRequest request);
 
+    @POST("community")
+    Call<NewResponse> editCommunityOperation (@Body CommunityRequest request);
+
     @POST("community-qa")
     Call<NewResponse> saveQAOperation (@Body QARequest request);
 

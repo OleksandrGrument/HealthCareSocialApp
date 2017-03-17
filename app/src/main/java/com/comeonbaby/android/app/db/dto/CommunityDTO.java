@@ -154,4 +154,19 @@ public class CommunityDTO implements Serializable {
 		}
 		return null;
 	}
+
+	@Override
+	public String toString() {
+		return "CommunityDTO{" +
+				"id=" + id +
+				", content='" + content + '\'' +
+				", content_type=" + content_type +
+				", title='" + title + '\'' +
+				", date_created='" + date_created + '\'' +
+				", listImage=" + listImage +
+				", user=" + user +
+				", like_count=" + like_count +
+				", like=" + like +
+				'}';
+	}
 }

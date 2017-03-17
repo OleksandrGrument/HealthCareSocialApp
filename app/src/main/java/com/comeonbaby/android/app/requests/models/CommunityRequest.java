@@ -1,5 +1,7 @@
 package com.comeonbaby.android.app.requests.models;
 
+import java.util.Arrays;
+
 /**
  * Created by olegs on 23.02.2017.
  */
@@ -30,4 +32,18 @@ public class CommunityRequest {
     public void setCommunityID(long communityID) {this.communityID = communityID;}
     public byte[][] getBitmaps() {return bitmaps;}
     public void setBitmaps(byte[][] bitmaps) {this.bitmaps = bitmaps;}
+
+    @Override
+    public String toString() {
+        return "CommunityRequest{" +
+                "operation='" + operation + '\'' +
+                ", user='" + user + '\'' +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", data='" + data + '\'' +
+                ", type=" + type +
+                ", communityID=" + communityID +
+                ", bitmaps=" + Arrays.toString(bitmaps) +
+                '}';
+    }
 }
