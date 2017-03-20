@@ -241,10 +241,12 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
             }
 
             @Override
-            public void onCancel() {}
+            public void onCancel() {
+            }
 
             @Override
-            public void onError(FacebookException e) {}
+            public void onError(FacebookException e) {
+            }
         });
     }
 

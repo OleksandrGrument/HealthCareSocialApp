@@ -2,8 +2,8 @@
 <resources>
 
     <string name="api_key_gcm">AIzaSyABPqO5_-fDh5N6DZunn8Grk0G4H_fXqXw</string>
-    <string name="kakao_app_key">a835853b7ed9cdc6d523eaf6380a7d58</string>
-    <string name="facebook_app_id">332264086946009</string>
+    <string name="kakao_app_key">abd5d03886fef989abcba625b59087c8</string>
+    <string name="facebook_app_id">646890888852263</string>
     <string name="string_press_back_again_to_exit">Press back again to exit app.</string>
     <string name="app_name">컴온베이비</string>
     <string name="regex_email">^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[a-zA-Z]{2,4}$</string>
