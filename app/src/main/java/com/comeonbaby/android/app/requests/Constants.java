@@ -4,7 +4,7 @@ package com.comeonbaby.android.app.requests;
 public class Constants {
 
     //public static final String BASE_URL = "http://89.223.27.239:8080/ComeOnBaby/"; // Базовый домен по которому идёт запрос (можно указывать полный путь, тогда опускать анотацию в интерфейсе)
-    public static final String BASE_URL = "http://89.223.27.239:8080/";
+    public static final String BASE_URL = "http://192.168.0.32:8080/";
     //public static final String BASE_URL = "http://10.0.2.2:8080/";
 
     public static final String IMAGES_URL = BASE_URL + "images/";
@@ -24,6 +24,11 @@ public class Constants {
     public static final String UPLOAD_BASIC_QUESTION = "uploadbasicquestion";
     public static final int MSG_UPLOAD_BASIC_QUESTION_FAIL = 666;
     public static final int MSG_UPLOAD_BASIC_QUESTION_SUCCESS = 111;
+
+
+
+    public static final String DELETE_USER_OPERATION = "deleteUser";
+
 
     public static final String SAVE_NOTE_OPERATION = "savenote";
     public static final String GET_NOTES_OPERATION = "getnotes";
@@ -117,4 +122,7 @@ public class Constants {
     public static final int MSG_GET_Q_A_FAIL = 40;
     public static final int MSG_SAVE_QA_SUCCESS = 41;
     public static final int MSG_SAVE_QA_FAIL = 42;
+
+    public static final int DELETE_USER_SUCCESS = 43;
+    public static final int DELETE_USER_FAIL = 44;
 }

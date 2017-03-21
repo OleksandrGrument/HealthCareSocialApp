@@ -28,6 +28,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.comeonbaby.android.R;
@@ -144,7 +145,7 @@ public class SettingFragment extends BaseContainerFragment implements OnClickLis
                     return;
                 }
                 //progress.setVisibility(View.INVISIBLE);
-                if(msg.what != Constants.MSG_ERROR) showSnackMessage(message);
+                //if(msg.what != Constants.MSG_ERROR) showSnackMessage(message);
                 switch (msg.what) {
                     case Constants.MSG_EMAIL_UPDATE_SUCCESS: {
                         if(user != null) {
@@ -454,6 +455,7 @@ public class SettingFragment extends BaseContainerFragment implements OnClickLis
                     @Override
                     public void onClick(View v) {
                         ((BaseActivity) getActivity()).showProgress();
+                        Commands.deleteUser(userDTO);
                         ((BaseActivity) getActivity()).logOut(getActivity());
                         ((BaseActivity) getActivity()).hideProgress();
                     }

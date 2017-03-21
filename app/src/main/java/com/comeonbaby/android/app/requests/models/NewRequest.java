@@ -25,4 +25,14 @@ public class NewRequest {
     public void setOperation(String operation) {this.operation = operation;}
     public void setUser(String user) {this.user = user;}
     public void setData(String data) {this.data = data;}
+
+    @Override
+    public String toString() {
+        return "NewRequest{" +
+                "secret='" + secret + '\'' +
+                ", operation='" + operation + '\'' +
+                ", user='" + user + '\'' +
+                ", data='" + data + '\'' +
+                '}';
+    }
 }

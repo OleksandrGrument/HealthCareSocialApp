@@ -9,7 +9,7 @@ public class ServerPath {
 //	public static String SERVER_MEDIA = "http://54.92.0.11";
 //	public static String SERVER_RECIPE = "http://54.92.0.11";
 	public static String SERVER = "http://10.0.2.2";
-	public static String SERVER_MEDIA = /*Constants.BASE_URL + */ "http://89.223.27.239:8080/show-image/";
+	public static String SERVER_MEDIA = /*Constants.BASE_URL + */ "http://192.168.0.32:8080/show-image/";
 	public static String SERVER_RECIPE = "http://10.0.2.2";
 
 

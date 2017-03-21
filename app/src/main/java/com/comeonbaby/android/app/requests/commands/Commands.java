@@ -504,10 +504,27 @@ public class Commands {
         request.setOperation(Constants.DELETE_Q_A_RECORD_OPERATION);
         request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
         request.setId(dto.getId());
-        Log.e("!!!!!!!!!!!!!!!!",request.toString());
         Call<NewResponse> response = requestInterface.deleteQARecord(request);
         executeRequest(handler, response, SUBTAG, Constants.DELETE_Q_A_RECORD_OPERATION, Constants.MSG_GET_COMUNITY_SUCCESS, Constants.MSG_GET_COMUNITY_FAIL);
     }
+
+
+        public static void deleteUser(final UserDTO user) {
+            final String SUBTAG = TAG + "getGuide()";
+
+            if(user == null || user.getSystemID() == null) {
+                Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
+                return;
+            }
+            final NewRequest request = new NewRequest();
+            request.setOperation(Constants.DELETE_USER_OPERATION);
+            request.setUser(user.toJSON().toString());
+            Log.e("!!!!!!!!!!!!!deleteUser",request.toString());
+
+            Call<NewResponse> response = requestInterface.deleteUser(request);
+            executeRequest(response, SUBTAG, Constants.DELETE_USER_OPERATION);
+        }
+
 
 
     public static void getComunityQA(final Handler handler, int type) {

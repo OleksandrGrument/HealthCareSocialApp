@@ -94,5 +94,8 @@ public interface RequestInterface {
     @POST("google-cloud-id")
     Call<NewResponse> sendToServerGCM (@Body NewRequest request);
 
+    @POST("users-app")
+    Call<NewResponse> deleteUser (@Body NewRequest request);
+
 }
 
