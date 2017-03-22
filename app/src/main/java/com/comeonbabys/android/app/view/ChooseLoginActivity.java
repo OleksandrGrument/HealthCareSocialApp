@@ -25,6 +25,7 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
+import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.kakao.auth.ISessionCallback;
@@ -42,10 +43,6 @@ import org.json.JSONObject;
 
 import java.util.Arrays;
 
-
-/**
- * Created by olegs on 16.12.2016.
- */
 
 public class ChooseLoginActivity extends BaseActivity implements View.OnClickListener {
 
@@ -69,18 +66,18 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
     private void autoLoginAction() {
         Log.d(TAG, "Autologin Action Started");
         if (appSession == null) return;
-        if(PrefsHelper.getPrefsHelper().getPref((PrefsHelper.PREF_REMEMBER_ME), false) && user.getLoginType() != null) {
+        if (PrefsHelper.getPrefsHelper().getPref((PrefsHelper.PREF_REMEMBER_ME), false) && user.getLoginType() != null) {
             switch (user.getLoginType()) {
                 case Constants.LOGIN_KAKAO:
                 case Constants.LOGIN_FACEBOOK: {
                     Log.d(TAG, "Try to login via " + user.getLoginType());
-                    if(user.getSocialID() == null) break;
+                    if (user.getSocialID() == null) break;
                     Commands.startLoginSocial(handler, user.getLoginType(), user.getEmail(), user.getSocialID());
                     break;
                 }
                 case Constants.LOGIN_EMAIL: {
                     Log.d(TAG, "Try to login via " + user.getLoginType());
-                    if(user.getEmail() == null || user.getPassword() == null) break;
+                    if (user.getEmail() == null || user.getPassword() == null) break;
                     Commands.startLoginEmail(handler, user.getEmail(), user.getPassword());
                     break;
                 }
@@ -99,11 +96,11 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
     protected void onResume() {
         super.onResume();
         showProgress();
-        if(noNetwork != null) {
+        if (noNetwork != null) {
             noNetwork.dismiss();
             noNetwork = null;
         }
-        if(!AppSession.isLogined) {
+        if (!AppSession.isLogined) {
             autoLoginAction();
         } else {
             hideProgress();
@@ -117,7 +114,8 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
         profile = user.getProfileDTO();
         setContentView(R.layout.activity_choose_login);
         initHandler();
-        initFacebook();
+      /*  initFacebook();*/
+        callbackManager = CallbackManager.Factory.create();
         initKakao();
         initEmail();
     }
@@ -129,8 +127,9 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
                 Bundle data = msg.getData();
                 String message = "";
                 JSONObject user = null, jsdata = null;
-                if(data.containsKey(ExtraConstants.MESSAGE)) message = data.getString(ExtraConstants.MESSAGE);
-                if(msg.what != Constants.MSG_ERROR) showSnackMessage(message);
+                if (data.containsKey(ExtraConstants.MESSAGE))
+                    message = data.getString(ExtraConstants.MESSAGE);
+                if (msg.what != Constants.MSG_ERROR) showSnackMessage(message);
                 switch (msg.what) {
                     //Success login
                     case Constants.MSG_LOGIN_EMAIL_SUCCESS:
@@ -144,8 +143,10 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
                                 user = new JSONObject(data.getString(ExtraConstants.USER));
                                 jsdata = new JSONObject(data.getString(ExtraConstants.DATA));
                             }
-                        } catch (JSONException exc) {exc.printStackTrace();}
-                        if(user != null && jsdata != null) {
+                        } catch (JSONException exc) {
+                            exc.printStackTrace();
+                        }
+                        if (user != null && jsdata != null) {
                             AppSession.getSession().getSystemUser().setFromJSON(user.toString());
                             AppSession.getSession().getSystemUser().getProfileDTO().parseFromJson(jsdata.toString());
                             NotesHolder.updateNotes();
@@ -184,72 +185,6 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
         Snackbar.make(findViewById(R.id.layoutRootLogin), msg, Snackbar.LENGTH_LONG).show();
     }
 
-    private void initFacebook() {
-        FacebookSdk.sdkInitialize(getApplicationContext()); // Facebook session
-        callbackManager = CallbackManager.Factory.create();  // CallbackManager Facebook
-        btnLoginFacebook = (LoginButton)findViewById(R.id.btnLoginFacebook);
-        //btnLoginFacebook.setReadPermissions(Arrays.asList("public_profile", "email", "user_birthday"));
-        btnLoginFacebook.setReadPermissions(Arrays.asList("public_profile", "email"));
-        btnLoginFacebook.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                GraphRequest request = GraphRequest.newMeRequest(loginResult.getAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
-                    @Override
-                    public void onCompleted(JSONObject object, GraphResponse response) {
-                        Log.d("FACEBOOK", "ON SUCCESS!!!!!!!!!!!!!");
-                        showProgress();
-                        UserDTO userDTO = new UserDTO();
-                        // Application code
-                        try {
-                                Long socialID = object.getLong("id");
-                                if(socialID != null) {
-                                    userDTO.setSocialID(socialID);
-                                    user.getProfileDTO().setNickname(socialID+"");
-                                }
-
-//                            //Get name from facebook
-//                                String name = object.getString("name");
-//                                if (name != null && !name.equals("")) {
-//                                    Log.d("Nickname", name);
-//                                    userDTO.getProfileDTO().setNickname(name);
-//                                }
-
-                            //Get email from facebook
-                                String email = object.getString("email");
-                                if (email != null && !email.equals("")) {
-                                    userDTO.setEmail(email);
-                                }
-                            //Get gerne from facebook
-                            String gender = object.getString("gender");
-                            if (gender != null) {
-                                if (gender.equals("male")) profile.setGender(true);
-                                else if (gender.equals("femail")) profile.setGender(false);
-                            }
-                            Log.d("FaceBook", object.toString());
-                            Commands.startLoginSocial(handler, Constants.LOGIN_FACEBOOK, userDTO.getEmail(), userDTO.getSocialID());
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                        Log.e("GraphResponse", "-------------" + response.toString());
-                    }
-                });
-                Bundle parameters = new Bundle();
-                parameters.putString("fields", "id,name,gender,birthday,email");
-                request.setParameters(parameters);
-                request.executeAsync();
-            }
-
-            @Override
-            public void onCancel() {
-            }
-
-            @Override
-            public void onError(FacebookException e) {
-            }
-        });
-    }
-
     private void initKakao() {
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
@@ -263,10 +198,10 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
         });
     }
 
-    private void initEmail(){
-        btnLoginEmail = (Button)findViewById(R.id.btnLoginApp);
+    private void initEmail() {
+        btnLoginEmail = (Button) findViewById(R.id.btnLoginApp);
         btnLoginEmail.setOnClickListener(this);
-        btnRegisterUser = (Button)findViewById(R.id.btnRegisterUser);
+        btnRegisterUser = (Button) findViewById(R.id.btnRegisterUser);
         btnRegisterUser.setOnClickListener(this);
     }
 
@@ -283,6 +218,79 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
             }
             case R.id.btnRegisterUser: {
                 leaveActivity(ChooseLoginActivity.this, CreateAccountActivity.class.toString(), false, false);
+                break;
+            }
+            case R.id.btnLoginKakaotalk: {
+                com.kakao.usermgmt.LoginButton button = (com.kakao.usermgmt.LoginButton) findViewById(R.id.btnKakaotalk);
+                button.performClick();
+                break;
+            }
+            case R.id.btnLoginFacebook: {
+
+                FacebookSdk.sdkInitialize(getApplicationContext());
+                LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile", "email" ,"user_birthday"));
+                LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+                        GraphRequest request = GraphRequest.newMeRequest(loginResult.getAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
+                            @Override
+                            public void onCompleted(JSONObject object, GraphResponse response) {
+                                Log.d("FACEBOOK", "ON SUCCESS!!!!!!!!!!!!!");
+                                showProgress();
+                                UserDTO userDTO = new UserDTO();
+                                // Application code
+                                try {
+                                    Long socialID = object.getLong("id");
+                                    if (socialID != null) {
+                                        userDTO.setSocialID(socialID);
+                                        user.getProfileDTO().setNickname(socialID + "");
+                                    }
+
+//                            //Get name from facebook
+//                                String name = object.getString("name");
+//                                if (name != null && !name.equals("")) {
+//                                    Log.d("Nickname", name);
+//                                    userDTO.getProfileDTO().setNickname(name);
+//                                }
+
+                                    //Get email from facebook
+                                    String email = object.getString("email");
+                                    if (email != null && !email.equals("")) {
+                                        userDTO.setEmail(email);
+                                    }
+                                    //Get gerne from facebook
+                                    String gender = object.getString("gender");
+                                    if (gender != null) {
+                                        if (gender.equals("male")) profile.setGender(true);
+                                        else if (gender.equals("femail"))
+                                            profile.setGender(false);
+                                    }
+                                    Log.d("FaceBook", object.toString());
+                                    Commands.startLoginSocial(handler, Constants.LOGIN_FACEBOOK, userDTO.getEmail(), userDTO.getSocialID());
+
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                                Log.e("GraphResponse", "-------------" + response.toString());
+                            }
+                        });
+                        Bundle parameters = new Bundle();
+                        parameters.putString("fields", "id,name,gender,birthday,email");
+                        request.setParameters(parameters);
+                        request.executeAsync();
+                    }
+
+                    @Override
+                    public void onCancel() {
+                        // App code
+                    }
+
+                    @Override
+                    public void onError(FacebookException exception) {
+                        // App code
+                    }
+                });
                 break;
             }
             default: {
@@ -349,7 +357,7 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
                                 Log.d("Nickname", name);
                                 user.getProfileDTO().setNickname(name);
                             } else {
-                                user.getProfileDTO().setNickname(userProfile.getId()+"");
+                                user.getProfileDTO().setNickname(userProfile.getId() + "");
                             }
                         }
                         Commands.startLoginSocial(handler, Constants.LOGIN_KAKAO, user.getEmail(), user.getSocialID());
@@ -365,8 +373,8 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
 
     //Переброс на договор, если ранее не принимался
     private boolean checkTermPolicy() {
-        if(user.getProfileDTO() == null) user.setProfileDTO(new ProfileDTO());
-        if(user.getProfileDTO().isIs_agreement()) {
+        if (user.getProfileDTO() == null) user.setProfileDTO(new ProfileDTO());
+        if (user.getProfileDTO().isIs_agreement()) {
             return true;
         } else {
             leaveActivityForResult(ChooseLoginActivity.this, TermPolicyActivity.class.toString(), false, false, null, null, REQUEST_CODE);
@@ -374,12 +382,12 @@ public class ChooseLoginActivity extends BaseActivity implements View.OnClickLis
         }
     }
 
-    void startNextActivity(){
+    void startNextActivity() {
         hideProgress();
         baseActivity.hideProgress();
-        if(checkTermPolicy()) {
+        if (checkTermPolicy()) {
             Intent intent;
-            if(profile.isIs_finish_question()) {
+            if (profile.isIs_finish_question()) {
                 intent = new Intent(ChooseLoginActivity.this, MainActivity.class);
             } else {
                 intent = new Intent(ChooseLoginActivity.this, BasicQuestionActivity01.class);

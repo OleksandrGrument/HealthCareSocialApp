@@ -51,17 +51,6 @@
                 android:orientation="vertical"
                 android:padding="@dimen/padding_body" >
 
-                <com.kakao.usermgmt.LoginButton
-                    android:id="@+id/btnLoginKakaotalk"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/height_button"
-                    android:background="@drawable/bg_button_kakao_selection"
-                    android:gravity="center"
-                    android:maxHeight="@dimen/height_button"
-                    android:text="@string/text_login_kakaotalk"
-                    android:textColor="@color/color_white"
-                    android:textStyle="normal" />
-
                 <!--<com.comeonbaby.android.app.view.customview.ButtonCustom-->
                     <!--android:id="@+id/btnLoginFacebook"-->
                     <!--android:layout_width="match_parent"-->
@@ -81,22 +70,52 @@
                     <!--android:layout_centerInParent="true"-->
                     <!--/>-->
 
-                <com.facebook.login.widget.LoginButton
-                android:id="@+id/btnLoginFacebook"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_button"
-                android:layout_marginTop="@dimen/padding_body"
-                android:background="@drawable/bg_button_facebook_selection"
-                android:gravity="center"
-                android:maxHeight="@dimen/height_button"
-                android:text="@string/text_login_facebook"
-                android:textColor="@color/color_white"
-                android:textStyle="normal" />
+            <!--    <com.facebook.login.widget.LoginButton
+                    android:id="@+id/btnLoginFacebook"
+                    style="@style/FacebookButton"
+                    android:layout_marginTop="@dimen/padding_body"
+                    android:background="@drawable/bg_button_facebook_selection"
+                    android:gravity="center"
+                    android:maxHeight="@dimen/height_button"
+                    android:text="@string/text_login_facebook"
+                    android:textColor="@color/color_white"
+                    android:textStyle="normal" />-->
+
+                <com.kakao.usermgmt.LoginButton
+                    android:id="@+id/btnKakaotalk"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bg_button_kakao_selection"
+                    android:gravity="center"
+                    android:maxHeight="@dimen/height_button"
+                    android:text="@string/text_login_kakaotalk"
+                    android:textColor="@color/color_white"
+                    android:textStyle="normal" />
+
+
+                <Button
+                    android:id="@+id/btnLoginKakaotalk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_kakao_selection"
+                    android:textColor="@color/color_white"
+                    android:onClick="onClick"
+                    android:text="@string/text_login_kakaotalk" />
+
+                <Button
+                    android:id="@+id/btnLoginFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_body"
+                    android:background="@drawable/bg_button_facebook_selection"
+                    android:onClick="onClick"
+                    android:textColor="@color/color_white"
+                    android:text="@string/text_login_facebook" />
 
                 <com.comeonbabys.android.app.view.customview.ButtonCustom
                     android:id="@+id/btnLoginApp"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/height_button"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/padding_body"
                     android:background="@drawable/bg_button_app_selection"
                     android:gravity="center"
