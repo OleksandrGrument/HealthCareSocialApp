@@ -41,7 +41,7 @@
             android:contentDescription="@string/app_name"
             android:src="@drawable/bg_logo" />
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/textDes"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             android:layout_above="@+id/layoutBottom"
             android:overScrollMode="never" >
 
-            <com.comeonbaby.android.app.view.customview.ExtendedCalendarView
+            <com.comeonbabys.android.app.view.customview.ExtendedCalendarView
                 android:id="@+id/calendar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -84,7 +84,7 @@
             android:gravity="center"
             android:orientation="horizontal" >
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:id="@+id/textEdit"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -104,7 +104,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_line_doc" />
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:id="@+id/textEdit1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -124,7 +124,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_line_doc" />
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:id="@+id/textEdit2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -144,7 +144,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_line_doc" />
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:id="@+id/textEdit3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

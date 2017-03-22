@@ -48,14 +48,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_nhietke" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNhietke"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_nhietke" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNhietke_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,14 +87,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_monan" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textMonan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_monan" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textMonan_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -126,14 +126,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_hat" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textHat"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_monan" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textHat_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -165,14 +165,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_tra" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textTra"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_monan" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textTra_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -204,14 +204,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_vandong" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textVandong"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_monan" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textVandong_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -243,7 +243,7 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_ngu" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNgu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -251,13 +251,13 @@
                     android:background="@drawable/border_line_gray_not_radius"
                     android:gravity="center" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNgu_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_ngu_modified" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNgu1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -267,7 +267,7 @@
                     android:background="@drawable/border_line_gray_not_radius"
                     android:gravity="center" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNgu1_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -298,14 +298,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_uongnuoc" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textUongnuoc"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_uongnuoc" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textUongnuoc_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -337,14 +337,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_tam" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textTam"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_tam" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textTam_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -376,14 +376,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_vitamin" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textVitamin"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_monan" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textVitamin_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -415,14 +415,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_axicfolic" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textAxicfolic"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_monan" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textAxicfolic_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -454,14 +454,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_cafe" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textCafe"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_cafe" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textCafe_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -493,14 +493,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_ruou" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textRuou"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_ruou" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textRuou_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -532,14 +532,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_thuocla" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textThuocla"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_thuocla" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textThuocla_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -571,14 +571,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_camxuc" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textCamxuc"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_camxuc" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textCamxuc_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -610,14 +610,14 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/icon_thietlap" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textThietlap"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/text_unit_thietlap" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textThietlap_Modified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -635,7 +635,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnSaveDayNote"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

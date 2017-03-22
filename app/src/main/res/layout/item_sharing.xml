@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:paddingLeft="@dimen/padding_item" >
-    <com.comeonbaby.android.app.view.customview.TextViewCustom
+    <com.comeonbabys.android.app.view.customview.TextViewCustom
         android:id="@+id/txtName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

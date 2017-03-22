@@ -47,7 +47,7 @@
                 android:paddingRight="5dp"
                 android:paddingStart="5dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/txtTitle4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                     android:text="@string/text_title_question_4"
                     android:textColor="@color/color_black" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/height_editext"
                     android:background="@android:color/transparent"
@@ -69,7 +69,7 @@
                     android:textColor="@color/color_black" />
             </LinearLayout>
 
-            <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+            <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                 android:id="@+id/checkboxFemale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                 android:padding="5dp"
                 android:weightSum="3" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad21"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -105,7 +105,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_21" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad22"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -116,7 +116,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_22" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad23"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -145,7 +145,7 @@
                 android:padding="5dp"
                 android:weightSum="3" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad24"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -156,7 +156,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_24" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad25"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -167,7 +167,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_25" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad26"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -196,7 +196,7 @@
                 android:padding="5dp"
                 android:weightSum="3" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad27"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -207,7 +207,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_27" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad28"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -218,7 +218,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_28" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad29"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -247,7 +247,7 @@
                 android:padding="5dp"
                 android:weightSum="3" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad30"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -258,7 +258,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_30" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad31"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -269,7 +269,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_31" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad32"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -298,7 +298,7 @@
                 android:padding="5dp"
                 android:weightSum="3" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad33"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -315,7 +315,7 @@
                     android:layout_weight="2"
                     android:gravity="center_vertical" >
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/rad34"
                         style="@style/RadioButton"
                         android:layout_width="wrap_content"
@@ -325,7 +325,7 @@
                         android:paddingStart="5dp"
                         android:text="@string/text_radio_question_34" />
 
-                    <com.comeonbaby.android.app.view.customview.EditTextCustom
+                    <com.comeonbabys.android.app.view.customview.EditTextCustom
                         android:id="@+id/editAnswer34"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -350,7 +350,7 @@
                     android:layout_height="1dp" />
             </TableRow>
 
-            <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+            <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                 android:id="@+id/checkboxMale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -375,7 +375,7 @@
                 android:padding="5dp"
                 android:weightSum="1" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad35"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -404,7 +404,7 @@
                 android:padding="5dp"
                 android:weightSum="2" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad36"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -415,7 +415,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_36" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad37"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -444,7 +444,7 @@
                 android:padding="5dp"
                 android:weightSum="2" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad38"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -455,7 +455,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_38" />
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad39"
                     style="@style/RadioButton"
                     android:layout_width="0dp"
@@ -483,7 +483,7 @@
                 android:gravity="center_vertical"
                 android:padding="5dp" >
 
-                <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                     android:id="@+id/rad40"
                     style="@style/RadioButton"
                     android:layout_width="wrap_content"
@@ -493,7 +493,7 @@
                     android:paddingStart="5dp"
                     android:text="@string/text_radio_question_40" />
 
-                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                <com.comeonbabys.android.app.view.customview.EditTextCustom
                     android:id="@+id/editAnswer40"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -519,7 +519,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonNextStep"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

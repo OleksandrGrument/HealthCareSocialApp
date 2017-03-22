@@ -19,7 +19,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal" >
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

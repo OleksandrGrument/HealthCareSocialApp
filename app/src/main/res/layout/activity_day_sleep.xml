@@ -34,12 +34,12 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_ngu_content" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="2dp"
@@ -49,7 +49,7 @@
                     android:text="@string/text_ngu_content1"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_ngu_content2" />
@@ -63,12 +63,12 @@
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_ngu_content3" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="2dp"
@@ -78,13 +78,13 @@
                     android:text="@string/text_ngu_content4"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_ngu_content5" />
             </LinearLayout>
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content" >
                 </NumberPicker>
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -123,7 +123,7 @@
                     android:layout_marginStart="10dp" >
                 </NumberPicker>
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -136,7 +136,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/text_ngu_label2" />
@@ -154,7 +154,7 @@
                     android:layout_height="wrap_content" >
                 </NumberPicker>
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -174,7 +174,7 @@
                     android:layout_marginStart="10dp" >
                 </NumberPicker>
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -189,7 +189,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinishNgu"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

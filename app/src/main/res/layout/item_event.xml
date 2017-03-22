@@ -17,7 +17,7 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/textName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:textStyle="normal"
             android:textColor="@color/color_black" />
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/textDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

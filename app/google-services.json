@@ -49,6 +49,37 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348018610363:android:ea4319ae011aa0f5",
+        "android_client_info": {
+          "package_name": "com.comeonbabys.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348018610363-v2lqeq2eecbvj21gre7k856pda5o443k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-jEaNCckNhfX90My_UDApbZWTkPtDpj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

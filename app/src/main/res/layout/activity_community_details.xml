@@ -24,7 +24,7 @@
             android:scaleType="centerInside"
             android:src="@drawable/arrow_left_1" />
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/txtTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -80,14 +80,14 @@
                     android:gravity="start"
                     android:orientation="vertical" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:id="@+id/textUsername"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/color_transparent"
                         android:textColor="@color/color_black" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:id="@+id/textDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                 android:layout_marginTop="5dp"
                 android:orientation="vertical" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textContent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -125,14 +125,14 @@
                 android:gravity="start"
                 android:orientation="horizontal" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/color_transparent"
                     android:text="@string/text_like_1"
                     android:textColor="@color/color_text_date" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
             android:background="@color/color_white"
             android:orientation="horizontal" >
 
-            <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+            <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                 android:id="@+id/toggleLike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -187,7 +187,7 @@
                 android:drawableLeft="@drawable/toggle_like_on_off"
                 android:drawableStart="@drawable/toggle_like_on_off" />
 
-            <com.comeonbaby.android.app.view.customview.EditTextCustom
+            <com.comeonbabys.android.app.view.customview.EditTextCustom
                 android:id="@+id/editCompose"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                 android:maxLines="5"
                 android:minHeight="@dimen/height_editext" />
 
-            <com.comeonbaby.android.app.view.customview.ButtonCustom
+            <com.comeonbabys.android.app.view.customview.ButtonCustom
                 android:id="@+id/buttonWrite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

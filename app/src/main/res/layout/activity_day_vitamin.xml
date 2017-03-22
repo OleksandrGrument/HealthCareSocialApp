@@ -26,7 +26,7 @@
             android:orientation="vertical"
             android:padding="@dimen/padding_body" >
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
@@ -65,7 +65,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinishVitamin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

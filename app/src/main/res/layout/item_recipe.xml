@@ -27,7 +27,7 @@
         android:paddingRight="5dp"
         android:paddingStart="5dp" >
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/textName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:textColor="@color/color_black"
             android:textStyle="normal" />
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/textDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

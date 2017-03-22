@@ -10,14 +10,14 @@
         android:background="@drawable/border_white_not_padding_radius"
         android:orientation="vertical" >
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/txtLoginSuccessDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/txtLoginSuccessMsg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:gravity="center"
             android:orientation="horizontal" >
 
-            <com.comeonbaby.android.app.view.customview.ButtonCustom
+            <com.comeonbabys.android.app.view.customview.ButtonCustom
                 android:id="@+id/btnLoginSuccessDialogOk"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

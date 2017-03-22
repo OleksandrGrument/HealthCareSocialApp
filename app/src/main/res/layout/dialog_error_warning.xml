@@ -18,7 +18,7 @@
             android:background="@color/color_top_bar"
             android:orientation="vertical" >
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:id="@+id/txtErrWarDialog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 android:background="@color/color_border_edittext" />
         </LinearLayout>
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/txtErrWarDialogSubMsg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
             android:gravity="center"
             android:orientation="horizontal" >
 
-            <com.comeonbaby.android.app.view.customview.ButtonCustom
+            <com.comeonbabys.android.app.view.customview.ButtonCustom
                 android:id="@+id/btnErrWarDialogOk"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

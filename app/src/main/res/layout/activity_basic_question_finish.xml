@@ -22,7 +22,7 @@
         android:gravity="center"
         android:src="@drawable/bg_button_basic_finish" />
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinishStep"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

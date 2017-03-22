@@ -33,12 +33,12 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_monan_content" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="2dp"
@@ -48,13 +48,13 @@
                     android:text="@string/text_monan_content1"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_monan_content2" />
             </LinearLayout>
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -81,7 +81,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Goiy_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                         android:drawableLeft="@drawable/checkbox_selector_on_off"
                         android:drawableStart="@drawable/checkbox_selector_on_off" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:id="@+id/text_Goiy_1"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/height_editext"
@@ -117,7 +117,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Goiy_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                         android:drawableLeft="@drawable/checkbox_selector_on_off"
                         android:drawableStart="@drawable/checkbox_selector_on_off" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:id="@+id/text_Goiy_2"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/height_editext"
@@ -153,7 +153,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Goiy_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -161,7 +161,7 @@
                         android:drawableLeft="@drawable/checkbox_selector_on_off"
                         android:drawableStart="@drawable/checkbox_selector_on_off" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:id="@+id/text_Goiy_3"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/height_editext"
@@ -197,7 +197,7 @@
                         android:contentDescription="@string/app_name"
                         android:src="@drawable/bg_button_refresh_selection" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -225,7 +225,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Khongthich"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -233,7 +233,7 @@
                         android:drawableLeft="@drawable/checkbox_selector_on_off"
                         android:drawableStart="@drawable/checkbox_selector_on_off" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:id="@+id/text_Khongthich"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/height_editext"
@@ -252,7 +252,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinishMonan"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

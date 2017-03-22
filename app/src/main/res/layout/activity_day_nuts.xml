@@ -34,12 +34,12 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_hat_content" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="2dp"
@@ -49,13 +49,13 @@
                     android:text="@string/text_hat_content1"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_hat_content2" />
             </LinearLayout>
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -101,7 +101,7 @@
                 android:gravity="center"
                 android:orientation="vertical" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/padding_body"
@@ -121,7 +121,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -133,7 +133,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtNuts1" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -144,7 +144,7 @@
                         android:text="@string/text_hat_soluong_1"
                         android:textColor="@color/color_black" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Hat_Goiy_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -176,7 +176,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtNuts2" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -187,7 +187,7 @@
                         android:text="@string/text_hat_soluong_2"
                         android:textColor="@color/color_black" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Hat_Goiy_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -207,7 +207,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -219,7 +219,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtNuts3" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -230,7 +230,7 @@
                         android:text="@string/text_hat_soluong_3"
                         android:textColor="@color/color_black" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Hat_Goiy_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -251,7 +251,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -263,7 +263,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtNuts4" />
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -274,7 +274,7 @@
                         android:text="@string/text_hat_soluong_4"
                         android:textColor="@color/color_black" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Hat_Goiy_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -286,7 +286,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinishHat"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

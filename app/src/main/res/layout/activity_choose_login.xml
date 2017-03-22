@@ -34,7 +34,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/weaved_logo_about_1" />
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
@@ -93,7 +93,7 @@
                 android:textColor="@color/color_white"
                 android:textStyle="normal" />
 
-                <com.comeonbaby.android.app.view.customview.ButtonCustom
+                <com.comeonbabys.android.app.view.customview.ButtonCustom
                     android:id="@+id/btnLoginApp"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_button"
@@ -108,7 +108,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnRegisterUser"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

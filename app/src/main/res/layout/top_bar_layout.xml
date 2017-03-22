@@ -10,7 +10,7 @@
         android:layout_height="@dimen/height_top_bar"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
-        <com.comeonbaby.android.app.view.customview.EditTextCustom
+        <com.comeonbabys.android.app.view.customview.EditTextCustom
             android:id="@+id/tvBack"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -26,7 +26,7 @@
             android:paddingRight="10dp"
             android:text="@string/string_cancel"
             android:textColor="@drawable/text_color_state" />
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:textColor="@color/color_black"
             android:textStyle="bold"
             />
-        <com.comeonbaby.android.app.view.customview.EditTextCustom
+        <com.comeonbabys.android.app.view.customview.EditTextCustom
             android:id="@+id/tvSave"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

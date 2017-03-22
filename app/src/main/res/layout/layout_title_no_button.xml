@@ -20,7 +20,7 @@
     android:background="@drawable/bg_button_top"
     android:orientation="horizontal" >
 
-    <com.comeonbaby.android.app.view.customview.TextViewCustom
+    <com.comeonbabys.android.app.view.customview.TextViewCustom
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

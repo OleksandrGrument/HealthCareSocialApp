@@ -5,7 +5,7 @@
     android:layout_margin="@dimen/padding_body"
     android:orientation="vertical" >
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnConfirmYes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,7 +17,7 @@
         android:textColor="@color/color_white"
         android:textStyle="bold" />
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnConfirmNo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     android:padding="@dimen/padding_item" >
 
-    <com.comeonbaby.android.app.view.customview.TextViewCustom
+    <com.comeonbabys.android.app.view.customview.TextViewCustom
         android:id="@+id/textName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         android:singleLine="true"
         android:textColor="@color/color_black" />
 
-    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
         android:id="@+id/checkboxChoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -34,7 +34,7 @@
                 android:gravity="center"
                 android:orientation="vertical" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="2dp"
@@ -42,13 +42,13 @@
                     android:text="@string/text_vandong_content1"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_vandong_content2" />
             </LinearLayout>
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -94,7 +94,7 @@
                 android:gravity="center"
                 android:orientation="vertical" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/padding_body"
@@ -114,7 +114,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -126,7 +126,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtExercise1" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Vandong_Goiy_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -158,7 +158,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtExercise2" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Vandong_Goiy_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -190,7 +190,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtExercise3" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Vandong_Goiy_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -211,7 +211,7 @@
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.TextViewCustom
+                    <com.comeonbabys.android.app.view.customview.TextViewCustom
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -223,7 +223,7 @@
                         android:textColor="@color/color_black"
                         android:id="@+id/txtExercise4" />
 
-                    <com.comeonbaby.android.app.view.customview.CheckBoxCustom
+                    <com.comeonbabys.android.app.view.customview.CheckBoxCustom
                         android:id="@+id/checkbox_Vandong_Goiy_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -235,7 +235,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinishVandong"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

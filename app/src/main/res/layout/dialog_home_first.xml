@@ -6,7 +6,7 @@
     android:descendantFocusability="blocksDescendants"
     android:orientation="vertical" >
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonClose"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

@@ -41,7 +41,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/height_editext"
                     android:background="@android:color/transparent"
@@ -59,7 +59,7 @@
                     android:layout_marginStart="50dp"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.RadioButtonCustom
+                    <com.comeonbabys.android.app.view.customview.RadioButtonCustom
                         android:id="@+id/radioMale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                         android:drawableStart="@drawable/checkbox_icon_male"
                         android:padding="10dp" />
 
-                    <com.comeonbaby.android.app.view.customview.RadioButtonCustom
+                    <com.comeonbabys.android.app.view.customview.RadioButtonCustom
                         android:id="@+id/radioFeMale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/height_editext"
                     android:background="@android:color/transparent"
@@ -103,7 +103,7 @@
                     android:textColor="@color/color_black"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNamSinh"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
@@ -127,7 +127,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
                     android:layout_weight="1"
@@ -148,7 +148,7 @@
                     android:gravity="start|center_vertical"
                     android:orientation="horizontal" >
 
-                    <com.comeonbaby.android.app.view.customview.ButtonCustom
+                    <com.comeonbabys.android.app.view.customview.ButtonCustom
                         android:id="@+id/btnCity"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
@@ -218,7 +218,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/height_editext"
                     android:background="@android:color/transparent"
@@ -229,7 +229,7 @@
                     android:textColor="@color/color_black"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                <com.comeonbabys.android.app.view.customview.EditTextCustom
                     android:id="@+id/editDiaChi"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -253,7 +253,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/height_editext"
                     android:background="@android:color/transparent"
@@ -264,7 +264,7 @@
                     android:textColor="@color/color_black"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textChuKy"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
@@ -288,7 +288,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/height_editext"
                     android:background="@android:color/transparent"
@@ -299,7 +299,7 @@
                     android:textColor="@color/color_black"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textRedday"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
@@ -324,7 +324,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/height_editext"
                     android:background="@android:color/transparent"
@@ -335,7 +335,7 @@
                     android:textColor="@color/color_black"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:id="@+id/textNgayCuoi"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
@@ -359,7 +359,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
                     android:layout_weight="1"
@@ -371,7 +371,7 @@
                     android:textColor="@color/color_black"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                <com.comeonbabys.android.app.view.customview.EditTextCustom
                     android:id="@+id/editChieuCao"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -386,7 +386,7 @@
                     android:singleLine="true"
                     android:textColor="@color/color_black" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
                     android:layout_marginLeft="5dp"
@@ -408,7 +408,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
                     android:layout_weight="1"
@@ -420,7 +420,7 @@
                     android:textColor="@color/color_black"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.EditTextCustom
+                <com.comeonbabys.android.app.view.customview.EditTextCustom
                     android:id="@+id/editCanNang"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -435,7 +435,7 @@
                     android:singleLine="true"
                     android:textColor="@color/color_black" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_editext"
                     android:layout_marginLeft="5dp"
@@ -451,7 +451,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinish"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"

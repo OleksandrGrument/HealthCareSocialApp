@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/bg_button_top" >
 
-        <com.comeonbaby.android.app.view.customview.TextViewCustom
+        <com.comeonbabys.android.app.view.customview.TextViewCustom
             android:id="@+id/txtTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         android:background="@android:color/transparent"
         android:gravity="center" >
 
-        <com.comeonbaby.android.app.view.customview.ButtonCustom
+        <com.comeonbabys.android.app.view.customview.ButtonCustom
             android:id="@+id/buttonRecipe"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:textColor="@drawable/text_color_tab_comeon_state"
             android:textStyle="normal" />
 
-        <com.comeonbaby.android.app.view.customview.ButtonCustom
+        <com.comeonbabys.android.app.view.customview.ButtonCustom
             android:id="@+id/buttonGuide"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

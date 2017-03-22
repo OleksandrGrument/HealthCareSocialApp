@@ -34,12 +34,12 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_nuoc_content" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="2dp"
@@ -49,19 +49,19 @@
                     android:text="@string/text_nuoc_content1"
                     android:textStyle="bold" />
 
-                <com.comeonbaby.android.app.view.customview.TextViewCustom
+                <com.comeonbabys.android.app.view.customview.TextViewCustom
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/text_nuoc_content2" />
             </LinearLayout>
 
-            <com.comeonbaby.android.app.view.customview.TextViewCustom
+            <com.comeonbabys.android.app.view.customview.TextViewCustom
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="@string/text_nuoc_content3" />
 
-            <com.comeonbaby.android.app.view.customview.ToggleButtonGroupTableLayout
+            <com.comeonbabys.android.app.view.customview.ToggleButtonGroupTableLayout
                 android:id="@+id/radGroup1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                     android:gravity="center"
                     android:weightSum="2" >
 
-                    <com.comeonbaby.android.app.view.customview.RadioButtonCustom
+                    <com.comeonbabys.android.app.view.customview.RadioButtonCustom
                         android:id="@+id/checboxNuoc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                         android:gravity="center_horizontal"
                         android:text="@string/text_checkbox_nuoc1" />
 
-                    <com.comeonbaby.android.app.view.customview.RadioButtonCustom
+                    <com.comeonbabys.android.app.view.customview.RadioButtonCustom
                         android:id="@+id/checboxNuoc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                     android:gravity="center"
                     android:weightSum="2" >
 
-                    <com.comeonbaby.android.app.view.customview.RadioButtonCustom
+                    <com.comeonbabys.android.app.view.customview.RadioButtonCustom
                         android:id="@+id/checboxNuoc3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                         android:gravity="center_horizontal"
                         android:text="@string/text_checkbox_nuoc3" />
 
-                    <com.comeonbaby.android.app.view.customview.RadioButtonCustom
+                    <com.comeonbabys.android.app.view.customview.RadioButtonCustom
                         android:id="@+id/checboxNuoc4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -119,11 +119,11 @@
                         android:gravity="center_horizontal"
                         android:text="@string/text_checkbox_nuoc4" />
                 </TableRow>
-            </com.comeonbaby.android.app.view.customview.ToggleButtonGroupTableLayout>
+            </com.comeonbabys.android.app.view.customview.ToggleButtonGroupTableLayout>
         </LinearLayout>
     </ScrollView>
 
-    <com.comeonbaby.android.app.view.customview.ButtonCustom
+    <com.comeonbabys.android.app.view.customview.ButtonCustom
         android:id="@+id/btnButtonFinishNuoc"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_bottom_bar"
