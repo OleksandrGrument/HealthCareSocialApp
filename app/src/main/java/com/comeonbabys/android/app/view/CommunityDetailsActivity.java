@@ -54,6 +54,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 	final int RESQUEST_CODE_EDIT = 1;
 	ImageView menuOptions;
     Handler handler;
+	Boolean likeUser=false;
 
 	TextViewCustom textCountLikes;
 
@@ -134,6 +135,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 								if("true".equals(data.getString(ExtraConstants.DATA)))
 								{
 									toggleLike.setChecked(true);
+									likeUser = true;
 								}
 							} catch (Exception e) {
 								e.printStackTrace();
@@ -221,12 +223,14 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 			DialogUtilities.showCommunityDialog(CommunityDetailsActivity.this, yesButtonListener, noButtonListener);
 			break;
 		case R.id.toggleLike:
-			if(toggleLike.isChecked()){
-				textCountLikes.setText((communityDto.getLike_count()+1) + "");
+			if(toggleLike.isChecked()) {
+				communityDto.setLike_count(communityDto.getLike_count()+1);
+				textCountLikes.setText(communityDto.getLike_count()+"");
 				Commands.addLike(communityDto);
-			} else {
-				textCountLikes.setText((communityDto.getLike_count()) + "");
-                Commands.deleteLike(communityDto);
+			}else{
+				communityDto.setLike_count(communityDto.getLike_count()-1);
+				textCountLikes.setText(communityDto.getLike_count()+"");
+				Commands.deleteLike(communityDto);
 			}
 			break;
 		case R.id.buttonWrite:
