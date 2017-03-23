@@ -1,5 +1,6 @@
 package com.comeonbabys.android.app.view;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +14,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.provider.MediaStore.Images;
+import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.TypedValue;
@@ -41,6 +43,7 @@ import com.comeonbabys.android.app.requests.commands.Commands;
 import com.comeonbabys.android.app.utils.AppSession;
 import com.comeonbabys.android.app.utils.ConstsCore;
 import com.comeonbabys.android.app.utils.ImageUtils;
+import com.comeonbabys.android.app.utils.PermHelper;
 import com.comeonbabys.android.app.view.customview.ButtonCustom;
 import com.comeonbabys.android.app.view.customview.EditTextCustom;
 import com.comeonbabys.android.app.view.customview.ImageViewMySuccess;
@@ -166,7 +169,7 @@ public class CommunityDetailsNewActivity extends BaseActivity implements OnClick
 //					Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 //                    Uri newImageUri = createNewImageUri("jpg");
 //					captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, newImageUri);
-//					// we will handle the returned data in onActivityResult
+//				/	// we will handle the returned data in onActivityResult
 //					startActivityForResult(captureIntent, REQUEST_CAMERA);
 //				}
 //			};
@@ -174,17 +177,15 @@ public class CommunityDetailsNewActivity extends BaseActivity implements OnClick
 //			OnClickListener noButtonListener = new OnClickListener() {
 //				@Override
 //				public void onClick(View v) {
-					Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-					intent.setType("image/*");
-					startActivityForResult(Intent.createChooser(intent, "Select File"), SELECT_FILE);
-//				}
-//			};
-//            //Запрос разрешений
-//            if(!PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_CAMERA) || !PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_STORAGE)) {
-//                PermHelper.verifyCameraPermissions(this);
-//                PermHelper.verifyStoragePermissions(this);
-//                break;
-//            }
+			if(PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_CAMERA) || PermHelper.checkPermissionGranted(this, PermHelper.REQUEST_STORAGE)) {
+
+				Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+				intent.setType("image/*");
+				startActivityForResult(Intent.createChooser(intent, "Select File"), SELECT_FILE);
+			} else {
+				PermHelper.verifyCameraPermissions(this);
+			}
+
 //            //Создание диалога выбора способа получения картинки
 //            DialogUtilities.showAddPhotoDialog(CommunityDetailsNewActivity.this, yesButtonListener, noButtonListener);
             break;
