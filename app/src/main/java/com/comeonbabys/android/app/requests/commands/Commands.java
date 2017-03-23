@@ -437,31 +437,69 @@ public class Commands {
         executeRequest(handler, response, SUBTAG, Constants.GET_COMUNITY_RECORDS_OPERATION, Constants.MSG_GET_COMUNITY_SUCCESS, Constants.MSG_GET_COMUNITY_FAIL);
     }
 
-    public static void saveComment(final Handler handler, CommentDTO dto) {
-        final String SUBTAG = TAG + "saveComment()";
-        if(dto != null || dto.getUserID() != 0 || dto.getComment().isEmpty() || dto.getCommunityID() != 0) {
+    /** Like requests */
+    public static void addLike(CommunityDTO communityDTO) {
+        final String SUBTAG = TAG + "addLike()";
+        final CommunityRequest request = new CommunityRequest();
+
+        request.setOperation(Constants.ADD_LIKE_OPERATION);
+        request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
+        request.setCommunityID(communityDTO.getId());
+        Call<NewResponse> response = requestInterface.addLike(request);
+        executeRequest(response, SUBTAG, Constants.ADD_LIKE_OPERATION);
+    }
+
+    public static void deleteLike(CommunityDTO communityDTO) {
+        final String SUBTAG = TAG + "deleteLike()";
+        final CommunityRequest request = new CommunityRequest();
+
+        request.setOperation(Constants.DELETE_LIKE_OPERATION);
+        request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
+        request.setCommunityID(communityDTO.getId());
+        Call<NewResponse> response = requestInterface.deleteLike(request);
+        executeRequest(response, SUBTAG, Constants.DELETE_LIKE_OPERATION);
+    }
+
+    public static void isUserLiked(final Handler handler,CommunityDTO communityDTO) {
+        final String SUBTAG = TAG + "isUserLiked()";
+        if(communityDTO == null || communityDTO.getId() == 0) {
             handler.sendEmptyMessage(Constants.MSG_ERROR);
-            Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
+            Log.e(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
             return;
         }
+        final CommunityRequest request = new CommunityRequest();
+        request.setOperation(Constants.IS_USER_LIKE_OPERATION);
+        request.setCommunityID(communityDTO.getId());
+        request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
+        Call<NewResponse> response = requestInterface.isUserLiked(request);
+        executeRequest(handler, response, SUBTAG, Constants.IS_USER_LIKE_OPERATION, Constants.IS_USER_LIKE_SUCCESS, Constants.IS_USER_LIKE_FAIL);
+    }
+
+    /** End like requests */
+
+    public static void saveComment(final Handler handler, CommentDTO dto) {
+        final String SUBTAG = TAG + "saveComment()";
         final CommunityRequest request = new CommunityRequest();
         request.setOperation(Constants.SAVE_COMMENT_OPERATION);
         request.setContent(dto.getComment());
         request.setCommunityID(dto.getCommunityID());
+        request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
         Call<NewResponse> response = requestInterface.saveCommentOperation(request);
+        Log.e("saveComment",response.toString());
         executeRequest(handler, response, SUBTAG, Constants.SAVE_COMMENT_OPERATION, Constants.MSG_SAVE_COMMENT_SUCCESS, Constants.MSG_SAVE_COMMENT_FAIL);
     }
 
     public static void getComments(final Handler handler, CommunityDTO dto) {
         final String SUBTAG = TAG + "getComments()";
-        if(dto != null || dto.getId() != 0) {
+        if(dto == null || dto.getId() == 0) {
             handler.sendEmptyMessage(Constants.MSG_ERROR);
-            Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
+            Log.e(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
             return;
         }
         final CommunityRequest request = new CommunityRequest();
         request.setOperation(Constants.GET_COMMENTS_OPERATION);
         request.setCommunityID(dto.getId());
+        request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
         Call<NewResponse> response = requestInterface.getCommentsOperation(request);
         executeRequest(handler, response, SUBTAG, Constants.GET_COMMENTS_OPERATION, Constants.MSG_GET_COMMENTS_SUCCESS, Constants.MSG_GET_COMMENTS_FAIL);
     }
@@ -483,6 +521,7 @@ public class Commands {
             Log.d(SUBTAG, Constants.ERROR_MESSAGE_NULL_VALUE);
             return;
         }
+
         final CommunityRequest request = new CommunityRequest();
         request.setOperation(Constants.DELETE_COMUNITY_RECORD_OPERATION);
         request.setUser(AppSession.getSession().getSystemUser().toJSON().toString());
@@ -573,7 +612,7 @@ public class Commands {
 
                 if (resp == null) {
                     handler.sendEmptyMessage(Constants.MSG_ERROR);
-                    Log.d(SUBTAG, "Retrofit error. Response NULL!");
+                    Log.e(SUBTAG, "Retrofit error. Response NULL!");
                     return;
                 }
                 Log.d(SUBTAG, "Response: operation - " + resp.getOperation() + ", result - " + resp.getResult() + ", message - " + resp.getMessage());

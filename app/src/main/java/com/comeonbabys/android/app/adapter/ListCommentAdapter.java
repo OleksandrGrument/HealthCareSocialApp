@@ -59,6 +59,7 @@ public class ListCommentAdapter extends BaseAdapter {
 			holder.txtName = (TextViewCustom) convertView.findViewById(R.id.textName);
 			holder.txtDate = (TextViewCustom) convertView.findViewById(R.id.textDate);
 			holder.txtContent = (TextViewCustom) convertView.findViewById(R.id.textContent);
+
 			holder.imgThumnail = (ImageView) convertView.findViewById(R.id.imgAvatar);
 			holder.imageRetry = (ImageView) convertView.findViewById(R.id.imageRetry);
 			convertView.setTag(holder);

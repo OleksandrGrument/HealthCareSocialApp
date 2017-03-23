@@ -97,5 +97,14 @@ public interface RequestInterface {
     @POST("users-app")
     Call<NewResponse> deleteUser (@Body NewRequest request);
 
+    @POST("community")
+    Call<NewResponse> addLike (@Body CommunityRequest request);
+
+    @POST("community")
+    Call<NewResponse> deleteLike (@Body CommunityRequest request);
+
+    @POST("community")
+    Call<NewResponse> isUserLiked (@Body CommunityRequest request);
+
 }
 

@@ -13,8 +13,11 @@ import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.comeonbabys.android.R;
+import com.comeonbabys.android.app.adapter.ListCommentAdapter;
+import com.comeonbabys.android.app.adapter.ListCommunityAdapter;
 import com.comeonbabys.android.app.common.Constants;
 import com.comeonbabys.android.app.common.DialogUtilities;
 import com.comeonbabys.android.app.common.Globals;
@@ -31,6 +34,10 @@ import com.comeonbabys.android.app.view.customview.TextViewCustom;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.Collections;
 import java.util.List;
 
 public class CommunityDetailsActivity extends BaseActivity implements OnClickListener {
@@ -46,12 +53,18 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 	ImageView menuOptions;
     Handler handler;
 
+	TextViewCustom textCountLikes;
+
+
 	protected void onCreateContent(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_community_details);
 		activity = this;
 		initObjectUI();
         initHandler();
 		setupHideKeyboard(findViewById(R.id.layoutRootCommunityDetails));
+		Log.e("!!!!communityDto",communityDto.toString());
+		Commands.isUserLiked(handler, communityDto);
+		Commands.getComments(handler, communityDto);
 	}
 
     private void initHandler() {
@@ -61,7 +74,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
                 Bundle data = msg.getData();
                 String message = "";
                 if (data.containsKey(ExtraConstants.MESSAGE)) message = data.getString(ExtraConstants.MESSAGE);
-                if (msg.what != com.comeonbabys.android.app.requests.Constants.MSG_ERROR) showSnackMessage(message);
+                //if (msg.what != com.comeonbabys.android.app.requests.Constants.MSG_ERROR) showSnackMessage(message);
 
                 switch (msg.what) {
 					case com.comeonbabys.android.app.requests.Constants.MSG_DELETE_COMMUNITY_SUCCESS: {
@@ -69,6 +82,55 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 						break;
 					}
 					case com.comeonbabys.android.app.requests.Constants.MSG_DELETE_COMMUNITY_FAIL: {
+						activity.hideProgress();
+						break;
+					}
+					case com.comeonbabys.android.app.requests.Constants.MSG_SAVE_COMMENT_SUCCESS: {
+						Commands.getComments(handler, communityDto);
+                        hideProgress();
+						break;
+					}
+					case com.comeonbabys.android.app.requests.Constants.MSG_SAVE_COMMENT_FAIL: {
+                        hideProgress();
+						break;
+					}
+					case com.comeonbabys.android.app.requests.Constants.MSG_GET_COMMENTS_SUCCESS: {
+						Log.d(TAG, "GET COMMUNITY COMMENT SUCCESS!!!!");
+						List<CommentDTO> commentList = null;
+						if (data.containsKey(ExtraConstants.DATA)) {
+							try {
+								JSONArray jsonArray = new JSONArray(data.getString(ExtraConstants.DATA));
+								commentList = CommentDTO.parseListComments(jsonArray);
+							} catch (Exception e) {
+								e.printStackTrace();
+							}
+						}
+						if(commentList==null){
+							break;
+						}
+						final ListCommentAdapter adapter = new ListCommentAdapter(commentList, CommunityDetailsActivity.this);
+						listComment.setAdapter(adapter);
+						break;
+					}
+					case com.comeonbabys.android.app.requests.Constants.MSG_GET_COMMENTS_FAIL: {
+						activity.hideProgress();
+						break;
+					}
+					case com.comeonbabys.android.app.requests.Constants.IS_USER_LIKE_SUCCESS: {
+						Log.e(TAG, "GET IS USER LIKE SUCCESS!!!!!!!!!!!!!!!");
+						if (data.containsKey(ExtraConstants.DATA)) {
+							try {
+								if("true".equals(data.getString(ExtraConstants.DATA)))
+								{
+									toggleLike.setChecked(true);
+								}
+							} catch (Exception e) {
+								e.printStackTrace();
+							}
+						}
+						break;
+					}
+					case com.comeonbabys.android.app.requests.Constants.IS_USER_LIKE_FAIL: {
 						activity.hideProgress();
 						break;
 					}
@@ -146,12 +208,28 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 				}
 			};
 			DialogUtilities.showCommunityDialog(CommunityDetailsActivity.this, yesButtonListener, noButtonListener);
-
-
 			break;
 		case R.id.toggleLike:
-//			showProgress();
-//			PostLikeCommunityCommand.start(baseActivity, communityDto.getId());
+			if(toggleLike.isChecked()){
+				textCountLikes.setText((communityDto.getLike_count()+1) + "");
+				Commands.addLike(communityDto);
+			} else {
+				textCountLikes.setText((communityDto.getLike_count()) + "");
+                Commands.deleteLike(communityDto);
+			}
+			break;
+		case R.id.buttonWrite:
+				if("".equals(editCompose.getText().toString())){
+					Toast.makeText(activity, "Empty text field", Toast.LENGTH_SHORT).show();
+				} else {
+                    showProgress();
+					//Toast.makeText(activity, "Add comment", Toast.LENGTH_SHORT).show();
+					CommentDTO commentDTO = new CommentDTO();
+					commentDTO.setCommunityID(communityDto.getId());
+					commentDTO.setComment(editCompose.getText().toString());
+					Commands.saveComment(handler, commentDTO);
+				}
+			break;
 		case R.id.imageRetry:
 			try {
 				CommentDTO comment = (CommentDTO) v.getTag();
@@ -161,6 +239,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 				}
 			} catch (Exception e) {
 			}
+			break;
 		default:
 			break;
 		}
@@ -176,7 +255,8 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 			((TextViewCustom) findViewById(R.id.textUsername)).setText(communityDto.getUser().getProfileDTO().getNickname());
 			((TextViewCustom) findViewById(R.id.textDate)).setText(communityDto.getDate_created());
 			((TextViewCustom) findViewById(R.id.textContent)).setText(communityDto.getContent());
-			((TextViewCustom) findViewById(R.id.textCount)).setText(communityDto.getLike_count() + "");
+			textCountLikes = (TextViewCustom) findViewById(R.id.textCount);
+			textCountLikes.setText(communityDto.getLike_count() + "");
 			toggleLike.setChecked(communityDto.isLike());
 			LinearLayout layoutImage = (LinearLayout) findViewById(R.id.layoutImage);
 			layoutImage.removeAllViews();

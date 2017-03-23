@@ -55,6 +55,7 @@ public class ListQAAdapter extends BaseAdapter {
 			holder.txtName = (TextViewCustom) convertView.findViewById(R.id.textName);
 			holder.txtDate = (TextViewCustom) convertView.findViewById(R.id.textDate);
 			holder.txtTraLoi = (TextViewCustom) convertView.findViewById(R.id.textTraLoi);
+
 			convertView.setTag(holder);
 			holder.txtName.setTextSize(TypedValue.COMPLEX_UNIT_SP, Globals.size);
 		} else {

@@ -29,6 +29,11 @@ public class Constants {
 
 
     public static final String DELETE_USER_OPERATION = "deleteUser";
+    /* Likes */
+    public static final String ADD_LIKE_OPERATION = "addlike";
+    public static final String DELETE_LIKE_OPERATION = "deletelike";
+    public static final String IS_USER_LIKE_OPERATION = "isUserLike";
+
 
 
     public static final String SAVE_NOTE_OPERATION = "savenote";

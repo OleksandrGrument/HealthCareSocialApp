@@ -4,6 +4,8 @@
 
 package com.comeonbabys.android.app.db.dto;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -184,6 +184,7 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 						} else{
 							Collections.reverse(comListQA);
 						}
+						Log.e("comListQA.toString()",comListQA.toString());
 						final ListQAAdapter adapter = new ListQAAdapter(comListQA, getActivity());
 						listCommunity.setAdapter(adapter);
 						break;
