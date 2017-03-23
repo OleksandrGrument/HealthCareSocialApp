@@ -47,7 +47,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/layoutBottom"
         android:layout_below="@+id/layoutTitle"
         android:fillViewport="true"
@@ -143,7 +143,7 @@
                     android:textColor="@color/color_text_date" />
             </LinearLayout>
 
-            <ListView
+            <com.comeonbabys.android.app.view.customview.CustomListView
                 android:id="@+id/listviewComment"
                 style="@style/ListView"
                 android:layout_width="match_parent"
@@ -154,7 +154,7 @@
                 android:dividerHeight="1dp"
                 android:listSelector="@android:color/transparent"
                 android:scrollbars="vertical" >
-            </ListView>
+            </com.comeonbabys.android.app.view.customview.CustomListView>
         </LinearLayout>
     </ScrollView>
 

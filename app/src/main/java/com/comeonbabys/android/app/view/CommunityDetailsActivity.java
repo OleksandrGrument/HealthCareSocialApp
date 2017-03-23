@@ -8,6 +8,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
@@ -29,6 +30,7 @@ import com.comeonbabys.android.app.requests.commands.Commands;
 import com.comeonbabys.android.app.utils.AppSession;
 import com.comeonbabys.android.app.view.customview.ButtonCustom;
 import com.comeonbabys.android.app.view.customview.CheckBoxCustom;
+import com.comeonbabys.android.app.view.customview.CustomListView;
 import com.comeonbabys.android.app.view.customview.EditTextCustom;
 import com.comeonbabys.android.app.view.customview.TextViewCustom;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -46,7 +48,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
     private static final String TAG = "CommDetailsActivity";
 	CheckBoxCustom toggleLike;
 	CommunityDTO communityDto;
-	ListView listComment;
+	CustomListView listComment;
 	EditTextCustom editCompose;
 	List<CommentDTO> listCommentDto;
 	final int RESQUEST_CODE_EDIT = 1;
@@ -108,8 +110,17 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 						if(commentList==null){
 							break;
 						}
+
+
+						/*listComment.setLayoutParams( new ListView.LayoutParams( ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT) );*/
+
 						final ListCommentAdapter adapter = new ListCommentAdapter(commentList, CommunityDetailsActivity.this);
-						listComment.setAdapter(adapter);
+                        listComment.setAdapter(adapter);
+
+				/*		LayoutParams lp = (LayoutParams) listComment.getLayoutParams();
+						lp.height = LayoutParams.WRAP_CONTENT;
+						listComment.setLayoutParams(lp);*/
+
 						break;
 					}
 					case com.comeonbabys.android.app.requests.Constants.MSG_GET_COMMENTS_FAIL: {
@@ -149,7 +160,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 
 	private void initObjectUI() {
 		communityDto = (CommunityDTO) getIntent().getSerializableExtra(ServiceConsts.EXTRA_COMMUNITY);
-		listComment = (ListView) findViewById(R.id.listviewComment);
+		listComment = (CustomListView) findViewById(R.id.listviewComment);
 		editCompose = (EditTextCustom) findViewById(R.id.editCompose);
 
 		((TextViewCustom) findViewById(R.id.txtTitle)).setTextSize(TypedValue.COMPLEX_UNIT_SP, Globals.size);
