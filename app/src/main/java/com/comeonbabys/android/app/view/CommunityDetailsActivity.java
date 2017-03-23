@@ -243,6 +243,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 					commentDTO.setCommunityID(communityDto.getId());
 					commentDTO.setComment(editCompose.getText().toString());
 					Commands.saveComment(handler, commentDTO);
+					editCompose.setText("");
 				}
 			break;
 		case R.id.imageRetry:
