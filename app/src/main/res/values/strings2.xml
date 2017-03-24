@@ -25,7 +25,7 @@
     <string name="text_report_12_2_2" formatted="false"> Drinking %s times / average %s standard </string>
     <string name="text_report_12_1_1" formatted="false"> Monthly %s drinking / average %s standard </string> 
 
-    <string name="title_register_user"> Register new user </string>
+    <string name="title_register_user"> 새 사용자 등록 </string>
     <string name="string_nickname_length"> Nickname length too small </string>
     <string name="string_passwords_different"> Password fields do not match </string>
 

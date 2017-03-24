@@ -107,8 +107,10 @@ public class ImageCommunityDTO implements Serializable {
 			for (String img : images) {
 				ImageCommunityDTO imgComm = new ImageCommunityDTO();
 				//imgComm.setId(1);
-				imgComm.setImage(img);
-				list.add(imgComm);
+				if (!"".equals(img)) {
+					imgComm.setImage(img);
+					list.add(imgComm);
+				}
 			}
 			return list;
 		} catch (Exception e) {
