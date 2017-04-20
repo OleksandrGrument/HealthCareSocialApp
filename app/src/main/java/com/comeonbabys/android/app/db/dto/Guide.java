@@ -13,6 +13,16 @@ public class Guide {
     private String date;
     private String name;
     private String url_image;
+    private String url;
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getUrl() {
+
+        return url;
+    }
 
     public Guide() {}
 
@@ -22,12 +32,13 @@ public class Guide {
         this.cartoonId = paramInt;
     }
 
-    public Guide(String paramString1, String paramString2, String paramString3, String paramString4)
+    public Guide(String paramString1, String paramString2, String paramString3, String paramString4, String url)
     {
         this.name = paramString1;
         this.url_image = paramString2;
         this.date = paramString3;
         this.url_image = paramString4;
+        this.url = url;
     }
 
     public int getCartoonId()

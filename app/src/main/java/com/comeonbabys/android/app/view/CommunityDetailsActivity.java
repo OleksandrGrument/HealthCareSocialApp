@@ -8,11 +8,13 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -48,7 +50,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
     private static final String TAG = "CommDetailsActivity";
 	CheckBoxCustom toggleLike;
 	CommunityDTO communityDto;
-	CustomListView listComment;
+	ListView listComment;
 	EditTextCustom editCompose;
 	List<CommentDTO> listCommentDto;
 	final int RESQUEST_CODE_EDIT = 1;
@@ -68,6 +70,37 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 		Log.e("!!!!communityDto",communityDto.toString());
 		Commands.isUserLiked(handler, communityDto);
 		Commands.getComments(handler, communityDto);
+	}
+
+	public void setListViewHeightBasedOnChildren(ListView listView) {
+
+		ListAdapter listAdapter = listView.getAdapter();
+		if (listAdapter != null) {
+
+			int numberOfItems = listAdapter.getCount();
+
+			// Get total height of all items.
+			int totalItemsHeight = 0;
+			for (int itemPos = 0; itemPos < numberOfItems; itemPos++) {
+				View item = listAdapter.getView(itemPos, null, listView);
+				float px = 300 * (listView.getResources().getDisplayMetrics().density);
+				item.measure(
+						View.MeasureSpec.makeMeasureSpec((int)px, View.MeasureSpec.AT_MOST),
+						View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
+				int height = item.getMeasuredHeight();
+				totalItemsHeight += height;
+			}
+
+			// Get total height of all item dividers.
+			int totalDividersHeight = listView.getDividerHeight() *
+					(numberOfItems - 1);
+
+			// Set list height.
+			ViewGroup.LayoutParams params = listView.getLayoutParams();
+			params.height = totalItemsHeight + totalDividersHeight;
+			listView.setLayoutParams(params);
+			listView.requestLayout();
+		}
 	}
 
     private void initHandler() {
@@ -112,15 +145,17 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 							break;
 						}
 
-
-						/*listComment.setLayoutParams( new ListView.LayoutParams( ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT) );*/
+						//listComment.setLayoutParams( new CustomListView.LayoutParams( ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT) );
 
 						final ListCommentAdapter adapter = new ListCommentAdapter(commentList, CommunityDetailsActivity.this);
                         listComment.setAdapter(adapter);
+						setListViewHeightBasedOnChildren(listComment);
 
-				/*		LayoutParams lp = (LayoutParams) listComment.getLayoutParams();
-						lp.height = LayoutParams.WRAP_CONTENT;
-						listComment.setLayoutParams(lp);*/
+//						ListView.LayoutParams lp = (ListView.LayoutParams) listComment.getLayoutParams();
+//						lp.height = ListView.LayoutParams.WRAP_CONTENT;
+//						listComment.setLayoutParams(lp);
+
+
 
 						break;
 					}
@@ -162,7 +197,7 @@ public class CommunityDetailsActivity extends BaseActivity implements OnClickLis
 
 	private void initObjectUI() {
 		communityDto = (CommunityDTO) getIntent().getSerializableExtra(ServiceConsts.EXTRA_COMMUNITY);
-		listComment = (CustomListView) findViewById(R.id.listviewComment);
+		listComment = (ListView) findViewById(R.id.listviewComment);
 		editCompose = (EditTextCustom) findViewById(R.id.editCompose);
 
 		((TextViewCustom) findViewById(R.id.txtTitle)).setTextSize(TypedValue.COMPLEX_UNIT_SP, Globals.size);

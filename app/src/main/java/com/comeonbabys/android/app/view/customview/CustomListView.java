@@ -12,26 +12,31 @@ import android.widget.ListView;
 public class CustomListView extends ListView {
 
     private android.view.ViewGroup.LayoutParams params;
-    private int prevCount = 0;
+    private int old_count = 0;
 
     public CustomListView(Context context, AttributeSet attrs)
     {
         super(context, attrs);
     }
 
-    @Override
-    protected void onDraw(Canvas canvas)
-    {
-        if (getCount() != prevCount)
-        {
-            int height = getChildAt(0).getHeight() + 1 ;
-            prevCount = getCount();
-            params = getLayoutParams();
-            params.height = getCount() * height;
-            setLayoutParams(params);
-        }
-
-        super.onDraw(canvas);
-    }
+//    @Override
+//    protected void onDraw(Canvas canvas) {
+//
+//        if (getCount() != old_count) {
+//            params = getLayoutParams();
+//            old_count = getCount();
+//            int totalHeight = 0;
+//            for (int i = 0; i < getCount(); i++) {
+//                this.measure(0, 0);
+//                totalHeight += getMeasuredHeight();
+//            }
+//
+//            params = getLayoutParams();
+//            params.height = totalHeight + (getDividerHeight() * (getCount() - 1));
+//            setLayoutParams(params);
+//        }
+//
+//        super.onDraw(canvas);
+//    }
 
 }

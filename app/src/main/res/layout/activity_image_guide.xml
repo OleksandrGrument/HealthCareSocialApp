@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    android:background="@drawable/bg_button_top"
+    android:paddingBottom="20dp">
 
 
     <LinearLayout
@@ -14,7 +15,7 @@
         android:background="@drawable/bg_button_top"
         android:gravity="center_vertical"
         android:minHeight="@dimen/height_top_bar"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imgBack"
@@ -28,11 +29,12 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_button_top"
-        android:src="@drawable/babe"/>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/babe"
+            android:onClick="onClickInImage"/>
 
 </LinearLayout>

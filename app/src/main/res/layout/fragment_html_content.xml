@@ -25,7 +25,7 @@
             android:src="@drawable/arrow_left_1" />
 
         <com.comeonbabys.android.app.view.customview.TextViewCustom
-            android:id="@+id/txtTitle"
+            android:id="@+id/txtTitle1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

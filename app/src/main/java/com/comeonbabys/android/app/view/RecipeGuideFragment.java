@@ -73,7 +73,7 @@ public class RecipeGuideFragment extends BaseContainerFragment implements Adapte
                             guides = new JSONArray(data.getString(ExtraConstants.DATA));
                             guide = new ArrayList<>();
                             for (int i = 0; i < guides.length(); i++) {
-                                guide.add(new Guide(guides.getJSONObject(i).getString("title"), guides.getJSONObject(i).getString("image"),guides.getJSONObject(i).getString("date"),guides.getJSONObject(i).getString("image")));
+                                guide.add(new Guide(guides.getJSONObject(i).getString("title"), guides.getJSONObject(i).getString("image"),guides.getJSONObject(i).getString("date"),guides.getJSONObject(i).getString("image"),guides.getJSONObject(i).getString("url")+""));
                             }
 
                         } catch (JSONException e) {

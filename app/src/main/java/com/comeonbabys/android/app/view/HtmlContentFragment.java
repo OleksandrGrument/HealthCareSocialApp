@@ -48,7 +48,7 @@ public class HtmlContentFragment extends BaseContainerFragment implements OnClic
 		communityDto = (CommunityDTO) intent.getSerializable(ServiceConsts.EXTRA_COMMUNITY);
 		comeOnDto = (ComeOnGuideDTO) intent.getSerializable(ServiceConsts.EXTRA_LIST_NANIN);
 		LinearLayout layoutImage = (LinearLayout) getActivity().findViewById(R.id.layoutImage);
-		TextViewCustom edtTitle = (TextViewCustom) getActivity().findViewById(R.id.txtTitle);
+		TextViewCustom edtTitle = (TextViewCustom) getActivity().findViewById(R.id.txtTitle1);
 		edtTitle.setTextSize(TypedValue.COMPLEX_UNIT_SP, Globals.size);
 		scrollViewHtml = (ScrollView) getActivity().findViewById(R.id.scrollViewHtml);
 		webviewCustom = (WebView) getActivity().findViewById(R.id.webviewCustom);
