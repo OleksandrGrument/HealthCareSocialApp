@@ -25,32 +25,32 @@ public class GlobalApplication extends SugarApp {
         Log.d(" XXXXXXXXXXXXX", "XXXXXXXXXX");
         Log.d("----INIT-----", "------KAKAOSDK init  --------");
         Log.d(" XXXXXXXXXXXXX", "XXXXXXXXXX");
-//        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-//
-//            @Override
-//            public void uncaughtException(Thread thread, Throwable e) {
-//                Log.i("GLOBAL", "KILL");
-//
-//                Intent intent = new Intent(GlobalApplication.this, SplashActivity.class);
-//
-//                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
-//                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
-//                        | Intent.FLAG_ACTIVITY_NEW_TASK);
-//
-//
-//                PendingIntent pendingIntent = PendingIntent.getActivity(
-//                        GlobalApplication.getGlobalApplicationContext().getBaseContext(), 0, intent, intent.getFlags());
-//
-//                AlarmManager mgr = (AlarmManager) GlobalApplication.getGlobalApplicationContext().getBaseContext()
-//                        .getSystemService(Context.ALARM_SERVICE);
-//                mgr.set(AlarmManager.RTC, System.currentTimeMillis() +500,
-//                        pendingIntent);
-//
-//                System.exit(1);
-//
-//
-//            }
-//        });
+        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+
+            @Override
+            public void uncaughtException(Thread thread, Throwable e) {
+                Log.i("GLOBAL", "KILL");
+
+                Intent intent = new Intent(GlobalApplication.this, SplashActivity.class);
+
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
+                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        | Intent.FLAG_ACTIVITY_NEW_TASK);
+
+
+                PendingIntent pendingIntent = PendingIntent.getActivity(
+                        GlobalApplication.getGlobalApplicationContext().getBaseContext(), 0, intent, intent.getFlags());
+
+                AlarmManager mgr = (AlarmManager) GlobalApplication.getGlobalApplicationContext().getBaseContext()
+                        .getSystemService(Context.ALARM_SERVICE);
+                mgr.set(AlarmManager.RTC, System.currentTimeMillis() +500,
+                        pendingIntent);
+
+                System.exit(1);
+
+
+            }
+        });
     }
 
     public static GlobalApplication getGlobalApplicationContext() {
