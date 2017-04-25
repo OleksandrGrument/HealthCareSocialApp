@@ -184,7 +184,7 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 						} else{
 							Collections.reverse(comListQA);
 						}
-						Log.e("comListQA.toString()",comListQA.toString());
+//						Log.e("comListQA.toString()",comListQA.toString());
 						final ListQAAdapter adapter = new ListQAAdapter(comListQA, getActivity());
 						listCommunity.setAdapter(adapter);
 						break;
@@ -195,7 +195,6 @@ public class CommunityFragment extends BaseContainerFragment implements OnItemCl
 						Log.d(TAG, "GET COMMUNITY Q_A FAIL!!!!");
 						break;
 					}
-
 
 					case Constants.MSG_GET_NOTICES_SUCCESS: {
 						Log.d(TAG, "GET NOTICES SUCCESS!!!!");
