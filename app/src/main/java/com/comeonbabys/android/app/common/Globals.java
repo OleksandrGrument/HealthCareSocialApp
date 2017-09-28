@@ -2,9 +2,7 @@ package com.comeonbabys.android.app.common;
 
 import android.app.Dialog;
 
-/**
- * Created by olegs on 19.12.2016.
- */
+
 
 public class Globals {
     public static String HOCKEYAPP_KEY = "73da638f3d5b057bd35dcb66d462fde2";

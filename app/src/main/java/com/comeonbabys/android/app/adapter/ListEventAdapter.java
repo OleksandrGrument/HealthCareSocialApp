@@ -18,9 +18,7 @@ import com.comeonbabys.android.app.view.customview.TextViewCustom;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author PvTai
- */
+
 public class ListEventAdapter extends BaseAdapter implements Filterable {
 
 	private List<CommunityDTO> dataSource;

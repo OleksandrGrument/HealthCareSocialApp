@@ -5,9 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 
-/**
- * Created by Oleg Shevchenko on 07.02.2017.
- */
+
 
 public abstract class BaseCommand implements Command {
     protected final Context context;

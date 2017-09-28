@@ -36,9 +36,6 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by Oleg Shevchenko on 15.02.2017.
- */
 
 public class Commands {
 

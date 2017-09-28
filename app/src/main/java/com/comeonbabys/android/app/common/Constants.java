@@ -9,9 +9,7 @@ import com.comeonbabys.android.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
-/**
- * @author PvTai Dec 10, 2014 11:54:52 PM
- */
+
 public class Constants {
 	public static final String STR_BLANK = "";
 	public static final String INTENT_URL = "url";

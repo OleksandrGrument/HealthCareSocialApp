@@ -18,9 +18,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author PvTai Nov 7, 2014 10:44:40 AM
- */
+
 public class CityDTO implements Serializable {
     private final static String CITIES_ARRAY = "cities";
 	private static List<CityDTO> listCity;

@@ -19,9 +19,7 @@ import com.comeonbabys.android.app.view.customview.TextViewCustom;
 
 import java.util.List;
 
-/**
- * @author PvTai
- */
+
 public class ListCityAdapter extends BaseAdapter {
 
 	private List<CityDTO> dataSource;

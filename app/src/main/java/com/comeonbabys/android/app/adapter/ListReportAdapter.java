@@ -13,9 +13,7 @@ import com.comeonbabys.android.app.view.customview.TextViewCustom;
 
 import java.util.List;
 
-/**
- * @author PvTai
- */
+
 public class ListReportAdapter extends BaseAdapter {
 
 	private List<ReportDTO> dataSource;

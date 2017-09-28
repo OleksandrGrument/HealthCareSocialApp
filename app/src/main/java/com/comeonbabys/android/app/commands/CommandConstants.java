@@ -1,8 +1,6 @@
 package com.comeonbabys.android.app.commands;
 
-/**
- * Created by Oleg Shevchenko on 07.02.2017.
- */
+
 
 public class CommandConstants {
     //SERVER PATHS

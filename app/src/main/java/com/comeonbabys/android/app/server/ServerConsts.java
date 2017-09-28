@@ -1,8 +1,5 @@
 package com.comeonbabys.android.app.server;
 
-/**
- * Created by olegs on 27.12.2016.
- */
 
 public class ServerConsts {
     public static final String SERVER_PROTOCOL = "http";

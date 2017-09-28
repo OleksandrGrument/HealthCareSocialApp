@@ -5,9 +5,6 @@ import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 
-/**
- * Created by olegs on 02.02.2017.
- */
 
 public class PermHelper {
     private static final int REQUEST = 1;

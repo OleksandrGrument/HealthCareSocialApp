@@ -25,9 +25,7 @@ import java.util.List;
 
 import static android.R.attr.x;
 
-/**
- * @author PvTai
- */
+
 public class ListCommentAdapter extends BaseAdapter {
 
 	private List<CommentDTO> dataSource;

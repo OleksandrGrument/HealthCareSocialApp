@@ -7,9 +7,7 @@ package com.comeonbabys.android.app.db.dto;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * @author PvTai Nov 7, 2014 10:44:40 AM
- */
+
 public class ListReportDTO implements Serializable {
 
 	/**

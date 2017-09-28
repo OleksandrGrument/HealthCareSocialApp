@@ -4,9 +4,6 @@ import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.URL;
 
-/**
- * Created by olegs on 27.12.2016.
- */
 
 public class TestServer {
     public static void main(String[] args) {

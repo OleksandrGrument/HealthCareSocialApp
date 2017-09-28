@@ -1,8 +1,5 @@
 package com.comeonbabys.android.app.requests;
 
-/**
- * Created by olegs on 13.02.2017.
- */
 
 public class ExtraConstants {
     public static final String USER = "user";

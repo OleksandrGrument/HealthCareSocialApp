@@ -15,9 +15,7 @@ import com.comeonbabys.android.app.view.customview.TextViewCustom;
 
 import java.util.List;
 
-/**
- * @author PvTai
- */
+
 public class ListQAAdapter extends BaseAdapter {
 
 	private List<CommunityQADTO> dataSource;

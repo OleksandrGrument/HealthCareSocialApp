@@ -21,9 +21,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author PvTai
- */
+
 public class ListCommunityAdapter extends BaseAdapter implements Filterable {
 
 	private List<CommunityDTO> dataSource;

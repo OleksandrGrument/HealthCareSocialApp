@@ -14,11 +14,6 @@ import retrofit2.http.POST;
 
 public interface RequestInterface {
 
-//    @POST("users") // Указывается директория на которою приходится запрос (можно указывать весь адресс), так же метод запроса в виде анотации
-//    Call<ServerResponse<LoginUser>> userOperation (@Body ServerRequest<LoginUser> request); // Структура -->
-    // Call<(Дженерик или свой тип который принимает ответ)> СВОЁ_НАЗВАНИЕ_МЕТОДА (@АНОТАЦИЯ ТИП_ОТПРАВЛЯЕМОГО_ОБЪЕКТА поле)
-    // Как работать с ретрофитом 2.0 ---- http://java-help.ru/retrofit-2-review/
-
     @POST("users-app")
     Call<NewResponse> updateEmailOperation(@Body NewRequest request);
 

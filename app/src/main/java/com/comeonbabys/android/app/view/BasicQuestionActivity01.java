@@ -22,9 +22,7 @@ import com.comeonbabys.android.app.view.customview.ToggleButtonGroupTableLayout;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by olegs on 19.12.2016.
- */
+
 
 public class BasicQuestionActivity01 extends BaseActivity implements View.OnClickListener, MultiTextWatcher.OnTextChangedListener {
 

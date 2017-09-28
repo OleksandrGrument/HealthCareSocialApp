@@ -25,9 +25,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Created by Oleg Shevchenko on 27.01.2017.
- */
+
 
 public class NotesHolder {
 

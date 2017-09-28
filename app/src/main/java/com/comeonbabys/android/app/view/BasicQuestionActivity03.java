@@ -1,8 +1,6 @@
 package com.comeonbabys.android.app.view;
 
-/**
- * Created by olegs on 20.12.2016.
- */
+
 import org.json.JSONException;
 import org.json.JSONObject;
 

@@ -6,7 +6,7 @@ import java.util.Locale;
 public class MathUtils {
 	
 	/**
-	 * @author PvTai
+
 	 * @Description Compare two double number
 	 * 
 	 * @param v1

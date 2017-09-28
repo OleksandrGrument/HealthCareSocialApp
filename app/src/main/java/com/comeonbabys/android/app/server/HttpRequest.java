@@ -11,9 +11,6 @@ import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 
-/**
- * Created by olegs on 27.12.2016.
- */
 
 public class HttpRequest {
     public static final String METHOD_GET = "GET";

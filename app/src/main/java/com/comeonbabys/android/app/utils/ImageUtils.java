@@ -26,9 +26,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.UUID;
 
-/**
- * @author PvTai Jan 21, 2015 5:03:38 PM
- */
+
 public class ImageUtils {
 	private static final String TAG = "ImageUtils";
 

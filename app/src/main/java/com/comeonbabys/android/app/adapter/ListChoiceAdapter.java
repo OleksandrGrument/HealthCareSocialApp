@@ -15,9 +15,7 @@ import com.comeonbabys.android.app.common.OnEventControlListener;
 import com.comeonbabys.android.app.view.customview.CheckBoxCustom;
 import com.comeonbabys.android.app.view.customview.TextViewCustom;
 
-/**
- * @author PvTai
- */
+
 public class ListChoiceAdapter extends BaseAdapter {
 
 	private String[] dataSource;

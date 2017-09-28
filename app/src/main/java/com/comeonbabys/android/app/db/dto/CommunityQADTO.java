@@ -13,9 +13,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-/**
- * @author PvTai Nov 7, 2014 10:44:40 AM
- */
+
 public class CommunityQADTO implements Serializable {
 
 

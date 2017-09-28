@@ -9,9 +9,7 @@ import org.json.JSONObject;
 import java.io.Serializable;
 
 
-/**
- * @author PvTai Nov 7, 2014 10:44:40 AM
- */
+
 @SuppressWarnings("serial")
 public class ProfileDTO implements Serializable {
 

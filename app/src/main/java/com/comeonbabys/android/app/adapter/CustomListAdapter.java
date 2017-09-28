@@ -15,9 +15,6 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import java.util.ArrayList;
 
 
-/**
- * Created by Lisa on 2/9/2017.
- */
 
 public class CustomListAdapter extends ArrayAdapter<String> {
     private final Activity context;

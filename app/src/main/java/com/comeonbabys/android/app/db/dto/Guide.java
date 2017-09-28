@@ -3,9 +3,7 @@ package com.comeonbabys.android.app.db.dto;
 
 import java.util.ArrayList;
 
-/**
- * Created by Lisa on 2/16/2017.
- */
+
 
 public class Guide {
     public static ArrayList<Guide> guide = new ArrayList();
